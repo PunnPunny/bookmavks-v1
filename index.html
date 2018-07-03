@@ -1,0 +1,2235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/logo-browser.png">
+    <link rel="stylesheet" href="logo-home.css">
+    <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="left-layout.css">
+    <link rel="stylesheet" href="right-layout.css">
+    <link rel="stylesheet" href="ProfileSlide.css">
+    <link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="middle.css">
+    <link rel="stylesheet" href="write.css">
+    <script src="img/https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="search-board.css">
+    <link rel="stylesheet" href="cover-media.css">
+    <link rel="stylesheet" href="resize.css">
+    <link rel="stylesheet" href="submenu.css">
+
+    <title>Bookmavks</title>
+</head>
+
+<body>
+
+
+    <div id="cover-media">
+
+        <!--
+        <div id="search-active">
+                
+            </div>
+-->
+        <div class="backHome">
+            <span onclick="profileClose()" class="back-text">BACK</span>
+
+            <div class="menuBHtab">
+
+                <img class="markBH" src="img/marks-ex.png" alt="">
+                
+                <img class="shareBH" src="img/share-logo-icon.png" alt="">
+                
+                <img class="saveBH" src="img/Paper_clip.png" alt="">
+
+            </div>
+
+            <div class="feeltab">
+<!--                love-->
+                <img class="love-icon" onclick="loveIcon()" id="feel-click" src="img/love-icon.png" alt="">
+                <img class="love-icon" onclick="loveIcon()" id="feel-click2" src="img/love-icon.png" alt="">
+                
+                
+                
+<!--                haha-->
+            <img class="haha-icon" onclick="hahaIcon()" id="feel-click-h" src="img/haha-icon.png" alt="">
+                <img class="haha-icon" onclick="hahaIcon()" id="feel-click-h2" src="img/haha-icon.png" alt="">
+                
+                <!--        wow-->
+                 <img class="wow-icon" onclick="wowIcon()" id="feel-click-w" src="img/wow-icon.png" alt="">
+                <img class="wow-icon" onclick="wowIcon()" id="feel-click-w2" src="img/wow-icon.png" alt="">
+                
+                
+<!--                sad-->
+                 <img class="sad-icon" onclick="sadIcon()" id="feel-click-s" src="img/sad-icon.png" alt="">
+                <img class="sad-icon" onclick="sadIcon()" id="feel-click-s2" src="img/sad-icon.png" alt="">
+                
+                
+<!--                angry-->
+                <img class="angry-icon" onclick="angIcon()" id="feel-click-a" src="img/angry-icon.png" alt="">
+                <img class="angry-icon" onclick="angIcon()" id="feel-click-a2" src="img/angry-icon.png" alt="">
+            </div>
+        </div>
+        
+
+
+
+
+
+
+        <div id="dt-paper-pop">
+        <div class="dt-inside">
+            <div class="profile-dt-inside">
+                <img class="gopromd" src="img/gopro-md-logo.png" alt="">
+                
+                <img class="goprobanner" src="img/goproban.jpg" alt="">
+            </div>
+                       
+            <div class="goproCH">
+                <div class="CH-gopro">
+                   <span style="margin-right: 55px;">More vidoes</span> 
+                </div >
+                
+                <div class="web-gopro">
+                    <span style="margin-left: 49px;">Go to Board</span>
+                </div>
+            </div>
+            
+            <div class="detail-dt">
+                <span style="text-transform: uppercase; font-size: 30px; margin-top: 30px;">GoPro HERO 6</span>
+                <span style="text-transform: uppercase; font-size: 14px">This is the moment in 4K</span>
+                <div style="height: 1px; width: 90%; background: #515151; margin-top: 50px;"></div>
+                <span style="text-transform: uppercase; font-size: 20px; margin-top: 50px;">Create your world</span>
+                <img style="margin-top: 16px;" src="img/goprohero6-1.jpg" alt="" width="100%;">
+                <img style="margin-top: 8px;" src="img/goprohero6-1.jpg" alt="" width="100%;">
+                <img style="margin-top: 8px;" src="img/goprohero6-1.jpg" alt="" width="100%;">
+                
+            </div>
+        </div>
+
+        </div>
+
+
+
+        <!--        feeling script-->
+        <script>
+            
+            
+            var lov = 1;
+
+            function loveIcon() {
+
+
+                if (lov == 1) {
+                    document.getElementById('feel-click').style.left = '300px';
+                    document.getElementById('feel-click').style.transition = '1.4s';
+                    document.getElementById('feel-click').style.top = '32%';
+                    document.getElementById('feel-click').style.width = '0px';
+                    document.getElementById('feel-click').style.height = '0px';
+
+
+
+                    document.getElementById('feel-click2').style.height = '40px';
+                    document.getElementById('feel-click2').style.width = '40px';
+                    document.getElementById('feel-click2').style.left = '10px';
+                    document.getElementById('feel-click2').style.transition = 'none';
+                    document.getElementById('feel-click2').style.top = '30%';
+                    lov++;
+                } else {
+                    document.getElementById('feel-click2').style.left = '300px';
+                    document.getElementById('feel-click2').style.transition = '1.4s';
+                    document.getElementById('feel-click2').style.width = '0px';
+                    document.getElementById('feel-click2').style.height = '0px';
+                    document.getElementById('feel-click2').style.top = '32%';
+
+
+
+                    document.getElementById('feel-click').style.height = '40px';
+                    document.getElementById('feel-click').style.width = '40px';
+                    document.getElementById('feel-click').style.left = '10px';
+                    document.getElementById('feel-click').style.top = '30%';
+                    document.getElementById('feel-click').style.transition = 'none';
+
+                    lov--;
+                }
+
+            }
+            
+            
+            
+               var hah = 1;
+            
+             function hahaIcon() {
+
+
+                if (hah == 1) {
+                    document.getElementById('feel-click-h').style.left = '300px';
+                    document.getElementById('feel-click-h').style.transition = '1.4s';
+                    document.getElementById('feel-click-h').style.top = '40%';
+                    document.getElementById('feel-click-h').style.width = '0px';
+                    document.getElementById('feel-click-h').style.height = '0px';
+
+
+
+                    document.getElementById('feel-click-h2').style.height = '40px';
+                    document.getElementById('feel-click-h2').style.width = '40px';
+                    document.getElementById('feel-click-h2').style.left = '10px';
+                    document.getElementById('feel-click-h2').style.transition = 'none';
+                    document.getElementById('feel-click-h2').style.top = '38%';
+                    hah++;
+                } else {
+                    document.getElementById('feel-click-h2').style.left = '300px';
+                    document.getElementById('feel-click-h2').style.transition = '1.4s';
+                    document.getElementById('feel-click-h2').style.width = '0px';
+                    document.getElementById('feel-click-h2').style.height = '0px';
+                    document.getElementById('feel-click-h2').style.top = '40%';
+
+
+
+                    document.getElementById('feel-click-h').style.height = '40px';
+                    document.getElementById('feel-click-h').style.width = '40px';
+                    document.getElementById('feel-click-h').style.left = '10px';
+                    document.getElementById('feel-click-h').style.top = '38%';
+                    document.getElementById('feel-click-h').style.transition = 'none';
+
+                    hah--;
+                }
+             }
+
+
+                 
+                 
+ var wow = 1;
+            
+             function wowIcon() {
+
+
+                if (wow == 1) {
+                    document.getElementById('feel-click-w').style.left = '300px';
+                    document.getElementById('feel-click-w').style.transition = '1.4s';
+                    document.getElementById('feel-click-w').style.top = '48%';
+                    document.getElementById('feel-click-w').style.width = '0px';
+                    document.getElementById('feel-click-w').style.height = '0px';
+
+
+
+                    document.getElementById('feel-click-w2').style.height = '40px';
+                    document.getElementById('feel-click-w2').style.width = '40px';
+                    document.getElementById('feel-click-w2').style.left = '10px';
+                    document.getElementById('feel-click-w2').style.transition = 'none';
+                    document.getElementById('feel-click-w2').style.top = '46%';
+                    wow++;
+                } else {
+                    document.getElementById('feel-click-w2').style.left = '300px';
+                    document.getElementById('feel-click-w2').style.transition = '1.4s';
+                    document.getElementById('feel-click-w2').style.width = '0px';
+                    document.getElementById('feel-click-w2').style.height = '0px';
+                    document.getElementById('feel-click-w2').style.top = '48%';
+
+
+
+                    document.getElementById('feel-click-w').style.height = '40px';
+                    document.getElementById('feel-click-w').style.width = '40px';
+                    document.getElementById('feel-click-w').style.left = '10px';
+                    document.getElementById('feel-click-w').style.top = '46%';
+                    document.getElementById('feel-click-w').style.transition = 'none';
+
+                    wow--;
+                }
+
+            }
+            
+            
+            
+            
+            
+            
+             var sad = 1;
+            
+             function sadIcon() {
+
+
+                if (sad == 1) {
+                    document.getElementById('feel-click-s').style.left = '300px';
+                    document.getElementById('feel-click-s').style.transition = '1.4s';
+                    document.getElementById('feel-click-s').style.top = '56%';
+                    document.getElementById('feel-click-s').style.width = '0px';
+                    document.getElementById('feel-click-s').style.height = '0px';
+
+
+
+                    document.getElementById('feel-click-s2').style.height = '40px';
+                    document.getElementById('feel-click-s2').style.width = '40px';
+                    document.getElementById('feel-click-s2').style.left = '10px';
+                    document.getElementById('feel-click-s2').style.transition = 'none';
+                    document.getElementById('feel-click-s2').style.top = '54%';
+                    sad++;
+                } else {
+                    document.getElementById('feel-click-s2').style.left = '300px';
+                    document.getElementById('feel-click-s2').style.transition = '1.4s';
+                    document.getElementById('feel-click-s2').style.width = '0px';
+                    document.getElementById('feel-click-s2').style.height = '0px';
+                    document.getElementById('feel-click-s2').style.top = '56%';
+
+
+
+                    document.getElementById('feel-click-s').style.height = '40px';
+                    document.getElementById('feel-click-s').style.width = '40px';
+                    document.getElementById('feel-click-s').style.left = '10px';
+                    document.getElementById('feel-click-s').style.top = '54%';
+                    document.getElementById('feel-click-s').style.transition = 'none';
+
+                    sad--;
+                }
+
+            }
+            
+            
+            
+              var ang = 1;
+            
+             function angIcon() {
+
+
+                if (ang == 1) {
+                    document.getElementById('feel-click-a').style.left = '300px';
+                    document.getElementById('feel-click-a').style.transition = '1.4s';
+                    document.getElementById('feel-click-a').style.top = '64%';
+                    document.getElementById('feel-click-a').style.width = '0px';
+                    document.getElementById('feel-click-a').style.height = '0px';
+
+
+
+                    document.getElementById('feel-click-a2').style.height = '40px';
+                    document.getElementById('feel-click-a2').style.width = '40px';
+                    document.getElementById('feel-click-a2').style.left = '10px';
+                    document.getElementById('feel-click-a2').style.transition = 'none';
+                    document.getElementById('feel-click-a2').style.top = '62%';
+                    ang++;
+                } else {
+                    document.getElementById('feel-click-a2').style.left = '300px';
+                    document.getElementById('feel-click-a2').style.transition = '1.4s';
+                    document.getElementById('feel-click-a2').style.width = '0px';
+                    document.getElementById('feel-click-a2').style.height = '0px';
+                    document.getElementById('feel-click-a2').style.top = '64%';
+
+
+
+                    document.getElementById('feel-click-a').style.height = '40px';
+                    document.getElementById('feel-click-a').style.width = '40px';
+                    document.getElementById('feel-click-a').style.left = '10px';
+                    document.getElementById('feel-click-a').style.top = '62%';
+                    document.getElementById('feel-click-a').style.transition = 'none';
+
+                    ang--;
+                }
+
+            }
+        </script>
+
+        <div id="media-search">
+
+
+
+
+
+            <div id="media-bar">
+                <div id="firstCm">
+                    You are the first. <br> Tell us something. <br>
+                    <div style="height: 0px; position: relative; bottom: 22px;"><span style="font-size: 60px;">.</span><br>
+                        <div style="height: 0px; position: relative; bottom: 20px;"><span style="font-size: 40px;">.</span><br></div>
+                        <div style="height: 0px; position: relative; top: 20px;"><span style="font-size: 20px;">.</span><br></div>
+                    </div>
+
+
+                </div>
+                <!--                <div class="all-comment">fsdfdsfsdfsdf</div>-->
+
+
+
+                <div class="myComment">
+                    <div class="myComment-box">
+                        <img class="profile-comment-media" src="img/nav-profile.png" width="40" alt="">
+                        <input class="comment-write" type="text" placeholder="Write a comment..">
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="search-show">
+
+                <div class="ss-detail">
+                    <div class="cover-flex-start-ss">
+
+
+
+
+
+                        <div class="travel-style">
+                            <input id="ts-id" class="ts-ip" type="text" placeholder="Style" onclick="tvStyle()" value="">
+                            <div id="tv-style-id" class="tv-style-list">
+                                <span onclick="liMoun()" class="mountain-ts ts-list-style">Mountain</span>
+                                <span onclick="liSea()" class="sea-ts ts-list-style">Sea</span>
+                                <span onclick="liCul()" class="culture-ts ts-list-style">Culture</span>
+                                <span onclick="liMuse()" class="museum-ts ts-list-style">Museum</span>
+                                <span onclick="liAqu()" class="aquarium-ts ts-list-style">Aquarium</span>
+                                <span onclick="liFor()" class="forest-ts ts-list-style">Forest</span>
+                                <span onclick="liSli()" class="slimy-ts ts-list-style">Slimy</span>
+                                <span onclick="liAdve()" class="adventure-ts ts-list-style">Adventure</span>
+                                <span onclick="liOth()" class="other-ts ts-list-style">Other</span>
+                            </div>
+                        </div>
+
+
+                        <!--                    script travel style-->
+                        <script>
+                            var tvs = 1;
+
+                            function tvStyle() {
+                                if (tvs == 1) {
+                                    document.getElementById('tv-style-id').style.height = '160px';
+                                    tvs = tvs - 1;
+                                } else {
+                                    document.getElementById('tv-style-id').style.height = '0';
+                                    tvs = tvs + 1;
+                                }
+                            }
+
+
+                            function liSea() {
+                                document.getElementById('ts-id').value = 'Sea';
+                                document.getElementById('tv-style-id').style.height = '0';
+                                tvs = 1;
+                            }
+
+                            function liCul() {
+                                document.getElementById('ts-id').value = 'Culture';
+                                document.getElementById('tv-style-id').style.height = '0';
+                                tvs = 1;
+                            }
+
+                            function liMuse() {
+                                document.getElementById('ts-id').value = 'Museum';
+                                document.getElementById('tv-style-id').style.height = '0';
+                                tvs = 1;
+                            }
+
+                            function liAqu() {
+                                document.getElementById('ts-id').value = 'Aquarium';
+                                document.getElementById('tv-style-id').style.height = '0';
+                                tvs = 1;
+                            }
+
+                            function liFor() {
+                                document.getElementById('ts-id').value = 'Forest';
+                                document.getElementById('tv-style-id').style.height = '0';
+                                tvs = 1;
+                            }
+
+                            function liSli() {
+                                document.getElementById('ts-id').value = 'Slimy';
+                                document.getElementById('tv-style-id').style.height = '0';
+                                tvs = 1;
+                            }
+
+                            function liAdve() {
+                                document.getElementById('ts-id').value = 'Adventure';
+                                document.getElementById('tv-style-id').style.height = '0';
+                                tvs = 1;
+                            }
+
+                            function liMoun() {
+                                document.getElementById('ts-id').value = 'Mountain';
+                                document.getElementById('tv-style-id').style.height = '0';
+                                tvs = 1;
+                            }
+
+                            function liOth() {
+                                document.getElementById('ts-id').value = '';
+                                document.getElementById('ts-id').placeholder = 'Type your style';
+                                document.getElementById('tv-style-id').style.height = '0';
+                                tvs = 1;
+
+
+                            }
+                        </script>
+
+
+
+
+
+
+
+
+
+                        <div id="sac" class="select-country">
+                            <div class="sc-box">
+                                <input id="sac-id" class="ip-sac" onclick="sac()" type="text" placeholder="Country">
+                            </div>
+                            <ul>
+                                <li onclick="thaiLi()" value="op-th">Thailand</li>
+                                <li onclick="japanLi()" value="op-jp">Japan</li>
+                                <li onclick="netLi()" value="op-nl">Netherlands</li>
+                            </ul>
+                        </div>
+
+                        <div class="region-select">
+                            <div class="region-ss">
+                                <input id="region-id-ip" class="ip-sac cursor-ed-rg" type="btton" placeholder="Region" onclick="regionClick()">
+                            </div>
+                            <div id="region-list-id" class="region-list">
+
+                                <div onclick="nRg()" class="rl-north rl-ed">
+                                    North
+                                </div>
+                                <div onclick="sRg()" class="rl-south rl-ed">
+                                    South
+                                </div>
+                                <div onclick="wRg()" class="rl-west rl-ed">
+                                    West
+                                </div>
+                                <div onclick="eRg()" class="rl-east rl-ed">
+                                    East
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="behave-ss">
+                            <div id="newSs" class="New-ss behave-ed" onclick="clickNew()">
+                                New
+                            </div>
+                            <div id="popSs" class="Pop-ss behave-ed" onclick="clickPop()">
+                                Popular
+                            </div>
+                        </div>
+
+                        <div class="ssProvince">
+                            <input class="add-province" type="text" placeholder="@Province">
+                        </div>
+
+
+                    </div>
+
+
+
+
+                    <div class="ss-search">
+                        <div class="ip-ss-search" onclick="searchBoard()">Search</div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+
+        <!--        region -->
+        <script>
+            var cn = 1;
+            var cp = 1;
+
+            function clickNew() {
+
+                if (cn == 1) {
+                    document.getElementById('newSs').style.color = 'white';
+
+                    cn = cn - 1;
+
+                } else {
+                    document.getElementById('newSs').style.color = '#4a4c4c';
+                    cn = cn + 1;
+
+                }
+            }
+
+
+            function clickPop() {
+
+                if (cp == 1) {
+                    document.getElementById('popSs').style.color = 'white';
+
+                    cp = cp - 1;
+
+                } else {
+                    document.getElementById('popSs').style.color = '#4a4c4c';
+                    cp = cp + 1;
+                }
+            }
+
+
+
+            function nRg() {
+                document.getElementById('region-id-ip').value = 'North';
+                document.getElementById('region-list-id').style.height = '0';
+                rck = 1;
+            }
+
+            function sRg() {
+                document.getElementById('region-id-ip').value = 'South';
+                document.getElementById('region-list-id').style.height = '0';
+                rck = 1;
+            }
+
+            function wRg() {
+                document.getElementById('region-id-ip').value = 'West';
+                document.getElementById('region-list-id').style.height = '0';
+                rck = 1;
+            }
+
+            function eRg() {
+                document.getElementById('region-id-ip').value = 'East';
+                document.getElementById('region-list-id').style.height = '0';
+                rck = 1;
+            }
+
+
+            var rck = 1;
+
+            function regionClick() {
+                if (rck == 1) {
+                    document.getElementById('region-list-id').style.height = '118px';
+                    rck = rck - 1;
+                } else {
+                    document.getElementById('region-list-id').style.height = '0';
+                    rck = rck + 1;
+                }
+            }
+        </script>
+
+
+        <!--        select-country function-->
+        <script>
+            function thaiLi() {
+                document.getElementById('sac-id').value = 'Thailand';
+                document.getElementById('sac').style.height = '43px';
+                sacT = 1;
+
+            }
+
+            function japanLi() {
+                document.getElementById('sac-id').value = 'Japan';
+                document.getElementById('sac').style.height = '43px';
+                sacT = 1;
+            }
+
+            function netLi() {
+                document.getElementById('sac-id').value = 'Netherlands';
+                document.getElementById('sac').style.height = '43px';
+                sacT = 1;
+            }
+
+
+            var sacT = 1;
+
+            function sac() {
+                if (sacT == 1) {
+                    document.getElementById('sac').style.height = '142px';
+                    sacT = sacT - 1;
+                } else {
+                    document.getElementById('sac').style.height = '43px';
+                    sacT = sacT + 1;
+                }
+
+            }
+        </script>
+
+
+
+
+        <!--        media-slide-->
+        <!--    media-search-->
+
+
+        <div id="RightSearch" class="left-media-menu" onclick="glassMedia(),mediaSesize()">
+            <img id="glass-media" src="img/glass-icon.png" width="15" alt="" style="margin-bottom: 73px;">
+        </div>
+
+        <div id="ssBoard">
+
+
+            <div id="img-left-sb" class="back-left-ss">
+                <img onclick="searchBoard()" id="imgBackRight" src="img/back-icon-left.png" width="10" alt="">
+            </div>
+
+
+            <div id="boardSearch" class="boardSearch">
+
+
+                <!--               fuction show and close-->
+                <div id="brSS" class="brSS" onclick="brsearch()">
+
+                    <div id="brShow-id" class="brShow">
+                        <img id="imgLeftss" class="imgLeftss" onclick="brsearch()" src="img/back-icon.png" width="10" alt="">
+
+
+                    </div>
+
+                </div>
+
+                <div id="bttSearch" onclick="hideBTT()">Video Board</div>
+
+                <div onclick="searchBoard()" id="backToUndo">Back to Search</div>
+
+                <div id="hideSearch" onclick="hideSearch()">Hide</div>
+
+            </div>
+
+
+        </div>
+
+        <!--        Search Board -->
+        <script>
+            function hideSearch() {
+
+                document.getElementById('RightSearch').style.display = 'flex';
+                document.getElementById('img-left-sb').style.display = 'flex';
+                document.getElementById('backToUndo').style.display = 'none';
+                document.getElementById('hideSearch').style.display = 'none';
+                document.getElementById('bttSearch').style.display = 'none';
+                document.getElementById('img-left-sb').style.right = '0';
+
+
+                document.getElementById('imgLeftss').width = '0';
+                document.getElementById('imgLeftss').style.transition = '0.24s';
+                document.getElementById('ssBoard').style.width = '0px';
+                document.getElementById('ssBoard').style.right = '316px';
+
+                document.getElementById('imgBackRight').style.display = 'inline-block';
+                document.getElementById('imgBackRight').style.right = '0px';
+                document.getElementById('imgBackRight').style.transition = '0.25s';
+                document.getElementById('imgBackRight').width = '10';
+            }
+
+
+            function hideBTT() {
+                document.getElementById('hideSearch').style.right = '0';
+                document.getElementById('imgBackRight').style.display = 'none';
+
+
+                document.getElementById('brSS').style.display = 'none';
+                document.getElementById('backToUndo').style.display = 'flex';
+                document.getElementById('imgLeftss').width = '0';
+                document.getElementById('imgLeftss').style.transition = '0.24s';
+                document.getElementById('ssBoard').style.background = 'rgba( 0, 0, 0, 1)';
+                document.getElementById('ssBoard').style.right = '0';
+                document.getElementById('ssBoard').style.width = '100%';
+
+                document.getElementById('bttSearch').style.display = 'none';
+                document.getElementById('boardSearch').style.marginLeft = '0';
+                document.getElementById('RightSearch').style.display = 'none';
+
+
+            }
+
+
+            function brsearch() {
+
+
+                document.getElementById('bttSearch').style.left = '0';
+
+                document.getElementById('img-left-sb').style.display = 'flex';
+                document.getElementById('hideSearch').style.right = '25px';
+                document.getElementById('hideSearch').style.transition = '0.25s';
+                document.getElementById('img-left-sb').style.right = '316px';
+                document.getElementById('imgLeftss').width = '0';
+                document.getElementById('imgLeftss').style.transition = '0.24s';
+                document.getElementById('ssBoard').style.background = 'rgba( 0, 0, 0, 1)';
+                document.getElementById('ssBoard').style.width = '316px';
+                document.getElementById('ssBoard').style.right = '0';
+                document.getElementById('imgBackRight').style.display = 'inline-block';
+                document.getElementById('imgBackRight').style.left = '0px';
+                document.getElementById('imgBackRight').style.transition = '0.25s';
+                document.getElementById('imgBackRight').width = '10';
+
+
+
+
+            }
+
+
+            function searchBoard() {
+                document.getElementById('bttSearch').style.left = '316px';
+
+                document.getElementById('hideSearch').style.display = 'flex';
+                document.getElementById('hideSearch').style.right = '0';
+                document.getElementById('hideSearch').style.transition = '0.25s';
+                document.getElementById('brSS').style.display = 'block';
+                document.getElementById('backToUndo').style.display = 'none';
+                document.getElementById('imgBackRight').style.display = 'inline-block';
+                document.getElementById('imgLeftss').width = '10';
+                document.getElementById('imgLeftss').style.transition = '0.3s';
+                document.getElementById('ssBoard').style.background = 'rgba( 0, 0, 0, 0.85)';
+                document.getElementById('ssBoard').style.width = '100%';
+
+
+
+                document.getElementById('ssBoard').style.right = '316px';
+
+
+
+
+                document.getElementById('imgBackRight').style.left = '20px';
+                document.getElementById('imgBackRight').width = '0';
+                //                document.getElementById('video-ssBoard').style.display = 'block';
+                document.getElementById('imgBackRight').style.transition = '0.25s';
+                document.getElementById('bttSearch').style.display = 'flex';
+                document.getElementById('boardSearch').style.marginLeft = '316px';
+                document.getElementById('RightSearch').style.display = 'flex';
+
+            }
+        </script>
+
+
+
+
+
+        <div class="tes4">
+            <iframe id="iframe-play" width="100%" height="100%" src="https://www.youtube.com/embed/vr0qNXmkUJ8?rel=0&modestbranding=1&fs=0&showinfo=0&showsearch=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+        </div>
+
+
+
+
+        <div id="media-detail">
+            <div class="space-for-bh">
+
+            </div>
+            <div class="head-detail-media">
+                <img style="cursor: pointer" class="gopro-media-logo" src="img/gopro-logo.png" alt="" width="50">
+                <div class="chanel-name-media">
+                    <div class="name-media">GoPro HERO6: This is the moment in 4K</div>
+                    <div class="date-media">Published on Sep 28, 2017</div>
+                </div>
+            </div>
+
+           
+
+            <div class="other-detail">
+                <div class="mavks-share" style="color: white">
+                    <div class="ms-mavks">
+
+                    </div>
+
+                    <div class="ms-shared">
+
+                    </div>
+
+                </div>
+
+                <div class="views-vote">
+
+                    <div class="view-4k">8,840,972 views</div>
+
+                    <div class="vote-media"></div>
+
+
+                </div>
+
+                <div class="rating-media">
+                    <!--                   เมื่อคลิ๊กเข้าไปที่ rating จะพบกับหน้าจอ modal บอกว่า
+                   มีใครให้ rating เท่าไหร่บ้าง คล้าย กดดูคน like ใน facebook-->
+
+                    <div class="rating-4k">
+                        8.9
+                    </div>
+
+               
+                </div>
+                 <div class="cover-dt-paper">
+                <div class="dt-paper" onclick="dtpaper()">
+                    <img class="img-paper-icon" src="img/paper-icon.png" alt="">
+                    <span style="color: white; margin-right: 12px;">Detail</span>
+                </div>
+
+                </div>
+                
+                
+                <div class="follow-media">
+
+                    <div id="id-fol" class="following-4k" onclick="followClick()">
+                        Follow
+                    </div>
+
+                </div>
+            </div>
+
+            <!--script Follow-->
+            <script>
+                var dtp = 1;
+
+                function dtpaper() {
+
+
+
+                    if (dtp == 1) {
+                        document.getElementById('dt-paper-pop').style.width = '341px';
+                        document.getElementById('dt-paper-pop').style.opacity = '1';
+                  
+                         
+
+                        dtp++;
+                    } else {
+
+                        document.getElementById('dt-paper-pop').style.width = '0px';
+                        document.getElementById('dt-paper-pop').style.opacity = '0';
+                       document.getElementById('iframe-play').width ='100%';
+
+
+                        dtp--;
+                    }
+
+
+                }
+
+
+
+
+
+
+                var fw = 1;
+
+                function followClick() {
+                    if (fw == 1) {
+                        document.getElementById('id-fol').innerHTML = "Following";
+                        fw = fw - 1;
+
+                    } else {
+                        document.getElementById('id-fol').innerHTML = "Follow";
+                        fw = fw + 1;
+                    }
+                }
+            </script>
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+    <!--        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/vr0qNXmkUJ8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
+
+
+
+
+
+
+
+    <header class="nav-sticky">
+        <nav>
+            <div class="nav-bg">
+                <div class="content-cover">
+                    <!--                 inne content-->
+                    <a href="">
+                        <div onclick="profileClose()" class="logo"></div>
+                    </a>
+                    <div class="vertical-line"></div>
+                    <div class="home-logo">
+                        <div class="home-status"></div>
+                        <a href=""><img src="img/home-logo.png" alt=""></a>
+                    </div>
+
+                    <div class="center-display">
+                        <div class="search-cover">
+                            <form class="search-bg" action="">
+                                <input type="text" class="search-input" placeholder="@Search">
+                                <a href="#"><input class="search-button" type="submit" value="&#x1f50d;"></a>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="menu-nav">
+
+                        <a href="#"><img class="menu-logo" id="fri-nav" src="img/fri-menu.png" alt="" width="28px" ></a>
+                        <a href="#"><img class="menu-logo" id="noti-nav" src="img/noti-menu.png" alt="" width="26px"></a>
+                        <a href="#"><img class="menu-logo" id="set-nav" src="img/setting-menu.png" alt="" width="32px"></a>
+                    </div>
+                    <div class="nav-profile">
+                        <img src="img/nav-profile.png" alt="" onclick="menuDropProfile()">
+
+                    </div>
+                </div>
+
+            </div>
+
+        </nav>
+
+        <script>
+            function closeMD() {
+                document.getElementById('profileMD').style.height = '0';
+                document.getElementById('profileMD').style.transition = '0.15s';
+                mdp = 1;
+            }
+
+
+            var mdp = 1;
+
+            function menuDropProfile() {
+                if (mdp == 1) {
+
+                    document.getElementById('profileMD').style.height = '323px';
+                    document.getElementById('profileMD').style.transition = '0.15s';
+
+                    mdp = 0;
+                } else {
+                    document.getElementById('profileMD').style.height = '0';
+                    document.getElementById('profileMD').style.transition = '0.15s';
+                    mdp = 1;
+                }
+
+            }
+        </script>
+
+
+        <div class="cover-Menudp">
+
+            <div id="menuDP">
+
+                <div class="storeMenuDrop">
+                </div>
+
+
+
+                <div class="MenuDrop-Right">
+
+                    <div class="friendsMenuDrop">
+                        friends
+                    </div>
+
+                    <div class="notiMenuDrop">
+                        noti
+                    </div>
+
+                    <div class="settingMenuDrop">
+                        setting
+                    </div>
+
+                    <div id="profileMD" class="profileMenuDrop">
+                        <div class="profileEd-Drop">
+                            <div class="profile-submenu-d">
+                                <p class="headMD">Profile</p>
+                                <p class="profile-md-nav" onclick="profileSlide(),closeMD()">Profile Side</p>
+                                <a href="myBoard.html"><p class="myBlog-md-nav">Go to my blog</p></a>
+                                <div class="lineMD"></div>
+                                <p class="headMD">Store</p>
+                                <p class="asses-md-nav">My accessories</p>
+                                <p class="tic-md-nav">My tickets</p>
+                                <div class="lineMD"></div>
+                                <p class="headMD">Event</p>
+                                <p class="achv-md-nav">Achievement</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </header>
+
+
+    <div id="bg-dark2" onclick="changeBg2()"></div>
+
+
+    <!--        profile-slide-->
+    <div class="p-slidebar" id="profile-slide">
+
+
+        <div class="profile-side-top">
+            <div class="bg-side-nav">
+                <div class="bg-opa-side"></div>
+                <img src="img/bg-profile-side.png" alt="">
+            </div>
+            <div class="profile-side">
+                <a href="#"><img src="img/profile-side.png" alt=""></a>
+            </div>
+            <a href="#">
+                <div class="side-name">
+                    <h3>Kwang Thibamrung</h3>
+                </div>
+            </a>
+            <a href="#">
+                <div class="side-follow">following : 26</div>
+            </a>
+            <a href="#">
+                <div class="side-follower">followers : 48</div>
+            </a>
+            <div class="side-menu">
+                <a href="#">
+                    <div class="book-side">
+                        <img src="img/books-ex.png" alt="">
+                        <div class="side-num">gallery</div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="mark-side">
+                        <img src="img/marks-ex.png" alt="">
+                        <div class="side-num">marks</div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="fri-side">
+                        <img src="img/fri-ex.png" alt="">
+                        <div class="side-num">friends</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="aboutme">
+            <div class="about-text">
+                <img class="paper-plane" src="img/paper-plane-png.png" alt=""> About me
+            </div>
+            <div class="line-side">
+                <div class="line-about"></div>
+            </div>
+
+            <div class="write-about">
+                <input type="text" placeholder="Write someting about you..." onfocus="this.placeholder = ''" onblur="this.placeholder ='Write something about you...'">
+            </div>
+            <div id="submit-about">
+            </div>
+        </div>
+
+
+
+        <div class="display-type-side">
+            <div class="style-dis display-size-side1">
+                <a href="#"><img src="img/manage-style-1.png" alt="" width="25"></a>
+            </div>
+            <div class="style-dis display-size-side2">
+                <a href="#"><img src="img/manage-style-2.png" width="25" alt=""></a>
+            </div>
+            <div id="st-2" class="style-dis display-size-side3">
+                <a href="#"><img src="img/manage-style-3.png" width="25" alt=""></a>
+            </div>
+        </div>
+
+
+
+        <!--        test-->
+        <img src="img/bg-profile-side.png" alt="">
+        <img src="img/bg-profile-side.png" alt="">
+        <img src="img/bg-profile-side.png" alt="">
+
+    </div>
+
+
+
+
+
+
+
+
+    <!--
+<script>
+    function quitVid(){
+        
+    }
+    
+    </script>
+-->
+
+
+
+    <script>
+        var y = 1;
+
+        function glassMedia() {
+            if (y == 1) {
+
+                document.getElementById('glass-media').src = 'img/xicon.png';
+                document.getElementById('glass-media').width = '12';
+                y = y - 1;
+
+            } else {
+                document.getElementById('glass-media').src = 'img/glass-icon.png';
+                document.getElementById('glass-media').width = '15';
+                y = y + 1;
+            }
+        }
+    </script>
+
+
+
+
+
+
+    <script>
+        var x = 1;
+
+        function mediaSesize() {
+
+
+            if (x == 1) {
+                document.getElementById('media-search').style.width = '656px';
+                document.getElementById('iframe-play').style.paddingRight = '314px';
+                document.getElementById('iframe-play').style.transition = '0.25s';
+
+                document.getElementById('media-detail').style.paddingRight = '658px';
+                document.getElementById('media-detail').style.transition = '0.25s';
+
+                document.getElementById('media-bar').style.paddingRight = '0px';
+                document.getElementById('firstCm').style.left = '63px';
+                document.getElementById('ssBoard').style.right = '316px';
+                document.getElementById('bttSearch').style.display = 'none';
+                document.getElementById('hideSearch').style.display = 'none';
+                //                document.getElementById('imgBackRight').width = '10';
+                //                document.getElementById('imgBackRight').style.transition = '0.25s';
+
+                x = x - 1;
+
+
+
+
+            } else {
+                document.getElementById('backToUndo').style.display = 'none';
+                document.getElementById('media-search').style.width = '340px';
+                document.getElementById('iframe-play').style.paddingRight = '0%';
+                document.getElementById('iframe-play').style.transition = '0.25s';
+                document.getElementById('media-detail').style.paddingRight = '340px';
+                document.getElementById('media-detail').style.transition = '0.25s';
+                document.getElementById('media-bar').style.paddingRight = '24px';
+                document.getElementById('firstCm').style.left = '52px';
+
+                document.getElementById('ssBoard').style.width = '0';
+                document.getElementById('ssBoard').style.right = '0';
+                document.getElementById('imgBackRight').width = '0';
+                document.getElementById('imgBackRight').style.transition = '0.12s';
+                document.getElementById('hideSearch').style.display = 'none';
+
+
+
+
+
+
+                x = x + 1;
+
+            }
+
+        }
+    </script>
+
+    <script>
+        document.getElementById('media-search').style.transition = '0.25s';
+    </script>
+
+
+
+
+
+
+    <!--script profile slide-->
+    <script>
+        var bsl = 1;
+
+        function profileSlide() {
+            document.getElementById('profile-slide').style.width = '568px';
+            document.getElementById('profile-slide').style.display = 'block';
+            document.getElementById('bg-dark').style.height = '100%';
+            document.getElementById('bg-dark').style.opacity = '0.8';
+
+
+            document.getElementById('bg-dark2').style.opacity = '0';
+            document.getElementById('bg-dark2').style.height = '0';
+            document.getElementById('write-hi').style.height = '156px';
+
+            document.getElementById('cover-media').style.display = 'none';
+            document.getElementById('iframe-play').src = 'https://www.youtube.com/embed/vr0qNXmkUJ8?rel=0&modestbranding=1&fs=0&showinfo=0&showsearch=0';
+            document.getElementById('firstCm').style.left = '38px';
+
+
+
+
+
+
+            document.documentElement.style.overflow = 'hidden'; // firefox, chrome
+            document.body.scroll = "no"; // ie only
+
+
+
+
+
+
+
+
+
+        }
+
+        function profileClose() {
+            document.getElementById('backToUndo').style.display = 'none';
+            document.getElementById('hideSearch').style.display = 'none';
+
+            document.getElementById('img-left-sb').style.display = 'none';
+
+
+
+
+            document.getElementById('RightSearch').style.display = 'flex';
+            document.documentElement.style.overflow = 'auto'; // firefox, chrome
+            document.body.scroll = "yes"; // ie only
+
+
+
+            document.getElementById('profile-slide').style.width = '0px';
+            document.getElementById('profile-slide').style.display = 'none;';
+            document.getElementById('bg-dark').style.height = '0';
+            document.getElementById('bg-dark').style.opacity = '0';
+            document.getElementById('glass-media').src = 'img/glass-icon.png';
+            document.getElementById('glass-media').width = '15';
+            document.getElementById('iframe-play').src = 'https://www.youtube.com/embed/vr0qNXmkUJ8?rel=0&modestbranding=1&fs=0&showinfo=0&showsearch=0';
+
+
+
+            document.documentElement.style.overflow = 'auto'; // firefox, chrome
+            //            document.body.scroll = "yes"; // ie only
+
+            document.getElementById('iframe-play').style.paddingRight = '0%';
+            document.getElementById('iframe-play').style.transition = '0.25s';
+            document.getElementById('media-detail').style.paddingRight = '340px';
+            document.getElementById('media-detail').style.transition = '0.25s';
+            document.getElementById('firstCm').style.left = '52px';
+
+
+            document.getElementById('sac-id').value = '';
+            document.getElementById('sac').style.height = '43px';
+            document.getElementById('tv-style-id').style.height = '0';
+            document.getElementById('ts-id').value = '';
+            document.getElementById('ts-id').placeholder = 'Style';
+            document.getElementById('region-id-ip').value = '';
+            document.getElementById('region-list-id').style.height = '0';
+
+
+
+            document.getElementById('popSs').style.color = '#4a4c4c';
+            document.getElementById('newSs').style.color = '#4a4c4c';
+
+
+
+
+
+            document.getElementById('ssBoard').style.width = '0';
+            document.getElementById('ssBoard').style.right = '0';
+
+            document.getElementById('imgBackRight').style.left = '10px';
+
+            document.getElementById('profileMD').style.height = '0';
+            document.getElementById('profileMD').style.transition = '0.15s';
+            document.getElementById('bttSearch').style.display = 'none';
+            mdp = 1;
+
+
+            x = 1;
+            cn = 1;
+            cp = 1;
+
+
+
+            tvs = 1;
+            rck = 1;
+            sacT = 1;
+            y = 1;
+
+        }
+    </script>
+
+
+
+
+
+    <div id="bg-dark" onclick="profileClose()"></div>
+
+
+
+    <div class="main" id="main" onclick="closeMD()">
+
+        <div class="left-layout">
+            <!--           <div class="cover-left-fixed">-->
+            <div class="profile-left">
+                <div onclick="profileSlide()"><a href="#"><img class="left-picpro" src="img/left-profile-picpro.png" alt=""></a>
+                    <a href="#"><img class="bg-goldengate" src="img/profile-left-bg.png" alt="" ></a></div>
+                <input class="left-profile-name" type="text" value="Kwang Thibamrung">
+            </div>
+
+
+            <div class="list-box2 west-cl1">
+                <a href="#">
+
+                    <div class="fri-bg-list">
+
+                        <img class="fri-list" src="img/fr-g1.png" alt="">
+                        <div class="fri-count">5</div>
+                    </div>
+
+                    <div class="fri-bg-list2">
+                        <img class="fri-list2" src="img/groub-fri.png" alt="">
+                        <div class="fri-count">2</div>
+                    </div>
+
+                    <div class="fri-bg-list3">
+                        <div class="fri-count">Analysis : 18</div>
+                    </div>
+
+                </a>
+            </div>
+
+
+
+            <!--list box west-->
+            <div class="list-box west-cl1">
+                <a href="#">
+                    <div class="west opa">@Prachuap Khiri Khan</div>
+
+                    <div class="fri-bg-list">
+                        <img class="fri-list" src="img/fri-list.png" alt="">
+                        <div class="fri-count">2</div>
+                    </div>
+
+                    <span class="next-place opanex">&#9654;</span>
+                </a>
+            </div>
+
+
+            <div class="friends">
+                <div class="fri1 west-cl1">
+
+                    <img class="fri1-ed" src="img/fri-1.png" alt="">
+                    <a href="#">
+                        <div class="palmt">Palm Natthasret</div>
+                    </a>
+
+                    <a href="#">
+                        <div class="mavks-li">
+                            <img class="mavks-west" src="img/mavks-west.png" alt="">
+                            <div class="fri-count2">2</div>
+                        </div>
+                    </a>
+                    <a href="#"><span class="next-place1 opanex">&#9654;</span></a>
+                    <a href="#">
+                        <div class="west2 opa">@Prachuap Khiri Khan</div>
+                    </a>
+
+
+                </div>
+
+                <div class="fri1 west-cl1">
+                    <img class="fri1-ed" src="img/fri-2.png" alt="">
+                    <a href="#">
+                        <div class="palmt">Tum Ruttanapong</div>
+                    </a>
+
+                    <a href="#">
+                        <div class="mavks-li mavk-tum">
+                            <img class="mavks-west" src="img/mavks-west.png" alt="">
+                            <div class="fri-count2">3</div>
+                        </div>
+                    </a>
+                    <a href="#"><span class="next-place2 opanex">&#9654;</span></a>
+                    <a href="#">
+                        <div class="west2 opa">@Prachuap Khiri Khan</div>
+                    </a>
+
+
+
+                </div>
+
+
+
+
+
+
+
+                <div class="fri1 north-cl1">
+                    <img class="fri1-ed" src="img/fri-5.png" alt="">
+                    <a href="#">
+                        <div class="palmt">Rock Suphot</div>
+                    </a>
+                    <a href="#">
+                        <div class="mavks-li-north">
+                            <img class="mavks-west" src="img/mavks-west.png" alt="">
+                            <div class="fri-count2">1</div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="north2 opa">@Mae Hong Son</div>
+                    </a>
+                </div>
+
+
+
+
+                <div class="fri1 south-cl1">
+                    <img class="fri1-ed" src="img/fri-4.png" alt="">
+                    <a href="#">
+                        <div class="palmt">Guitar Wilasini</div>
+                    </a>
+                    <a href="#">
+                        <div class="mavks-li-south">
+                            <img class="mavks-west" src="img/mavks-west.png" alt="">
+                            <div class="fri-count2">1</div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="south2 opa">@Nakhon Si Thammarat</div>
+                    </a>
+
+
+                </div>
+                <div class="fri1 east-cl1">
+                    <img class="fri1-ed" src="img/fri-3.png" alt="">
+                    <a href="#">
+                        <div class="palmt">Gift Chanunchida</div>
+                    </a>
+                    <a href="#">
+                        <div class="mavks-li-north2">
+                            <img class="mavks-west" src="img/mavks-west.png" alt="">
+                            <div class="fri-count22">1</div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="north22 opa">@Khoon Kaen</div>
+                    </a>
+                </div>
+
+
+
+            </div>
+            <!--</div>-->
+        </div>
+
+
+
+        <div class="middle-layout">
+            <!--            <div class="cover-trending">-->
+
+            <div class="top-place">
+
+                <p class="t-place">
+                    Trending
+                </p>
+
+                <a href="#">
+                    <div class="north opa">@Mae Hong Son</div>
+                </a>
+                <a href="#">
+                    <div class="east opa">@Khon Kaen</div>
+                </a>
+                <a href="#">
+                    <div class="west opa">@Prachuap Khiri Khan</div>
+                </a>
+                <a href="#">
+                    <div class="south opa">@Phuket</div>
+                </a>
+                <a href="#">
+                    <div class="west opa">@Nakhon Ratchasima</div>
+                </a>
+
+                <!--            </div>-->
+            </div>
+
+
+
+
+
+            <div class="write-something" id="write-hi">
+                <div class="upper-write">
+                    <a href="#"><img class="write-profile" src="img/nav-profile.png" alt="" onclick="profileSlide()"></a>
+                    <input class="w-ex" type="text" placeholder="Write about your moment.." onclick="changeBg()">
+                    <a href="#">
+                        <div class="post-moment">Post</div>
+                    </a>
+                </div>
+
+                <a href="#">
+                    <div class="down-ex" onclick="profileSlide()">
+                        <img id="a" onmouseover="chbg('#eeeef4')" onmouseout="chbg('#f9f9fa')" class="books-ex" src="img/books-ex.png" alt="">
+                        <span id="a" onmouseover="chbg('#eeeef4')" onmouseout="chbg('#f9f9fa')" class="books-ex-t">gallery</span>
+                        <div onmouseover="chbg('#eeeef4')" onmouseout="chbg('#f9f9fa')" id="b" class="bg-books"></div>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="down-ex2" onclick="profileSlide()">
+                        <img id="a" onmouseover="chbg2('#eeeef4')" onmouseout="chbg2('#f9f9fa')" class="books-ex2" src="img/marks-ex.png" alt="">
+                        <span id="a" onmouseover="chbg2('#eeeef4')" onmouseout="chbg2('#f9f9fa')" class="books-ex-t2">marks</span>
+                        <div onmouseover="chbg2('#eeeef4')" onmouseout="chbg2('#f9f9fa')" id="c" class="bg-books2"></div>
+                    </div>
+                </a>
+
+
+                <a href="#">
+                    <div class="down-ex3" onclick="profileSlide()">
+                        <img id="a" onmouseover="chbg3('#eeeef4')" onmouseout="chbg3('#f9f9fa')" class="books-ex3" src="img/fri-ex.png" alt="">
+                        <span id="a" onmouseover="chbg3('#eeeef4')" onmouseout="chbg3('#f9f9fa')" class="books-ex-t3">friends</span>
+                        <div onmouseover="chbg3('#eeeef4')" onmouseout="chbg3('#f9f9fa')" id="d" class="bg-books3"></div>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div onmouseover="cc('#ca9999')" onmouseout="cc('#d6a9a9')" id="z" class="write-content">
+                        <span class="crec">Write a book</span>
+                        <img class="wls" src="img/write-logo-sm.png" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div id="postex" onmouseover="po('#4ea0d7')" onmouseout="po('#7dbde8')" class="postex"><span class="create-blog">Create a blog </span><img class="blog-logo" src="img/blog.png" width="35" alt=""></div>
+
+                </a>
+
+                <!--                when slide-->
+                <div class="write-ex-show">
+
+                    <div class="line-write-show"></div>
+                    <div class="cover-write-show">
+                        <div class="tag-fri-write">
+                            <a href="#">
+                                <div class="tag-with">
+                                    <img src="img/fri-tag.png" width="20" alt=""><span style="margin-left: 2px; font-size: 22px; color: #474fb5">+</span>
+                                </div>
+                            </a>
+                            <input class="input-tag-fri" type="text" placeholder="Tag your friends with the moment together..">
+
+
+                        </div>
+
+                        <div class="upload photo-cl">
+                            <a href="#"><img src="img/photo-icon.png" alt="" width="38"></a>
+                        </div>
+
+
+                        <div class="upload camera-cl">
+                            <a href="#"> <img src="img/camera-logo.png" alt="" width="38" > </a>
+                        </div>
+
+                        <div class="upload songs-cl">
+                            <a href="#"><img src="img/sogns-upload.png" width="38" alt=""></a>
+                        </div>
+
+                        <div class="upload art-cl">
+                            <a href="#"><img src="img/art-upload.png" width="38" alt=""></a>
+                        </div>
+
+                        <div class="upload text-cl">
+                            <a href="#"><img src="img/text-upload.png" width="38" alt=""></a>
+                        </div>
+
+                        <div class="upload interact-cl">
+                            <a href="#"><img src="img/interact-upload.png" width="38" alt=""></a>
+                        </div>
+
+
+
+
+                    </div>
+
+
+
+                </div>
+
+                <!--picture/video/banner/soundtrack/text/art/interactive-->
+            </div>
+
+
+
+            <script>
+                function changeBg() {
+                    document.getElementById('bg-dark2').style.opacity = '0.8';
+                    document.getElementById('bg-dark2').style.height = '100%';
+                    document.getElementById('write-hi').style.height = '243px';
+                }
+
+                function changeBg2() {
+                    document.getElementById('bg-dark2').style.opacity = '0';
+                    document.getElementById('bg-dark2').style.height = '0';
+                    document.getElementById('write-hi').style.height = '156px';
+                }
+            </script>
+
+
+            <!--book feeds-->
+            <div class="books-middle-feeds">
+
+                <div class="book-tum">
+                    <div class="body-tum">
+                        <div class="fri-trav">
+                            <a href="#"><span class="with">with 10 friends</span></a>
+                            <a href="#"><img class="fri1-lis" src="img/fri-6.png" alt=""></a>
+                            <a href="#"><img class="fri1-lis" src="img/fri-4.png" alt=""></a>
+                            <a href="#"><img class="fri1-lis" src="img/fri-3.png" alt=""></a>
+                            <a href="#"><img class="fri1-lis" src="img/fri-1.png" alt=""></a>
+                            <a href="#"><span class="fif">+6</span></a>
+                        </div>
+                        <div class="place-date">
+                            <a href="#">
+                                <div class="place-text">@Chiang Mai on Sunday 9 December 2018</div>
+                            </a>
+                        </div>
+                        <div class="profile-books">
+                            <a href="#"><img class="tum-book-profile" src="img/tum-book-profile.png" alt=""></a>
+                        </div>
+
+
+                        <div class="detail-book">
+                            <div class="left-detail">
+                                <div class="read-box">
+                                    Read
+                                </div>
+                            </div>
+
+
+                            <div class="mid-detail">
+                                <div class="tum-mid-de">Tum x the Gank แอ่วเหนือ~</div>
+                                <div class="tum-mid-de2">by Tum Ruttanapong</div>
+                                <div class="pos-cove">
+                                    <a href="#">
+                                        <div class="pos-r">48 reads</div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="pos-l">15 Likes</div>
+                                    </a>
+                                </div>
+
+                            </div>
+
+
+                            <div class="right-detail">
+                                <div class="r-books-r">Ratting</div>
+                                <div class="r-books-t">
+                                    8.1
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="book-tum btum2">
+
+                    <div class="body-tum2">
+                        <div class="fri-trav">
+                            <a href="#"><span class="with">with 8 friends</span></a>
+                            <a href="#"><img class="fri1-lis" src="img/fri-6.png" alt=""></a>
+                            <a href="#"><img class="fri1-lis" src="img/fri-4.png" alt=""></a>
+                            <a href="#"><img class="fri1-lis" src="img/fri-2.png" alt=""></a>
+                            <a href="#"><img class="fri1-lis" src="img/fri-1.png" alt=""></a>
+                            <a href="#"><span class="fif2">+4</span></a>
+                        </div>
+                        <div class="place-date">
+                            <a href="#">
+                                <div class="place-text">@Phuket on Saturday 22 September 2018</div>
+                            </a>
+                        </div>
+                        <div class="profile-books">
+                            <a href="#"><img class="tum-book-profile2" src="img/fri-5.png" alt=""></a>
+                        </div>
+
+
+                        <div class="detail-book">
+                            <div class="left-detail">
+                                <div class="read-box">
+                                    Read
+                                </div>
+
+                            </div>
+
+
+                            <div class="mid-detail">
+                                <div class="tum-mid-de">Phuket Go!!</div>
+                                <div class="tum-mid-de2">by Rock Suphot</div>
+                                <div class="pos-cove">
+                                    <a href="#">
+                                        <div class="pos-r">59 reads</div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="pos-l">23 Likes</div>
+                                    </a>
+                                </div>
+
+                            </div>
+
+
+                            <div class="right-detail">
+                                <div class="r-books-r">Ratting</div>
+                                <div class="r-books-t">
+                                    7.8
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <script>
+            function po(color) {
+                document.getElementById('postex').style.backgroundColor = color;
+            }
+        </script>
+
+
+
+        <script>
+            function cc(color) {
+                document.getElementById('z').style.backgroundColor = color;
+            }
+        </script>
+        <script>
+            function chbg(color) {
+                document.getElementById('b').style.backgroundColor = color;
+            }
+        </script>
+
+        <script>
+            function chbg2(color) {
+                document.getElementById('c').style.backgroundColor = color;
+            }
+        </script>
+
+        <script>
+            function chbg3(color) {
+                document.getElementById('d').style.backgroundColor = color;
+            }
+        </script>
+
+
+
+
+
+
+
+
+
+
+        <div class="right-layout">
+
+            <div class="media" onclick="mediaSearch(),mediaSlide()">
+                <a href="#">
+                    <div class="media-today">
+                        <h3>#1 Video Trending</h3>
+                    </div>
+                </a>
+
+                <div class="gopro-left">
+                    <a class="taga" href="#">
+                        <div class="wrap">
+                            <div class="discript">
+                                <p>GoPro : This is the Moment..</p>
+                            </div>
+                            <div class="discript-2">
+                                <p>8.5M Views</p>
+                            </div>
+                            <div class="discript-3">
+                                <p>50K Likes</p>
+                            </div>
+                            <div class="rating">
+                                <p class="p1" style="background: #3d3d3d">8.9</p>
+                            </div>
+                            <div class="gopro-color-upper"></div>
+                            <img class="gopro-logo" src="img/gopro-logo.png" alt="">
+                            <span class="play_circle">&#9654;</span>
+                            <img class="goprol1" src="img/travel-1.png" alt="">
+                        </div>
+
+                        <!--
+                        <a class="taga" href="#">
+                            <div class="wrap">
+                                <div>
+                                    <div class="discript">
+                                        <p>GoPro : The Adventure of ..</p>
+                                    </div>
+                                    <div class="discript-2">
+                                        <p>33M Views</p>
+                                    </div>
+                                    <div class="discript-3">
+                                        <p>147K Likes</p>
+                                    </div>
+                                    <div class="rating">
+                                        <p class="p1" style="background: #3d3d3d">8.4</p>
+                                    </div>
+                                    <div class="gopro-color-upper2"></div>
+                                    <img class="gopro-logo" src="img/gopro-logo.png" alt="">
+                                    <span class="play_circle">&#9654;</span>
+                                    <img class="goprol2" src="img/travel-2.png" alt="">
+                                </div>
+                            </div>
+                        </a>
+-->
+                    </a>
+                </div>
+            </div>
+
+
+            <!--autoplay-->
+
+
+
+
+
+
+            <script>
+                function mediaSearch() {
+                    document.getElementById('ssBoard').style.width = '0';
+                    document.getElementById('iframe-play').src = 'https://www.youtube.com/embed/vr0qNXmkUJ8?autoplay=1;rel=0&showinfo=0&showsearch=0';
+
+                    document.documentElement.style.overflow = 'hidden'; // firefox, chrome
+                    document.body.scroll = "no"; // ie only
+
+                    document.getElementById('cover-media').style.display = 'flex';
+                    document.getElementById('media-search').style.width = '340px';
+                    document.getElementById('media-search').style.display = 'flex';
+
+
+                    document.getElementById('bg-dark').style.height = '100%';
+                    document.getElementById('bg-dark').style.opacity = '0.8';
+                    document.getElementById('media-bar').style.paddingRight = '24px';
+                    document.getElementById('imgBackRight').style.left = '10px';
+                    x = 1;
+
+
+
+
+                }
+
+                function profileClose() {
+                    document.getElementById('backToUndo').style.display = 'none';
+
+                    document.getElementById('hideSearch').style.display = 'none';
+
+                    document.getElementById('img-left-sb').style.display = 'none';
+
+
+                    document.getElementById('RightSearch').style.display = 'flex';
+                    document.documentElement.style.overflow = 'auto'; // firefox, chrome
+                    document.body.scroll = "yes"; // ie only
+
+
+
+                    document.getElementById('cover-media').style.display = 'none';
+                    document.getElementById('media-search').style.width = '0px';
+                    document.getElementById('media-search').style.display = 'none';
+                    document.getElementById('bg-dark').style.height = '0';
+                    document.getElementById('bg-dark').style.opacity = '0';
+                    document.getElementById('profile-slide').style.width = '0px';
+                    document.getElementById('profile-slide').style.display = 'none;';
+                    document.getElementById('glass-media').src = 'img/glass-icon.png';
+                    document.getElementById('glass-media').width = '15';
+                    document.getElementById('iframe-play').src = 'https://www.youtube.com/embed/vr0qNXmkUJ8?rel=0&modestbranding=1&fs=0&showinfo=0&showsearch=0';
+
+                    document.documentElement.style.overflow = 'auto'; // firefox, chrome
+                    document.body.scroll = "yes"; // ie only
+
+
+                    document.getElementById('iframe-play').style.paddingRight = '0%';
+                    document.getElementById('iframe-play').style.transition = '0.25s';
+                    document.getElementById('media-detail').style.paddingRight = '340px';
+                    document.getElementById('media-detail').style.transition = '0.25s';
+                    document.getElementById('firstCm').style.left = '52px';
+
+                    document.getElementById('sac-id').value = '';
+                    document.getElementById('sac').style.height = '43px';
+                    document.getElementById('tv-style-id').style.height = '0';
+                    document.getElementById('ts-id').value = '';
+                    document.getElementById('ts-id').placeholder = 'Style';
+                    document.getElementById('region-id-ip').value = '';
+                    document.getElementById('region-list-id').style.height = '0';
+
+
+
+                    document.getElementById('popSs').style.color = '#4a4c4c';
+                    document.getElementById('newSs').style.color = '#4a4c4c';
+                    x = 1;
+
+
+
+                    document.getElementById('ssBoard').style.width = '0';
+                    document.getElementById('ssBoard').style.right = '0';
+
+                    document.getElementById('imgBackRight').style.left = '10px';
+
+                    document.getElementById('profileMD').style.height = '0';
+                    document.getElementById('profileMD').style.transition = '0.15s';
+                    document.getElementById('bttSearch').style.display = 'none';
+
+
+                    mdp = 1;
+
+
+
+                    cn = 1;
+                    cp = 1;
+
+                    tvs = 1;
+                    rck = 1;
+                    sacT = 1;
+                    y = 1;
+
+                }
+            </script>
+
+            <!--    script media slide-->
+
+            <script>
+                function mediaSlide() {
+                    document.getElementById('media-bar').style.paddingRight = '24px';
+                    document.getElementById('iframe-play').src = 'https://www.youtube.com/embed/vr0qNXmkUJ8?autoplay=1;?rel=0&modestbranding=1&fs=0&showinfo=0&showsearch=0';
+                    document.getElementById('cover-media').style.display = 'flex';
+                    document.getElementById('media-bar').style.width = '340px';
+                    document.getElementById('media-bar').style.display = 'flex';
+
+
+                    //                    document.getElementById('media-bar').style.flexDirection = 'row';
+                    //                    document.getElementById('media-bar').style.justifyContent = 'flex-end';
+
+
+
+                    document.getElementById('bg-dark').style.height = '100%';
+                    document.getElementById('bg-dark').style.opacity = '0.8';
+
+
+
+
+                    document.documentElement.style.overflow = 'hidden'; // firefox, chrome
+                    document.body.scroll = "no"; // ie only
+
+
+
+
+
+
+                    document.getElementById('bg-dark2').style.opacity = '0';
+                    document.getElementById('bg-dark2').style.height = '0';
+                    document.getElementById('write-hi').style.height = '156px';
+                }
+
+                function profileClose() {
+                    document.getElementById('backToUndo').style.display = 'none';
+
+
+                    document.getElementById('hideSearch').style.display = 'none';
+
+                    document.getElementById('img-left-sb').style.display = 'none';
+
+
+
+                    document.getElementById('RightSearch').style.display = 'flex';
+
+                    document.documentElement.style.overflow = 'auto'; // firefox, chrome
+                    document.body.scroll = "yes"; // ie only
+
+
+
+                    document.getElementById('cover-media').style.display = 'none';
+
+
+
+
+                    document.getElementById('bg-dark').style.height = '0';
+                    document.getElementById('bg-dark').style.opacity = '0';
+
+                    document.getElementById('media-bar').style.width = '0px';
+                    document.getElementById('media-bar').style.display = 'none;';
+
+                    document.getElementById('media-search').style.width = '0px';
+                    document.getElementById('media-search').style.display = 'none';
+                    document.getElementById('profile-slide').style.width = '0px';
+                    document.getElementById('profile-slide').style.display = 'none;';
+                    document.getElementById('glass-media').src = 'img/glass-icon.png';
+                    document.getElementById('glass-media').width = '15';
+                    document.getElementById('iframe-play').src = 'https://www.youtube.com/embed/vr0qNXmkUJ8?rerl=0&showinfo=0&showsearch=0';
+
+
+                    document.documentElement.style.overflow = 'auto'; // firefox, chrome
+                    document.body.scroll = "yes"; // ie only
+
+                    document.getElementById('iframe-play').style.paddingRight = '0%';
+                    document.getElementById('iframe-play').style.transition = '0.25s';
+                    document.getElementById('media-detail').style.paddingRight = '340px';
+                    document.getElementById('media-detail').style.transition = '0.25s';
+                    document.getElementById('firstCm').style.left = '52px';
+
+                    document.getElementById('sac-id').value = '';
+                    document.getElementById('sac').style.height = '43px';
+                    document.getElementById('tv-style-id').style.height = '0';
+                    document.getElementById('ts-id').value = '';
+                    document.getElementById('ts-id').placeholder = 'Style';
+                    document.getElementById('region-id-ip').value = '';
+                    document.getElementById('region-list-id').style.height = '0';
+
+
+
+                    document.getElementById('popSs').style.color = '#4a4c4c';
+                    document.getElementById('newSs').style.color = '#4a4c4c';
+
+
+                    document.getElementById('ssBoard').style.width = '0';
+                    document.getElementById('ssBoard').style.right = '0';
+
+                    document.getElementById('imgBackRight').style.left = '10px';
+
+                    document.getElementById('profileMD').style.height = '0';
+                    document.getElementById('profileMD').style.transition = '0.15s';
+                    document.getElementById('bttSearch').style.display = 'none';
+                    mdp = 1;
+
+                    x = 1;
+
+
+                    cn = 1;
+                    cp = 1;
+
+                    tvs = 1;
+                    rck = 1;
+                    sacT = 1;
+                    y = 1;
+                }
+            </script>
+
+            <!--            books trending-->
+            <!--
+            <div>
+                <br> //Comment/Book Trending//
+            </div>
+-->
+
+            <div class="book">
+                <div class="book-today ncl">
+                    <h3>#1 Book Trending</h3>
+                </div>
+                <div class="book-right ">
+                    <a href="#">
+                        <div class="bg-mr">
+                            <div class="bdiscript-2">
+                                <p>10.8K Reads</p>
+                            </div>
+                            <div class="bdiscript-3">
+                                <p>4.9K Likes</p>
+                            </div>
+                            <div class="writeByR">Writer : W.Johnson</div>
+                            <div class="rating">
+                                <p class="p1" style="background: #ececec; color: black">9.2</p>
+                            </div>
+
+
+                            <div class="book-color-upper2 edUper2"></div>
+                            <img class="bg-book" src="img/travelGuideCM.jpg" alt="">
+
+                        </div>
+                    </a>
+
+                    <!--
+                    <a href="#">
+                        <div class="b2">
+                            <div class="bdiscript-2">
+                                <p>3.4K Reads</p>
+                            </div>
+                            <div class="bdiscript-3">
+                                <p>1.5K Likes</p>
+                            </div>
+                            <div class="rating">
+                                <p class="p1" style="background: #ececec; color: black">8.7</p>
+                            </div>
+                            <p class="pbook">Travel at ChiangMai</p>
+                            <img class="book-profile" src="img/book-profile.png" alt="">
+                            <div class="book-color-upper2"></div>
+                            <img class="bg-book" src="img/book-1.png" alt="">
+                        </div>
+                    </a>
+-->
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+            <div class="book">
+                <div class="book-today">
+                    <h3>#1 Blog Trending</h3>
+                </div>
+                <div class="book-right">
+                    <a href="#">
+                        <div class="bg-mr">
+                            <div class="bdiscript-2d">
+                                <p>7.7K Reads</p>
+                            </div>
+                            <div class="bdiscript-3d">
+                                <p>2.5K Likes</p>
+                            </div>
+                            <div class="rating">
+                                <p class="p1" style="background: #ececec; color: black">9.2</p>
+                            </div>
+                            <p class="pbook2">มาแอ่วเจียงใหม่จ้าว</p>
+                            <img class="book-profile" src="img/book2-profile.png" alt="">
+                            <div class="book-color-upper2"></div>
+                            <img class="bg-book" src="img/book-2.png" alt="">
+                        </div>
+                    </a>
+
+                    <!--
+                    <a href="#">
+                        <div class="b2">
+                            <div class="bdiscript-2">
+                                <p>3.4K Reads</p>
+                            </div>
+                            <div class="bdiscript-3">
+                                <p>1.5K Likes</p>
+                            </div>
+                            <div class="rating">
+                                <p class="p1" style="background: #ececec; color: black">8.7</p>
+                            </div>
+                            <p class="pbook">Travel at ChiangMai</p>
+                            <img class="book-profile" src="img/book-profile.png" alt="">
+                            <div class="book-color-upper2"></div>
+                            <img class="bg-book" src="img/book-1.png" alt="">
+                        </div>
+                    </a>
+-->
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,525 @@
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-left,
+.media {
+    box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.4);
+}
+
+/*profile*/
+
+.left-layout {
+    width: 272px;
+
+}
+
+.right-layout {}
+
+.left-layout,
+.middle-layout,
+.right-layout {
+    margin: 0 11px 0 11px;
+}
+
+.profile-left {
+    width: 272px;
+    height: 170px;
+    border-radius: 4px;
+}
+
+
+.left-layout,
+.right-layout {
+    margin-top: 30px;
+
+}
+
+.bg-goldengate {
+    width: 272px;
+    border-radius: 4px;
+    border-bottom: solid 7px #9d4848;
+    position: absolute;
+    z-index: 1;
+    animation: bg-bottom-profile 7s ease-out infinite;
+}
+
+@keyframes bg-bottom-profile {
+    0% {
+        border-bottom: solid 7px #2355c1;
+    }
+    40% {
+        border-bottom: solid 7px #cbd12d;
+    }
+    60% {
+        border-bottom: solid 7px #cbd12d;
+    }
+    100% {
+        border-bottom: solid 7px #2355c1;
+    }
+}
+
+
+
+
+
+.left-picpro {
+    position: absolute;
+    z-index: 2;
+    width: 80px;
+    border-radius: 80px;
+    border: 4px solid white;
+    margin: 24px 94px 0px 94px;
+}
+
+.left-profile-name {
+    width: 157px;
+    height: 30px;
+    position: absolute;
+    z-index: 2;
+    margin: 123px 0px 0 59px;
+    border-radius: 5px;
+    border: none;
+    background: rgba( 0, 0, 0, 0.483);
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    outline: none;
+}
+
+
+.list-box {
+    height: 50px;
+    margin: 8px 0px 20px 0px;
+    position: relative;
+    width: 272px;
+    border-radius: 25px;
+    padding-left: 5px;
+    box-sizing: border-box
+}
+
+.list-box2 {
+    height: 50px;
+    margin: 20px 0px 0px 0px;
+    position: relative;
+    width: 272px;
+    border-radius: 25px;
+    padding-left: 5px;
+    box-sizing: border-box;
+    padding-top: 3.5px;
+}
+
+.west-list {}
+
+.fri-list {
+    width: 20px;
+}
+
+
+.fri-list2 {
+    width: 29px;
+}
+
+.fri-count {
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+    position: relative;
+    bottom: 3px;
+}
+
+.next-place {
+    position: absolute;
+    color: rgba( 0, 0, 0, 0.564);
+    right: 10px;
+    right: 7px;
+    top: 13px;
+    font-size: 18px;
+
+}
+
+.next-place:active {
+    color: rgba( 255, 255, 255, 0.564);
+}
+
+.fri-bg-list {
+    position: relative;
+    display: inline-block;
+    top: 6px;
+    left: 9px;
+    background: rgba( 114, 148, 222, 0.564);
+    width: 44px;
+    height: 27px;
+    padding: 5px 0 0px 7px;
+    border-radius: 8px;
+    transition: 0.3s ease-out;
+
+}
+
+.fri-bg-list2 {
+    position: relative;
+    display: inline-block;
+    top: 6px;
+    left: 9px;
+    background: rgba( 114, 148, 222, 0.564);
+    width: 52px;
+    height: 27px;
+    padding: 5px 0 0px 7px;
+    border-radius: 8px;
+    transition: 0.3s ease-out;
+
+}
+
+
+
+
+.fri-bg-list3 {
+    position: relative;
+    display: inline-block;
+    top: 6px;
+    left: 9px;
+    background: rgba( 114, 148, 222, 0.564);
+    width: 120px;
+    height: 27px;
+    padding: 5px 0 0px 7px;
+    border-radius: 8px;
+    transition: 0.3s ease-out;
+
+}
+.fri-bg-list3:hover {
+    background: rgba( 43, 98, 216, 0.564);
+    transition: 0.3s ease-out;
+}
+
+.fri-bg-list2:hover {
+    background: rgba( 43, 98, 216, 0.564);
+    transition: 0.3s ease-out;
+}
+
+
+.fri-bg-list:hover {
+    background: rgba( 43, 98, 216, 0.564);
+    transition: 0.3s ease-out;
+}
+
+
+
+
+
+/*Friends*/
+
+.friends {
+    border-radius: 4px;
+
+}
+
+.fri1 {
+    height: 71px;
+    border-radius: 50px;
+    margin-bottom: 2px;
+    background: white;
+}
+
+.fri1-ed {
+    width: 55px;
+    border-radius: 60px;
+    border: solid 2px white;
+    margin: 6px 0px 0px 5px;
+    position: relative;
+    display: inline-block;
+
+}
+
+.north-cl1 {
+    background: #ff8a8a;
+}
+
+.west-cl1 {
+    background: #b3adea;
+}
+
+.south-cl1 {
+    background: #c3c5f2;
+}
+
+.east-cl1 {
+    background: #dbcd93;
+    ;
+}
+
+.palmt {
+    display: inline-block;
+    position: relative;
+    bottom: 42px;
+    left: 2px;
+}
+
+a .palmt {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+.west2 {
+    background: #7063c4;
+    padding: 6px 12px 6px 11px;
+    border-radius: 7px;
+    font-size: 12px;
+    color: white;
+    transition: 0.3s ease-out;
+    position: relative;
+    display: inline-block;
+    bottom: 36px;
+    left: 70px;
+}
+.west2:active{
+    background:#5a4fa3;
+  }
+
+.mavks-li {
+    position: absolute;
+    display: inline-block;
+    margin: 4px 0px 0px 43px;
+    background: #8d9ee2;
+    border-radius: 39px;
+    width: 40px;
+    height: 29px;
+}
+
+.mavks-li:hover {
+    background: #6581DF;
+    transition: 0.3s ease-out;
+}
+
+.mavks-west {
+    width: 15px;
+    margin: 4px 0 0 6px;
+}
+
+.fri-count2 {
+    display: inline-block;
+    font-size: 16px;
+    color: white;
+    position: relative;
+    bottom: 4px;
+    right: 1px
+}
+
+
+.mavk-tum {
+    margin: 3px 0px 0px 32px;
+}
+
+
+.next-place2 {
+    position: absolute;
+    color: rgba( 0, 0, 0, 0.564);
+    font-size: 18px;
+    margin: 34px 0px 0px 45px;
+
+}
+
+.next-place2:active {
+    color: rgba( 255, 255, 255, 0.564);
+}
+
+
+.next-place1 {
+    position: absolute;
+    color: rgba( 0, 0, 0, 0.564);
+    font-size: 18px;
+    margin: 34px 0px 0px 55px;
+
+}
+
+.next-place1:active {
+    color: rgba( 255, 255, 255, 0.564);
+}
+
+
+.east2 {
+    background: #b19e4d;
+    padding: 6px 12px 6px 11px;
+    border-radius: 7px;
+    font-size: 12px;
+    color: white;
+    transition: 0.3s ease-out;
+    position: relative;
+    display: inline-block;
+    right: 
+/*
+    bottom: 14px;
+    right: 109px;
+*/
+
+}
+
+.ed-er{
+    position: relative;
+    bottom: 35px;
+    left: 71px;
+}
+
+.east2:active {
+    background: #907e31;
+
+}
+
+.opanex:hover {
+    opacity: 0.7;
+    transition: 0.3s ease-out;
+}
+
+
+
+
+
+.south2 {
+    background: #8186e5;
+    padding: 6px 12px 6px 11px;
+    border-radius: 7px;
+    font-size: 12px;
+    color: white;
+    transition: 0.3s ease-out;
+    position: relative;
+    display: inline-block;
+    bottom: 36px;
+    left: 70px;
+
+
+}
+
+.south2:active {
+    background: #777bd2;
+
+}
+
+.north2 {
+    background: #ac6161;
+    padding: 6px 12px 6px 11px;
+    border-radius: 7px;
+    font-size: 12px;
+    color: white;
+    transition: 0.3s ease-out;
+    position: relative;
+    display: inline-block;
+    bottom: 14px;
+    right: 82px;
+
+
+}
+
+.north2:active {
+    background: #934d4d;
+}
+
+.mavks-li-north {
+    position: absolute;
+    display: inline-block;
+    margin: 4px 0px 0px 63px;
+    background:#d17272;
+    border-radius: 39px;
+    width: 40px;
+    height: 29px;
+}
+
+.mavks-li-north:hover {
+    background: #ac6161;
+    transition: 0.3s ease-out;
+}
+
+
+/*
+.mavks-li-east {
+    position: absolute;
+    display: inline-block;
+    margin: 4px 0px 0px 35px;
+    background:#c0b480;
+    border-radius: 39px;
+    width: 40px;
+    height: 29px;
+}
+
+.mavks-li-east:hover {
+    background: #b19e4d;
+    transition: 0.3s ease-out;
+}
+*/
+
+
+.mavks-li-north2 {
+    position: absolute;
+    display: inline-block;
+    margin: 4px 0px 0px 35px;
+    background:#c0b480;
+    border-radius: 39px;
+    width: 40px;
+    height: 29px;
+}
+
+.mavks-li-north2:hover {
+    background: #b19e4d;
+    transition: 0.3s ease-out;
+}
+
+.fri-count22 {
+    display: inline-block;
+    font-size: 16px;
+    color: white;
+    position: relative;
+    bottom: 4px;
+    right: 1px
+}
+
+.north22 {
+  background: #b19e4d;
+    padding: 6px 12px 6px 11px;
+    border-radius: 7px;
+    font-size: 12px;
+    color: white;
+    transition: 0.3s ease-out;
+    position: relative;
+    display: inline-block;
+    bottom: 35px;
+    right: -70px;
+
+
+}
+
+.north22:active {
+    background: #907e31;
+}
+
+
+.mavks-li-south {
+    position: absolute;
+    display: inline-block;
+    margin: 4px 0px 0px 53px;
+    background:#a7aae8;
+    
+    border-radius: 39px;
+    width: 40px;
+    height: 29px;
+}
+
+.mavks-li-south:hover {
+    background: #8186e5;
+    transition: 0.3s ease-out;
+}
+
+
+.mavks-li-east {
+    position: absolute;
+    display: inline-block;
+    margin: 4px 0px 0px 35px;
+    background:#c0b480;
+    border-radius: 39px;
+    width: 40px;
+    height: 29px;
+}
+
+.mavks-li-east:hover {
+    background: #b19e4d;
+    transition: 0.3s ease-out;
+}

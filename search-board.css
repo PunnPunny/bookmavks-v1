@@ -1,0 +1,169 @@
+#ssBoard {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    right: 316px;
+    background: rgba( 0, 0, 0, 0.85);
+    z-index: 2000;
+    direction: rtl;
+    transition: 0.3s;
+
+}
+
+
+.boardSearch {
+    margin-left: 316px;
+    height: 100%;
+    direction: ltr;
+    overflow: hidden;
+    display: flex;
+    
+    
+}
+
+.brSS {
+    width: 1px;
+    height: 100%;
+    cursor: e-resize;
+}
+
+.brShow {
+    width: 0;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    user-select: none;
+    
+}
+
+.imgLeftss {
+    margin-bottom: 73px;
+    cursor: pointer;
+}
+
+.back-left-ss {
+    color: white;
+    position: absolute;
+    height: 100%;
+    align-items: center;
+    bottom: 41px;
+    display: flex;
+    overflow: hidden;
+    right: 316px;
+}
+
+#imgBackRight {
+    transition: 0.4s;
+    cursor: pointer;
+    position: relative;
+    left: 10px;
+    user-select: none;
+}
+#bttSearch{
+    position: absolute;
+    margin: 5px;
+    height: 20px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+    color: #4f4f4f;
+    border: 2px solid #4f4f4f;
+    cursor: pointer;
+    font: 14px;
+    transition: 0.2s;
+    display: none;
+    user-select: none;
+    left: 316px;
+}
+
+#bttSearch:hover{
+    color: #848484;
+        transition: 0.2s;
+border: 2px solid #848484;
+}
+
+#bttSearch:active{
+    color: white;
+        transition: 0.2s;
+border: 2px solid white;
+}
+
+
+
+#backToUndo{
+    color: white;
+    position: absolute;
+    margin: 5px;
+    height: 20px;
+    width: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+    color: #4f4f4f;
+    border: 2px solid #4f4f4f;
+    cursor: pointer;
+    font: 14px;
+    transition: 0.2s;
+    display: none;
+    user-select: none;
+    
+}
+
+#backToUndo:hover{
+    color: #848484;
+        transition: 0.2s;
+border: 2px solid #848484;
+}
+
+#backToUndo:active{
+    color: white;
+        transition: 0.2s;
+border: 2px solid white;
+}
+
+
+
+
+#hideSearch{
+    color: white;
+    position: absolute;
+    margin: 5px;
+    height: 20px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+    color: #4f4f4f;
+    border: 2px solid #4f4f4f;
+    cursor: pointer;
+    font: 14px;
+    transition: 0.2s;
+    user-select: none;
+    right: 0;
+    display: none;
+    
+}
+
+#hideSearch:hover{
+    color: #848484;
+        transition: 0.2s;
+border: 2px solid #848484;
+}
+
+#hideSearch:active{
+    color: white;
+        transition: 0.2s;
+border: 2px solid white;
+}
+
+.glass-media{
+    user-select: none;
+}
+
+

@@ -1,0 +1,79 @@
+[debug] [2018-06-09T17:55:37.459Z] ----------------------------------------------------------------------
+[debug] [2018-06-09T17:55:37.461Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\LENOVO\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2018-06-09T17:55:37.462Z] CLI Version:   3.18.6
+[debug] [2018-06-09T17:55:37.462Z] Platform:      win32
+[debug] [2018-06-09T17:55:37.462Z] Node Version:  v10.1.0
+[debug] [2018-06-09T17:55:37.462Z] Time:          Sun Jun 10 2018 00:55:37 GMT+0700 (SE Asia Standard Time)
+[debug] [2018-06-09T17:55:37.462Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-06-09T17:55:37.476Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-06-09T17:55:37.477Z] > authorizing via signed-in user
+[debug] [2018-06-09T17:55:37.478Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-06-09T17:55:37.478Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/NQBn3ySiE02KaZYaT2R7ijJ1_N5suxMZUl6VzPKzQdWlj6dVPGLC_QC1v0DlUVfa',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Sun Jun 10 2018 00:55:37 GMT+0700 (SE Asia Standard Time)
+[debug] [2018-06-09T17:55:37.753Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-09T17:55:37.759Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/bookmavks-demo  
+  
+ Sun Jun 10 2018 00:55:37 GMT+0700 (SE Asia Standard Time)
+[info] 
+[warn] !  Your CLI authentication needs to be updated to take advantage of new features.
+[warn] !  Please run firebase login --reauth
+[info] 
+[debug] [2018-06-09T17:55:58.776Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2018-06-09T17:55:58.778Z] > authorizing via signed-in user
+[debug] [2018-06-09T17:55:58.779Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-06-09T17:55:58.779Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/NQBn3ySiE02KaZYaT2R7ijJ1_N5suxMZUl6VzPKzQdWlj6dVPGLC_QC1v0DlUVfa',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Sun Jun 10 2018 00:55:58 GMT+0700 (SE Asia Standard Time)
+[debug] [2018-06-09T17:55:58.964Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-09T17:55:58.970Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/bookmavks-demo  
+  
+ Sun Jun 10 2018 00:55:58 GMT+0700 (SE Asia Standard Time)
+[debug] [2018-06-09T17:56:00.115Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-09T17:56:00.117Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/bookmavks-demo/tokens  
+  
+ Sun Jun 10 2018 00:56:00 GMT+0700 (SE Asia Standard Time)
+[debug] [2018-06-09T17:56:21.130Z] Error: connect ETIMEDOUT 104.197.85.31:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1161:14)
+[error] 
+[error] Error: Server Error. connect ETIMEDOUT 104.197.85.31:443
+[debug] [2018-06-09T17:59:06.429Z] ----------------------------------------------------------------------
+[debug] [2018-06-09T17:59:06.432Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\LENOVO\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2018-06-09T17:59:06.432Z] CLI Version:   3.18.6
+[debug] [2018-06-09T17:59:06.432Z] Platform:      win32
+[debug] [2018-06-09T17:59:06.432Z] Node Version:  v10.1.0
+[debug] [2018-06-09T17:59:06.432Z] Time:          Sun Jun 10 2018 00:59:06 GMT+0700 (SE Asia Standard Time)
+[debug] [2018-06-09T17:59:06.433Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-06-09T17:59:06.443Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-06-09T17:59:06.443Z] > authorizing via signed-in user
+[debug] [2018-06-09T17:59:06.445Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-06-09T17:59:06.445Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/NQBn3ySiE02KaZYaT2R7ijJ1_N5suxMZUl6VzPKzQdWlj6dVPGLC_QC1v0DlUVfa',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Sun Jun 10 2018 00:59:06 GMT+0700 (SE Asia Standard Time)
+[info] 
+[warn] !  Your CLI authentication needs to be updated to take advantage of new features.
+[warn] !  Please run firebase login --reauth
+[info] 
+[debug] [2018-06-09T17:59:27.490Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2018-06-09T17:59:27.491Z] > authorizing via signed-in user
+[debug] [2018-06-09T17:59:27.493Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/bookmavks-demo  
+  
+ Sun Jun 10 2018 00:59:27 GMT+0700 (SE Asia Standard Time)
+[debug] [2018-06-09T17:59:48.594Z] Error: connect ETIMEDOUT 104.197.85.31:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1161:14)
+[error] 
+[error] Error: Server Error. connect ETIMEDOUT 104.197.85.31:443

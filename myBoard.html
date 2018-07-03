@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Board</title>
+    <link rel="stylesheet" href="myBaord.css">
+</head>
+
+<body>
+    <div class="main">
+       <div onmouseover="tabTopper()" id="tabTopper">
+          <div class="home">
+              <a href="index.html"><span class="home">Home</span></a>
+          </div>
+          <div class="coverTapTop">
+             <div class="edit">
+                 #edit
+             </div>
+              
+          </div>
+           
+       </div>
+        <div id="banner">
+            <img id="tabTopperHold" onmouseover="tabTopper()" onmouseout="tabTopperHide()" src="img/bannerMyBoard.jpg" alt="">
+        </div>
+    </div>
+    <script>
+        function tabTopper() {
+            document.getElementById('tabTopper').style.height  ='50px';
+            
+        }
+        
+        function tabTopperHide(){
+            document.getElementById('tabTopper').style.height  ='0px';
+        }
+    </script>
+
+</body>
+</html>

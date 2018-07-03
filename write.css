@@ -1,0 +1,161 @@
+.write-ex-show{
+    display: flex;
+    width: 814px;
+    height: 91px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.line-write-show{
+    position: relative;
+    width: 97%;
+    height: 4px;
+    background: #e4f0f0;
+    bottom: 11px;
+}
+.tesa{
+    width: 814px;
+    height: 4px;
+    display: flex;
+    justify-content: center;
+}
+.upload{
+    width: 55px;
+    height: 55px;
+    background: pink;
+    margin: 0 8px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.cover-write-show{
+    width: 814px;
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+}
+
+.art-cl{
+    background: #23a1a1;
+    transition: 0.3s;
+}
+
+.art-cl:hover{
+    background: #1d8f8f;
+    transition: 0.3s;
+}
+.art-cl:active{
+    background: #118282;
+}
+
+.songs-cl{
+    background: #da8080;
+    transition: 0.3s;
+}
+.songs-cl:hover{
+    background: #be7878;
+    transition: 0.3s;
+}
+.songs-cl:active{
+    background: #b26a6a;
+}
+
+.text-cl{
+    background: #8484d0;
+    transition: 0.3s;
+    
+}
+.text-cl:hover{
+    background: #7474cc;
+    transition: 0.3s;
+}
+
+.text-cl:active{
+    background: #6767ca;
+}
+
+.interact-cl{
+    background: #819efd;
+    transition: 0.3s;
+}
+
+.interact-cl:hover{
+    background: #5b81ff;
+    transition: 0.3s;
+}
+
+.interact-cl:active{
+    background: #4772ff;
+}
+
+.photo-cl{
+    background: #ff8851;
+    transition: 0.3s;
+}
+.photo-cl:hover{
+    background: #fc7435;
+    transition: 0.3s;
+    
+}
+
+.photo-cl:active{
+    background: #fc5c11;   
+}
+.camera-cl{
+    background: #ff6060;
+    transition: 0.3s;
+}
+.camera-cl:hover{
+    background: #fe4848;
+    transition: 0.3s;
+}
+.camera-cl:active{
+    background: #fe2d2d;
+}
+
+.tag-fri-write{
+    width: 366px;
+    height: 48px;
+    background: #f1f1f8;
+    margin-right: 10px;
+    margin-top: 4px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.tag-with{
+    display: flex;
+    padding: 4px 6px;
+    background: #dcdce9;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    font-size: 18px;
+    border: dashed 2px #9c9cc2;
+    transition: 0.2s;
+    
+}
+
+.tag-with:active{
+    transition: 0.2s;
+    background: #ececf3;
+}
+
+.input-tag-fri{
+    width: 289px;
+    height: inherit;
+    margin-left: 5px;
+    outline: none;
+    border: none;
+    background: none;
+    font-size: 14px;
+    
+}
+

@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    background-color: #fafafa;
+    font-family: sans-serif;
+}
+
+nav{
+    
+}
+
+.main{
+}
+
+.nav-bg {
+    height: 64px;
+    width: 100%;
+    background: white;
+    box-shadow: 0 -3px 35px 0 rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    user-select: none;
+}
+
+.content-cover {
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.logo {
+    background: url(img/logo.png);
+    background-size: cover;
+    height: 52px;
+    width: 35px;
+    position: relative;
+    top: 6px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    transition: 0.3s ease-out;
+    animation: logo-animate 0.3s ease-out;
+
+}
+
+@keyframes logo-animate {
+    0% {
+
+        top: -10px;
+    }
+    50% {
+
+        top: 0px;
+    }
+    100% {
+
+        top: 6px;
+    }
+}
+
+.content-cover a {
+    text-decoration: none;
+}
+
+/*
+.logo:hover {
+    background: url(logo-2.png);
+    background-size: cover;
+    height: 52px;
+    width: 35px;
+    top: 6px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    transition: 0.3s ease-out;
+}
+*/
+
+.vertical-line {
+
+    width: 3px;
+    height: 49px;
+    background: #bcbcbc;
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    left: 30px;
+    animation: line-animate 0.3s ease-out;
+}
+
+@keyframes line-animate {
+    0% {
+        opacity: 0.1;
+        left: 0px;
+    }
+    50% {
+        opacity: 0.4;
+        left: 14;
+    }
+    100% {
+        opacity: 1 ;left: 30px;
+    }
+}
+
+
+.home-logo {
+    display: inline-block;
+    height: 70px;
+    position: relative;
+    left: 62px;
+    bottom: 10px;
+    animation: home-logo-animate 0.3s ease-out;
+}
+
+.home-logo img {
+    width: 67px;
+}
+
+@keyframes home-logo-animate {
+    0% {
+        opacity: 0.1;
+        left: 0px;
+    }
+    50% {
+        opacity: 0.4;
+        left: 30px
+    }
+    100% {
+        opacity: 1;
+        left: 62px
+    }
+}
+
+
+.home-status {
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    border-radius: 14px;
+    float: right;
+    position: absolute;
+    right: -14px;
+    top: -7px;
+}
+
+.home-status {
+    background: #;
+    animation: home-status-color 5s ease infinite;
+}
+
+@keyframes home-status-color {
+    0% {
+        background: #F4D040;
+    }
+    50% {
+        background: #A56ABE;
+    }
+    100% {
+        background: #F4D040;
+    }
+}
+
+.home-logo a img {
+    transition: 0.3s ease-out;
+}
+
+.home-logo a img:hover {
+    transition: 0.3s ease-out;
+    opacity: 0.6;
+}

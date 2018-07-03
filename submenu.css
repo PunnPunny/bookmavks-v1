@@ -1,0 +1,102 @@
+#menuDP{
+    width: 70%;
+    position: absolute;
+    z-index: 1000;
+}
+
+
+.MenuDrop-Right{
+    width: 226px;
+    position: absolute;
+    right: 0;
+/*    display: none;*/
+}
+
+.cover-Menudp{
+    display: flex;
+    justify-content: center;
+}
+
+.friendsMenuDrop{
+    width: 200px;
+    position: absolute;
+    right: 109px;
+    display: none;
+}
+
+.notiMenuDrop{
+     width: 200px;
+    position: absolute;
+    right: 59px;
+    display: none;
+}
+
+.settingMenuDrop{
+    width: 200px;
+    position: absolute;
+    right: 9px;
+    display: none;
+}
+
+.profileMenuDrop{
+     width: 200px;
+    height: 0;
+    background: #fcfcfc;
+        
+    position: absolute;
+    right: -73px;
+/*    display: none;*/
+   border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+    box-shadow: 0 0 4px 0 rgba(0,0,0,0.3);
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.profileEd-Drop{
+    width: inherit;
+    border-radius: inherit;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.profile-md-nav, .myBlog-md-nav, .asses-md-nav, .tic-md-nav,.achv-md-nav{
+    cursor: pointer;
+   user-select: none;
+    margin: 0;
+    padding: 8px 0 8px 30px;
+    box-sizing: border-box;
+    color: #515151;
+}
+
+.profile-md-nav:hover, .myBlog-md-nav:hover, .asses-md-nav:hover, .tic-md-nav:hover,.achv-md-nav:hover{
+    animation: bgDropM 0.5s;
+    background: #367edc;
+    color: white;
+}
+
+.profile-submenu-d{
+    width: 100%;
+    padding: 0 10px;
+    color: #444444;
+    padding: 12px;
+    font-size: 14px;
+}
+
+.headMD{
+    padding: 0 0 0 12px;
+    font-weight: bolder;
+    color: #818fcf;
+    margin: 0 0 6px 0;
+    cursor: context-menu;
+    user-select: none;
+}
+
+.lineMD{
+    width: 85%;
+    height: 3px;
+    background: #e9e9f5;
+    margin: 14px 14px 14px 14px;
+}
