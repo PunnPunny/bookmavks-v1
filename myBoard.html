@@ -12,21 +12,25 @@
 </head>
 
 <body>
+    <div id="banner">
+            
+        </div>
     <div class="main">
        <div id="tabTopper">
           <div class="home">
-<!--              <a href="index.html"><img style="margin-top: 3px;" src="img/logo.png" width="28" alt=""></a>-->
-           
-           
+              <a href="index.html">
+              <img id="logoTop" style="margin-top: 3px;" src="img/logo.png" width="28" alt="">
               
-<!--
+              <img id="logoTop2" style="margin-top: 3px;" src="img/logo2.png" width="28" alt="" onmousemove="logoChange()" onmouseout="logoChange2()">
+              
+              </a>
+           
               
               <div style="width: 1.5px; height: 70%; background:#e5e5e5; margin-left: 26px; margin-right: 26px;">
               </div>
               
--->
               
-              <a href="index.html"><span class="TextHome">Home</span></a>
+              <span onclick="allBoard()" id="allBoard" class="TextHome">Board</span>
                <input class="inputBoard" type="text" placeholder="Search People">
                <input class="submitBoard" type="submit" value="&#x1f50d;">
                
@@ -37,21 +41,53 @@
           
           
           <div class="coverTapTop">
-            <div class="profileTop">
-                <img class="imgProfile" src="img/left-profile-picpro.png" width="40" alt="">
+           <div>
+                <img width="22" src="img/editBoard.png" alt="">
             </div>
+            <div class="profileTop">
+                <img onclick="profileBoard()" class="imgProfile" src="img/left-profile-picpro.png" width="38" alt="">
+            </div>
+            
              <div class="bookmavksTop">
+                
                  Update+
              </div>
               
           </div>
            
        </div>
-        <div id="banner">
-            <img id="tabTopperHold" src="img/bannerMyBoard.jpg" alt="">
-        </div>
+       
     </div>
  
+ 
+ <script>
+     function profileBoard(){
+        document.getElementById('banner').style.height='480px';
+         document.getElementById('banner').style.opacity='1';
+         document.getElementById('tabTopper').style.background='rgba( 0, 0, 0, 0.125)';
+     }
+     
+     function allBoard(){
+         document.getElementById('banner').style.height='100%';
+         document.getElementById('banner').style.opacity='0.78';
+         document.getElementById('tabTopper').style.background='rgba( 0, 0, 0, 0.3 )';
+     }
+     
+     
+    function logoChange(){
+        document.getElementById('logoTop2').style.opacity='0';
+        document.getElementById('logoTop2').style.transition ='0.3s';
+        
+    }
+     
+       function logoChange2(){
+        document.getElementById('logoTop2').style.opacity='1';
+           document.getElementById('logoTop2').style.transition ='0.3s';
+        
+    }
+
+    
+    </script>
 
 </body>
 </html>
