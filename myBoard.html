@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>My Board</title>
-     <link rel="icon" href="img/logo-browser.png">
+    <link rel="icon" href="img/logo-browser.png">
     <link rel="stylesheet" href="myBaord.css">
     <link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -12,81 +12,127 @@
 </head>
 
 <body>
-    <div id="banner">
-            
-        </div>
+   
+
+   
     <div class="main">
-       <div id="tabTopper">
-          <div class="home">
-              <a href="index.html">
+       <div class="coverFlex">
+<!--
+       <div id="editMenu">
+           
+       </div>
+-->
+        <div id="banner">
+    
+        <div id="tabTopper">
+            <div class="home">
+                <a href="index.html">
               <img id="logoTop" style="margin-top: 3px;" src="img/logo.png" width="28" alt="">
               
               <img id="logoTop2" style="margin-top: 3px;" src="img/logo2.png" width="28" alt="" onmousemove="logoChange()" onmouseout="logoChange2()">
               
               </a>
-           
-              
-              <div style="width: 1.5px; height: 70%; background:#e5e5e5; margin-left: 26px; margin-right: 26px;">
-              </div>
-              
-              
-              <span onclick="allBoard()" id="allBoard" class="TextHome">Board</span>
-               <input class="inputBoard" type="text" placeholder="Search People">
-               <input class="submitBoard" type="submit" value="&#x1f50d;">
-               
-               
-          </div>
-          
-         
-          
-          
-          <div class="coverTapTop">
-           <div>
-                <img width="22" src="img/editBoard.png" alt="">
-            </div>
-            <div class="profileTop">
-                <img onclick="profileBoard()" class="imgProfile" src="img/left-profile-picpro.png" width="38" alt="">
-            </div>
-            
-             <div class="bookmavksTop">
-                
-                 Update+
-             </div>
-              
-          </div>
-           
-       </div>
-       
-    </div>
- 
- 
- <script>
-     function profileBoard(){
-        document.getElementById('banner').style.height='480px';
-         document.getElementById('banner').style.opacity='1';
-         document.getElementById('tabTopper').style.background='rgba( 0, 0, 0, 0.125)';
-     }
-     
-     function allBoard(){
-         document.getElementById('banner').style.height='100%';
-         document.getElementById('banner').style.opacity='0.78';
-         document.getElementById('tabTopper').style.background='rgba( 0, 0, 0, 0.3 )';
-     }
-     
-     
-    function logoChange(){
-        document.getElementById('logoTop2').style.opacity='0';
-        document.getElementById('logoTop2').style.transition ='0.3s';
-        
-    }
-     
-       function logoChange2(){
-        document.getElementById('logoTop2').style.opacity='1';
-           document.getElementById('logoTop2').style.transition ='0.3s';
-        
-    }
 
+
+                <div style="width: 1.5px; height: 70%; background:#e5e5e5; margin-left: 69px; margin-right: 26px;">
+                </div>
+
+
+                <span onclick="allBoard()" id="allBoard" class="TextHome">Board</span>
+                <input class="inputBoard" type="text" placeholder="Search People">
+                <input class="submitBoard" type="submit" value="&#x1f50d;">
+
+
+            </div>
+
+
+
+
+            <div class="coverTapTop">
+               <div class="friends">
+                   <img src="img/fr-g1.png" width="22" alt="">
+               </div>
+                <div class="editBoard" onclick="editBoard()">
+                    <img width="22" src="img/editBoard.png" alt="">
+                </div>
+                <div class="profileTop">
+                    <img onclick="profileBoard()" class="imgProfile" src="img/left-profile-picpro.png" width="38" alt="">
+                </div>
+
+                <div class="bookmavksTop">
+
+                    Update+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
     
+    
+     <div id="proBoard" class="proBoard">
+        <div class="profileIMG">
+            <img id="twstimg" src="img/profile-side.png" alt="">
+        </div>
+        
+        
+        
+        
+    </div>
+    
+<!--    coverflex-->
+    </div> 
+    
+   
+    </div>
+
+
+
+    <script>
+        var edm = true;
+
+        function editBoard() {
+                if (edm == true) {
+                    document.getElementById('editMenu').style.height = '120px';
+                    edm = false;
+                } else {
+                    document.getElementById('editMenu').style.height = '0px';
+                     edm = true;
+                }
+            }
+
+                function profileBoard() {
+                    document.getElementById('banner').style.height = '480px';
+                
+                   
+                 document.getElementById('twstimg').style.transform = 'translate(0%,0%)';
+                    document.getElementById('twstimg').style.transition = '0.3s ease-out';
+                 
+                }
+
+                function allBoard() {
+                    document.getElementById('banner').style.height = '100%';
+                    
+                  
+                    document.getElementById('twstimg').style.transform = 'translate(0%,200%)';
+                     document.getElementById('twstimg').style.transition = '0.3s ease-in';
+                   
+                   
+                }
+
+
+                function logoChange() {
+                    document.getElementById('logoTop2').style.opacity = '0';
+                    document.getElementById('logoTop2').style.transition = '0.3s';
+
+                }
+
+                function logoChange2() {
+                    document.getElementById('logoTop2').style.opacity = '1';
+                    document.getElementById('logoTop2').style.transition = '0.3s';
+
+                }
     </script>
 
 </body>
