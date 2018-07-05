@@ -2,137 +2,256 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Board</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K.Thibamrung - Bookmavks</title>
     <link rel="icon" href="img/logo-browser.png">
     <link rel="stylesheet" href="myBaord.css">
     <link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-   
 
-   
+
+
     <div class="main">
-       <div class="coverFlex">
-<!--
+        <div class="coverFlex">
+            <!--
        <div id="editMenu">
            
        </div>
 -->
-        <div id="banner">
-    
-        <div id="tabTopper">
-            <div class="home">
-                <a href="index.html">
+            <div id="banner">
+
+            </div>
+
+            <div id="tabTopper">
+                <div class="home">
+                    <a href="index.html">
               <img id="logoTop" style="margin-top: 3px;" src="img/logo.png" width="28" alt="">
               
-              <img id="logoTop2" style="margin-top: 3px;" src="img/logo2.png" width="28" alt="" onmousemove="logoChange()" onmouseout="logoChange2()">
+<!--              <img id="logoTop2" style="margin-top: 3px;" src="img/logo2.png" width="28" alt="" onmousemove="logoChange()" onmouseout="logoChange2()">-->
               
               </a>
 
 
-                <div style="width: 1.5px; height: 70%; background:#e5e5e5; margin-left: 69px; margin-right: 26px;">
+                    <div style="width: 1.5px; height: 70%; background:#e5e5e5; margin-left: 69px; margin-right: 26px;">
+                    </div>
+
+
+                    <span onclick="allBoard()" id="allBoard" class="TextHome">Board</span>
+                    <input class="inputBoard" type="text" placeholder="Search People">
+                    <input class="submitBoard" type="submit" value="&#x1f50d;">
+
+
                 </div>
 
 
-                <span onclick="allBoard()" id="allBoard" class="TextHome">Board</span>
-                <input class="inputBoard" type="text" placeholder="Search People">
-                <input class="submitBoard" type="submit" value="&#x1f50d;">
 
+
+                <div class="coverTapTop">
+                    <div class="friends mg-12">
+                        <img src="img/fr-g1.png" width="22" alt="">
+                    </div>
+
+                    <div class="achiev mg-12">
+                        <img src="img/quality.png" width="25" alt="">
+                    </div>
+
+                    <div class="editBoard mg-12" onclick="editBoard()">
+                        <img width="22" src="img/editBoard.png" alt="">
+                    </div>
+                    <div class="profileTop mg-12">
+                        <img onclick="profileBoard()" class="imgProfile" src="img/left-profile-picpro.png" width="38" alt="">
+                    </div>
+
+                    <div class="bookmavksTop mg-12">
+
+                        Update+
+                    </div>
+
+                </div>
 
             </div>
 
 
 
 
-            <div class="coverTapTop">
-               <div class="friends">
-                   <img src="img/fr-g1.png" width="22" alt="">
-               </div>
-                <div class="editBoard" onclick="editBoard()">
-                    <img width="22" src="img/editBoard.png" alt="">
-                </div>
-                <div class="profileTop">
-                    <img onclick="profileBoard()" class="imgProfile" src="img/left-profile-picpro.png" width="38" alt="">
+            <div id="proBoard" class="proBoard">
+                <div class="profileIMG">
+                    <img id="twstimg" src="img/profile-side.png" alt="">
                 </div>
 
-                <div class="bookmavksTop">
 
-                    Update+
+
+                <div id="forHide">
+                    <div class="nameProfile">
+
+                        Kwang Thanawut
+
+                    </div>
+
+
+                    <div class="write-about">
+                        <input type="text" placeholder="Write something about you" onfocus="this.placeholder = ''" onblur="this.placeholder ='Write something about you'">
+                    </div>
+
+                    <div class="boardProfile">
+                    <div class="chooseUpper">
+                       <div id="seeAll">
+                           <div onclick="seeAll()" class="edCU whiteBoard">
+                               See all memories
+                           </div>
+                       </div>
+                       
+                       <div id="goToVideo">
+                           <div class="edCU blackBoard">
+                               My video board
+                           </div>
+                       </div>
+                        
+                    </div>
+                        <div class="boardInside1">
+                            <div class="moment widB">
+                                <div id="theightM" class="tmoment">
+                                    <span id="tMo" class="tHE" onclick="ClickMoment()">Moment</span>
+                                </div>
+                                <div id="CreateLine1"></div>
+                            </div>
+
+
+                            <div class="blog widB">
+                                <div id="theightBL" class="tblog">
+                                    <span id="tBl" class="tHE" onclick="ClickBlog()">Blog</span>
+                                </div>
+                                <div id="CreateLine2"></div>
+                            </div>
+
+                            <div class="book widB">
+                                <div id="theightBO" class="tbook ">
+                                    <span id="tBo" class="tHE" onclick="ClickBook()">Book</span>
+                                </div>
+                                <div id="CreateLine3"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <div class="footer">
+                        
+                    </div>
                 </div>
+
 
             </div>
 
-        </div>
-
-    </div>
-    
-    
-     <div id="proBoard" class="proBoard">
-        <div class="profileIMG">
-            <img id="twstimg" src="img/profile-side.png" alt="">
+            <!--    coverflex-->
         </div>
         
         
-        
-        
-    </div>
-    
-<!--    coverflex-->
-    </div> 
-    
-   
     </div>
 
 
 
     <script>
         var edm = true;
+        
+        function seeAll(){
+            document.getElementById('CreateLine1').style.width = '60%';
+            document.getElementById('CreateLine2').style.width = '60%';
+             document.getElementById('CreateLine3').style.width = '60%';
+            
+            
+            document.getElementById('tMo').style.color = '#262626';
+            document.getElementById('tBl').style.color = '#262626';
+            document.getElementById('tBo').style.color = '#262626';
+        }
+        
+        
+          function ClickMoment() {
+            document.getElementById('CreateLine1').style.width = '60%';
+            document.getElementById('CreateLine2').style.width = '0%';    
+              document.getElementById('CreateLine3').style.width = '0%';
+              
+               document.getElementById('tMo').style.color = '#262626';
+              
+                        document.getElementById('tBo').style.color = '#969696';
+               document.getElementById('tBl').style.color = '#969696';
+              
+        }
+
+        function ClickBlog() {
+            document.getElementById('CreateLine2').style.width = '60%';
+            document.getElementById('CreateLine1').style.width = '0%';
+            document.getElementById('CreateLine3').style.width = '0%';
+            
+            document.getElementById('tBl').style.color = '#262626';
+                      document.getElementById('tMo').style.color = '#969696';
+               document.getElementById('tBo').style.color = '#969696';
+        }
+
+        function ClickBook() {
+            document.getElementById('CreateLine3').style.width = '60%';
+           document.getElementById('CreateLine1').style.width = '0%';
+            document.getElementById('CreateLine2').style.width = '0%';
+            
+              document.getElementById('tBo').style.color = '#262626';
+            
+               document.getElementById('tMo').style.color = '#969696';
+               document.getElementById('tBl').style.color = '#969696';
+
+        }
+
+
+      
+
+
 
         function editBoard() {
-                if (edm == true) {
-                    document.getElementById('editMenu').style.height = '120px';
-                    edm = false;
-                } else {
-                    document.getElementById('editMenu').style.height = '0px';
-                     edm = true;
-                }
+            if (edm == true) {
+                document.getElementById('editMenu').style.height = '120px';
+                edm = false;
+            } else {
+                document.getElementById('editMenu').style.height = '0px';
+                edm = true;
             }
+        }
 
-                function profileBoard() {
-                    document.getElementById('banner').style.height = '480px';
-                
-                   
-                 document.getElementById('twstimg').style.transform = 'translate(0%,0%)';
-                    document.getElementById('twstimg').style.transition = '0.3s ease-out';
-                 
-                }
+        function profileBoard() {
+            document.getElementById('banner').style.height = '480px';
+            document.getElementById('forHide').style.display = 'flex';
 
-                function allBoard() {
-                    document.getElementById('banner').style.height = '100%';
-                    
-                  
-                    document.getElementById('twstimg').style.transform = 'translate(0%,200%)';
-                     document.getElementById('twstimg').style.transition = '0.3s ease-in';
-                   
-                   
-                }
+            document.getElementById('twstimg').style.transform = 'translate(0%,0%) scale(1) ';
+            document.getElementById('twstimg').style.transition = '0.2s ease-out';
+
+        }
+
+        function allBoard() {
+            document.getElementById('banner').style.height = '100%';
+            document.getElementById('forHide').style.display = 'none';
 
 
-                function logoChange() {
-                    document.getElementById('logoTop2').style.opacity = '0';
-                    document.getElementById('logoTop2').style.transition = '0.3s';
+            document.getElementById('twstimg').style.transform = ' translate(0%,200%) scale(0) ';
+            document.getElementById('twstimg').style.transition = '0.3s ease-in';
 
-                }
 
-                function logoChange2() {
-                    document.getElementById('logoTop2').style.opacity = '1';
-                    document.getElementById('logoTop2').style.transition = '0.3s';
+        }
 
-                }
+
+        function logoChange() {
+            document.getElementById('logoTop2').style.opacity = '0';
+            document.getElementById('logoTop2').style.transition = '0.3s';
+
+        }
+
+        function logoChange2() {
+            document.getElementById('logoTop2').style.opacity = '1';
+            document.getElementById('logoTop2').style.transition = '0.3s';
+
+        }
     </script>
 
 </body>

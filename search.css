@@ -56,6 +56,31 @@ a{
     font-size: 18px;
     width: 300px;
     animation: search-input 0.3s ease-out;
+    transition: 0.125s;
+}
+
+@media (max-width:1238px){
+    .search-input{
+  
+    width: 200px;
+ 
+}
+}
+
+@media (max-width:1086px){
+    .search-input{
+  
+    width: 120px;
+ 
+}
+}
+
+@media (max-width:962px){
+    .search-input{
+  
+    width: 60px;
+ 
+}
 }
 /*
 @keyframes search-input {

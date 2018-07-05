@@ -1,13 +1,17 @@
 body {
     margin: 0;
+    background: #f4f4f4
 }
-html, body, .main{
+
+html,
+body,
+.main {
     height: 100%;
     width: 100%;
 }
 
 
-.coverFlex{
+.coverFlex {
     display: flex;
     flex-direction: column;
 }
@@ -22,10 +26,21 @@ html, body, .main{
     background-size: cover;
     background-position: 0% 27%;
     position: absolute;
-    transition: 0.125s;
+    transition: 0.2s ease-out;
+    animation: banner 0.45s;
+
 }
 
+@keyframes banner {
+    0% {
+        transform: translate(0%, -30%);
+    }
+    100% {
+        transform: translate(0%, 0%);
+    }
+}
 
+/*
 #editMenu{
     width: 100%;
     height: 0px;
@@ -34,13 +49,14 @@ html, body, .main{
     bottom: 0;
     transition: 0.125s;
 }
+*/
 
-.editBoard{
+.editBoard {
     margin-right: 10px;
     cursor: pointer;
 }
 
-.friends{
+.friends {
     margin-right: 10px;
     cursor: pointer;
 }
@@ -48,15 +64,15 @@ html, body, .main{
 #tabTopper {
     width: 100%;
     height: 50px;
-        background: rgba( 0, 0, 0, 0.3);
+    background: rgba( 0, 0, 0, 0.3);
     /*    background: rgba( 255, 255, 255, 0.25 );*/
-
     display: flex;
     overflow: hidden;
     animation: tabTopAnime 0.5s;
     transition: 0.3s;
     position: fixed;
     top: 0;
+    z-index: 1;
 }
 
 
@@ -72,13 +88,13 @@ html, body, .main{
 
 .bookmavksTop {
     font-size: 16px;
-  font-family: sans-serif;
-/*    color:#212121;*/
+    font-family: sans-serif;
+    /*    color:#212121;*/
     width: 60px;
     height: 80%;
     display: flex;
     align-items: center;
-    background:rgba( 0, 0, 0, 0.328 );
+    background: rgba( 0, 0, 0, 0.328);
     padding: 0 12px;
     border-radius: 8px;
     margin-right: 10px;
@@ -87,19 +103,19 @@ html, body, .main{
     user-select: none;
 }
 
-.bookmavksTop:hover{
+.bookmavksTop:hover {
     animation: bmkHover 3s infinite;
 }
 
-@keyframes bmkHover{
-    0%{
-        background: rgba( 81, 81, 198, 1 );
+@keyframes bmkHover {
+    0% {
+        background: rgba( 81, 81, 198, 1);
     }
-    50%{
-        background: rgba( 130, 211, 69, 1 );
+    50% {
+        background: rgba( 130, 211, 69, 1);
     }
-    100%{
-        background: rgba( 81, 81, 198, 1 );
+    100% {
+        background: rgba( 81, 81, 198, 1);
     }
 }
 
@@ -108,7 +124,7 @@ html, body, .main{
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    
+
 
 }
 
@@ -120,10 +136,10 @@ html, body, .main{
     cursor: pointer;
     font-family: 'Prompt';
     font-weight: bolder;
-     user-select: none;
+    user-select: none;
 }
 
-.profileTop{
+.profileTop {
     margin-right: 10px;
     border-radius: 50px;
     display: flex;
@@ -131,11 +147,11 @@ html, body, .main{
     align-items: center;
 }
 
-.imgProfile{
+.imgProfile {
     border-radius: 50px;
     border: 2.5px solid white;
     cursor: pointer;
-    
+
 }
 
 .home a {
@@ -159,10 +175,27 @@ html, body, .main{
     margin-left: 50px;
     padding-left: 12px;
     box-sizing: border-box;
-    width: 300px;
+    width: 400px;
     height: 72%;
     font-size: 16px;
+    transition: 0.125s;
 }
+
+@media (max-width:935px) {
+    .inputBoard {
+        width: 300px;
+    }
+}
+
+@media (max-width:835px) {
+    .inputBoard {
+        width: 200px;
+    }
+}
+
+
+
+
 
 ::placeholder {
     font-family: 'tahoma', 'sans-serif';
@@ -186,30 +219,166 @@ input:focus::-webkit-input-placeholder {
 
 }
 
-#logoTop{
+#logoTop {
     position: absolute;
     bottom: 5px;
     left: 17px;
     transition: 0.3s;
 }
-#logoTop2{
+
+#logoTop2 {
     position: absolute;
     bottom: 5px;
     left: 17px;
 }
 
-.proBoard{
-    margin-top: 480px;
+.proBoard {
+    margin-top: 358px;
     display: flex;
-    justify-content: center;
-    transform: scale();
-    
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+
+
+}
+
+#twstimg {
+    animation: twst 0.4s;
+}
+
+@keyframes twst {
+    0% {
+        transform: scale(0);
+
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 
-#twstimg{
-    position: relative;
-    bottom: 122px;
- 
-     
+.nameProfile {
+    font-family: 'Prompt';
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.achiev {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.write-about {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 600px;
+    
+    font-size: 16px;
+    padding: 6px;
+    box-sizing: border-box;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+
+.write-about input {
+    display: flex;
+    text-align: center;
+    outline: none;
+    border: none;
+    width: inherit;
+    height: inherit;
+    font-size: 16px;
+    color: #494949;
+    font-size: 18px;
+    background:none; 
+}
+
+.boardProfile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.mg-12 {
+    margin: 8px;
+}
+
+
+#forHide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.boardInside1 {
+    width: 90%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    background: white;
+    margin-top: 30px;
+    border-radius: 25px;
+}
+
+.widB {
+    display: flex;
+    width: 33.33%;
+    align-items: center;
+    margin-top: 50px;
+    font-size: 20px;
+    font-family: 'Prompt';
+    flex-direction: column;
+}
+
+.tHE {
+    cursor: pointer;
+    user-select: none;
+}
+
+#CreateLine1,
+#CreateLine2,
+#CreateLine3 {
+    height: 4px;
+    width: 60%;
+    background: pink;
+    transition: 0.3s;
+}
+
+.chooseUpper{
+    display: flex;
+    user-select: none;
+    
+}
+#seeAll, #goToVideo{
+    margin-top: 60px;
+}
+
+.edCU{
+    font-family: 'Prompt';
+    font-size: 18px;
+    cursor: pointer;
+    padding: 16px;
+}
+
+.whiteBoard{
+    background: white;
+    border-radius: 50px;
+    margin-right: 6px;
+    
+}
+.blackBoard{
+    background: #3f3f3f;
+    border-radius: 50px;
+    color: white;
+    margin-left: 6px;
+}
+
+.footer{
+    margin-top: 50px;
 }
