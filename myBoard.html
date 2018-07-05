@@ -42,7 +42,7 @@
                     </div>
 
 
-                    <span onclick="allBoard()" id="allBoard" class="TextHome">Board</span>
+                    <span onclick="allBoard(),setTimeout(closeBoard,125)" id="allBoard" class="TextHome">Board</span>
                     <input class="inputBoard" type="text" placeholder="Search People">
                     <input class="submitBoard" type="submit" value="&#x1f50d;">
 
@@ -65,7 +65,7 @@
                         <img width="22" src="img/editBoard.png" alt="">
                     </div>
                     <div class="profileTop mg-12">
-                        <img onclick="profileBoard()" class="imgProfile" src="img/left-profile-picpro.png" width="38" alt="">
+                        <img onclick="setTimeout(profileBoard,5),setTimeout(openBoard,0)" class="imgProfile" src="img/left-profile-picpro.png" width="38" alt="">
                     </div>
 
                     <div class="bookmavksTop mg-12">
@@ -100,20 +100,20 @@
                     </div>
 
                     <div class="boardProfile">
-                    <div class="chooseUpper">
-                       <div id="seeAll">
-                           <div onclick="seeAll()" class="edCU whiteBoard">
-                               See all memories
-                           </div>
-                       </div>
-                       
-                       <div id="goToVideo">
-                           <div class="edCU blackBoard">
-                               My video board
-                           </div>
-                       </div>
-                        
-                    </div>
+                        <div class="chooseUpper">
+                            <div id="seeAll">
+                                <div onclick="seeAll()" class="edCU whiteBoard">
+                                    See all memories
+                                </div>
+                            </div>
+
+                            <div id="goToVideo">
+                                <div class="edCU blackBoard">
+                                    My video board
+                                </div>
+                            </div>
+
+                        </div>
                         <div class="boardInside1">
                             <div class="moment widB">
                                 <div id="theightM" class="tmoment">
@@ -139,9 +139,9 @@
 
                         </div>
                     </div>
-                    
+
                     <div class="footer">
-                        
+
                     </div>
                 </div>
 
@@ -150,63 +150,77 @@
 
             <!--    coverflex-->
         </div>
-        
-        
+
+
     </div>
 
 
 
     <script>
-        var edm = true;
+   
+function closeBoard(){
+    document.getElementById('forHide').style.display ='none';
+     
+}
         
-        function seeAll(){
+        function openBoard(){
+    document.getElementById('forHide').style.display ='flex';
+     
+}
+
+
+
+        var edm = true;
+
+        function seeAll() {
             document.getElementById('CreateLine1').style.width = '60%';
             document.getElementById('CreateLine2').style.width = '60%';
-             document.getElementById('CreateLine3').style.width = '60%';
-            
-            
+            document.getElementById('CreateLine3').style.width = '60%';
+
+
             document.getElementById('tMo').style.color = '#262626';
             document.getElementById('tBl').style.color = '#262626';
             document.getElementById('tBo').style.color = '#262626';
         }
-        
-        
-          function ClickMoment() {
+
+
+        function ClickMoment() {
             document.getElementById('CreateLine1').style.width = '60%';
-            document.getElementById('CreateLine2').style.width = '0%';    
-              document.getElementById('CreateLine3').style.width = '0%';
-              
-               document.getElementById('tMo').style.color = '#262626';
-              
-                        document.getElementById('tBo').style.color = '#969696';
-               document.getElementById('tBl').style.color = '#969696';
-              
+            document.getElementById('CreateLine2').style.width = '0%';
+            document.getElementById('CreateLine3').style.width = '0%';
+
+            document.getElementById('tMo').style.color = '#262626';
+
+            document.getElementById('tBo').style.color = '#969696';
+            document.getElementById('tBl').style.color = '#969696';
+
         }
 
         function ClickBlog() {
             document.getElementById('CreateLine2').style.width = '60%';
             document.getElementById('CreateLine1').style.width = '0%';
             document.getElementById('CreateLine3').style.width = '0%';
-            
+
             document.getElementById('tBl').style.color = '#262626';
-                      document.getElementById('tMo').style.color = '#969696';
-               document.getElementById('tBo').style.color = '#969696';
+            document.getElementById('tMo').style.color = '#969696';
+            document.getElementById('tBo').style.color = '#969696';
         }
 
         function ClickBook() {
             document.getElementById('CreateLine3').style.width = '60%';
-           document.getElementById('CreateLine1').style.width = '0%';
+            document.getElementById('CreateLine1').style.width = '0%';
             document.getElementById('CreateLine2').style.width = '0%';
+
+            document.getElementById('tBo').style.color = '#262626';
+
+            document.getElementById('tMo').style.color = '#969696';
+            document.getElementById('tBl').style.color = '#969696';
             
-              document.getElementById('tBo').style.color = '#262626';
-            
-               document.getElementById('tMo').style.color = '#969696';
-               document.getElementById('tBl').style.color = '#969696';
 
         }
 
 
-      
+
 
 
 
@@ -222,20 +236,24 @@
 
         function profileBoard() {
             document.getElementById('banner').style.height = '480px';
-            document.getElementById('forHide').style.display = 'flex';
+            document.getElementById('forHide').style.transform = 'translate(0%,0%) scale(1)';
 
-            document.getElementById('twstimg').style.transform = 'translate(0%,0%) scale(1) ';
+            document.getElementById('twstimg').style.transform = 'translate(0%,0%) scale(1)';
             document.getElementById('twstimg').style.transition = '0.2s ease-out';
+
 
         }
 
         function allBoard() {
             document.getElementById('banner').style.height = '100%';
-            document.getElementById('forHide').style.display = 'none';
+            document.getElementById('forHide').style.transform = 'translate(0%,200%) scale(0)';
 
 
-            document.getElementById('twstimg').style.transform = ' translate(0%,200%) scale(0) ';
+            document.getElementById('twstimg').style.transform = 'translate(0%,200%) scale(0)';
             document.getElementById('twstimg').style.transition = '0.3s ease-in';
+
+
+
 
 
         }
