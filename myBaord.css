@@ -28,6 +28,7 @@ body,
     background-size: cover;
     background-position: 0% 27%;
     position: absolute;
+    z-index: 0;
     transition: 0.2s ease-out;
     animation: banner 0.45s;
 
@@ -384,4 +385,98 @@ input:focus::-webkit-input-placeholder {
 
 .footer{
     margin-top: 50px;
+}
+
+.BoardMenu{
+    height: 100%;
+    width: 100%;
+/*
+    padding-top: 100px;
+    box-sizing: border-box;
+*/
+  
+    
+}
+.edBM{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 50px 0px;
+    
+}
+
+.bmMenu{
+    width: 280px;
+    height: 96%;
+    margin-left: 20px;
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+}
+
+
+
+.edChoose{
+    font-size: 16px;
+    font-family: 'Prompt';
+ 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 0px;
+    user-select: none;
+    cursor: pointer;
+    transition: 0.08s;
+}
+
+.WriterMenu:hover{
+    background: #91b3fc;
+    color: white;
+}
+.VideoMenu:hover{
+    background: #3f3f3f;
+    color: white;
+}
+
+.BoardTopper{
+    font-family: 'Prompt';
+    font-size: 16px;
+    margin-bottom: 22px;
+    cursor: context-menu;
+    user-select: none;
+}
+
+.lineDown{
+    width: 80%;
+    height: 2px;
+    background: #dbdbdb;
+    margin-top: 20px;
+}
+
+
+#bgDarkBoard{
+   width: 100%;
+    height: 100%;
+    background: rgba( 0, 0, 0, 0.0);
+    position: absolute;
+    z-index: 0;
+    display: none;
+    transition: 0.3s;
+}
+
+
+#forHideBoardMenu{
+    transform: translate(-50%,0%) scale(0);
+    transition: 0.3s;
+    display: none;
+    
 }

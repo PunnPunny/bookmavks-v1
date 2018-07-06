@@ -26,14 +26,53 @@
 -->
             <div id="banner">
 
+                <div id="forHideBoardMenu" class="BoardMenu">
+                    <div class="edBM">
+                        <div class="bmMenu">
+                            <div class="BoardTopper">
+                                Board
+                            </div>
+                            <div class="WriterMenu edChoose" onclick="setTimeout(writerBoardOpen,300),setTimeout(wbgOpacity,100)">
+
+
+                                Writer Board
+                            </div>
+                            <div class="VideoMenu edChoose" onclick="setTimeout(videoBoardOpen,0),setTimeout(bgOpacity,100)">
+                                Video Board
+                            </div>
+
+                            <div class="lineDown">
+
+                            </div>
+                        </div>
+
+
+                        <div id="bgDarkBoard">
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+
+
+
             </div>
+
+
+
 
             <div id="tabTopper">
                 <div class="home">
                     <a href="index.html">
               <img id="logoTop" style="margin-top: 3px;" src="img/logo.png" width="28" alt="">
               
-<!--              <img id="logoTop2" style="margin-top: 3px;" src="img/logo2.png" width="28" alt="" onmousemove="logoChange()" onmouseout="logoChange2()">-->
+
               
               </a>
 
@@ -42,7 +81,7 @@
                     </div>
 
 
-                    <span onclick="allBoard(),setTimeout(closeBoard,125)" id="allBoard" class="TextHome">Board</span>
+                    <span onclick="allBoard(),setTimeout(closeBoard,125),setTimeout(showMenuBoard,0),setTimeout(tlBoardMenu,80)" id="allBoard" class="TextHome">Board</span>
                     <input class="inputBoard" type="text" placeholder="Search People">
                     <input class="submitBoard" type="submit" value="&#x1f50d;">
 
@@ -54,7 +93,7 @@
 
                 <div class="coverTapTop">
                     <div class="friends mg-12">
-                        <img src="img/fr-g1.png" width="22" alt="">
+                        <img src="img/fr-g12.png" width="26" alt="">
                     </div>
 
                     <div class="achiev mg-12">
@@ -65,7 +104,12 @@
                         <img width="22" src="img/editBoard.png" alt="">
                     </div>
                     <div class="profileTop mg-12">
-                        <img onclick="setTimeout(profileBoard,5),setTimeout(openBoard,0)" class="imgProfile" src="img/left-profile-picpro.png" width="38" alt="">
+                        <img
+                        onclick="setTimeout(profileBoard,5)
+                        ,setTimeout(openBoard,0)
+                        ,setTimeout(closeMenuBoard,300)
+                        ,setTimeout(ClosetlBoardMenu,50)"
+                        class="imgProfile" src="img/left-profile-picpro.png" width="38" alt="">
                     </div>
 
                     <div class="bookmavksTop mg-12">
@@ -90,7 +134,7 @@
                 <div id="forHide">
                     <div class="nameProfile">
 
-                        Kwang Thanawut
+                        Kwang Thibamrung
 
                     </div>
 
@@ -157,16 +201,44 @@
 
 
     <script>
-   
-function closeBoard(){
-    document.getElementById('forHide').style.display ='none';
-     
-}
-        
-        function openBoard(){
-    document.getElementById('forHide').style.display ='flex';
-     
-}
+        function videoBoardOpen() {
+            document.getElementById('bgDarkBoard').style.display = 'block';
+
+        }
+
+        function bgOpacity() {
+            document.getElementById('bgDarkBoard').style.background = 'rgba( 0, 0, 0, 0.5)';
+            document.getElementById('tabTopper').style.background = 'rgba( 0, 0, 0, 0.5)';
+
+        }
+
+
+
+        function writerBoardOpen() {
+            document.getElementById('bgDarkBoard').style.display = 'none';
+
+        }
+
+        function wbgOpacity() {
+            document.getElementById('bgDarkBoard').style.background = 'rgba( 0, 0, 0, 0.0)';
+            document.getElementById('tabTopper').style.background = 'rgba( 0, 0, 0, 0.3)';
+
+        }
+
+
+
+
+
+        function closeBoard() {
+            document.getElementById('forHide').style.display = 'none';
+
+        }
+
+        function openBoard() {
+            document.getElementById('forHide').style.display = 'flex';
+            document.getElementById('tabTopper').style.background = 'rgba( 0, 0, 0, 0.3)';
+
+        }
 
 
 
@@ -215,7 +287,7 @@ function closeBoard(){
 
             document.getElementById('tMo').style.color = '#969696';
             document.getElementById('tBl').style.color = '#969696';
-            
+
 
         }
 
@@ -234,8 +306,29 @@ function closeBoard(){
             }
         }
 
+
+
+        function closeMenuBoard() {
+            document.getElementById('forHideBoardMenu').style.display = 'none';
+        }
+
+        function ClosetlBoardMenu() {
+            document.getElementById('forHideBoardMenu').style.transform = 'translate(-50%,0%) scale(0)';
+        }
+        
+        
+
+        function showMenuBoard() {
+            document.getElementById('forHideBoardMenu').style.display = 'block';
+        }
+
+        function tlBoardMenu() {
+            document.getElementById('forHideBoardMenu').style.transform = 'translate(0%,0%) scale(1)';
+        }
+
         function profileBoard() {
             document.getElementById('banner').style.height = '480px';
+
             document.getElementById('forHide').style.transform = 'translate(0%,0%) scale(1)';
 
             document.getElementById('twstimg').style.transform = 'translate(0%,0%) scale(1)';
@@ -246,11 +339,13 @@ function closeBoard(){
 
         function allBoard() {
             document.getElementById('banner').style.height = '100%';
+
             document.getElementById('forHide').style.transform = 'translate(0%,200%) scale(0)';
 
 
             document.getElementById('twstimg').style.transform = 'translate(0%,200%) scale(0)';
             document.getElementById('twstimg').style.transition = '0.3s ease-in';
+            document.getElementById('bgDarkBoard').style.background = 'rgba( 0, 0, 0, 0.0)';
 
 
 
