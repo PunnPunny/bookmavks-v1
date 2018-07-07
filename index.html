@@ -938,7 +938,7 @@
                 <div class="content-cover">
                     <!--                 inne content-->
                     <a href="">
-                        <div onclick="profileClose()" class="logo"></div>
+                        <div onclick="profileClose(),setTimeout(closeAll,300),setTimeout(allFunClose,10)" class="logo"></div>
                     </a>
                     <div class="vertical-line"></div>
                     <div class="home-logo">
@@ -1083,17 +1083,17 @@
             <div class="side-menu">
 
                 <div class="book-side Cu-Us-none" onclick="setTimeout(callSpace,0),setTimeout(slideSpace,50),gallSpace(),changAC1()">
-                    <img src="img/books-ex.png" alt="">
+                    <img src="img/books-ex.png" width="38" alt="">
                     <div class="side-num">gallery</div>
                 </div>
 
                 <div class="mark-side Cu-Us-none" onclick="setTimeout(callSpace,0),setTimeout(slideSpace,50),marksSpace(),changAC2()">
-                    <img src="img/marks-ex.png" alt="">
+                    <img src="img/marks-ex.png" width="34" alt="">
                     <div class="side-num">marks</div>
                 </div>
 
                 <div class="fri-side Cu-Us-none" onclick="setTimeout(callSpace,0),setTimeout(slideSpace,50),friSpace(),changAC3()">
-                    <img src="img/fri-ex.png" alt="">
+                    <img src="img/fri-ex.png" width="52" alt="">
                     <div class="side-num">friends</div>
                 </div>
 
@@ -1394,7 +1394,7 @@
     </div>
 
 
-    <div id="SpaceUse">
+    <div id="SpaceUse" onclick="closeMD()">
 
         <div id="SpaceUse2">
 
@@ -1407,25 +1407,66 @@
 
                 <div class="logoRight">
                     <div onclick="setTimeout(callSpace,0),setTimeout(slideSpace,50),gallSpace(),changAC1()" id="imgRightBook" class="edRight hovRight" onmouseover="hovAC1()" onmouseout="outAC1()">
-                        <img id="onHov1" src="img/onHov.png" alt="">
-                        <img id="imgR" src="img/book-logo-big.png" width="28" alt="">
+                        <img id="onHov1" src="img/onHov.png" height="54"  alt="">
+                        <img id="imgR1" src="img/book-logo-big.png" width="26" alt="">
                     </div>
 
                     <div onclick="setTimeout(callSpace,0),setTimeout(slideSpace,50),marksSpace(),changAC2()" id="imgRightMarks" class="edRight hovRight" onmouseover="hovAC2()" onmouseout="outAC2()">
-                        <img id="onHov2" src="img/onHov.png" alt="">
-                        <img id="imgR" src="img/mark-logo-big.png" width="28" alt="">
+                        <img id="onHov2" src="img/onHov.png" height="54" alt="">
+                        <img id="imgR2" src="img/mark-logo-big.png" width="26" alt="">
                     </div>
 
                     <div onclick="setTimeout(callSpace,0),setTimeout(slideSpace,50),friSpace(),changAC3()" id="imgRightFri" class="edRight3 hovRight" onmouseover="hovAC3()" onmouseout="outAC3()">
-                        <img id="onHov3" src="img/onHov.png" alt="">
-                        <img id="imgR" src="img/fri-ex.png" width="48" alt="">
+                        <img id="onHov3" src="img/onHov.png" height="54" alt="">
+                        <img id="imgR3" src="img/fri-ex.png" width="46" alt="">
                     </div>
 
                 </div>
+                
 
-                <div>
-
-
+                <div class="rSlide">
+<!--
+                 <div class="menuCreator">
+                     <div class="lineRightM"></div>
+                     <div class="writerBook">
+                         <img src="img/bookRight.png" width="48" alt="">
+                     </div>
+                 </div>
+-->
+                  
+                 
+                 <div class="myBoardRight Cu-Us-none">
+                   <a href="myBoard.html"><div class="myBoardStyle">
+                       My board
+                   </div>
+                    </a>
+                     
+                 </div>
+                 
+                 
+                   
+                    <div class="xRight" >
+                       <span id="TfullR" onclick="fullR()" onmouseover="showCA1()" onmouseout="closeCA1()" class="Cu-Us-none xTextRight">O</span>
+                       <div id="onCAnimate1"></div>
+                    </div>
+                   
+                    
+                     <div class="xRight">
+                       <span onclick="closeRightMenu()" class="Cu-Us-none xTextRight" onmouseover="showCA2()" onmouseout="closeCA2()">X</span>
+                       <div id="onCAnimate2"></div>
+                    </div>
+                    
+                    
+                     <div class="xRight">
+                       <span onclick="profileClose(),setTimeout(closeAll,300),setTimeout(allFunClose,10)" class="Cu-Us-none xTextRight" onmouseover="showCA3()" onmouseout="closeCA3()">
+                            <img id="RbackToMain" src="img/backTo.png" width="22" alt="">
+                            <div id="onCAnimate3"></div>
+                       </span>
+                    </div>
+                    
+                     
+                
+                    
                 </div>
 
 
@@ -1478,6 +1519,70 @@
 
 
     <script>
+        
+        function showCA1(){
+            document.getElementById('onCAnimate1').style.transform ='scale(1)';
+        }
+        
+        function closeCA1(){
+            document.getElementById('onCAnimate1').style.transform ='scale(0)';
+        }
+        
+           function showCA2(){
+            document.getElementById('onCAnimate2').style.transform ='scale(1)';
+        }
+        
+        function closeCA2(){
+            document.getElementById('onCAnimate2').style.transform ='scale(0)';
+        }
+        
+           function showCA3(){
+            document.getElementById('onCAnimate3').style.transform ='scale(1)';
+        }
+        
+        function closeCA3(){
+            document.getElementById('onCAnimate3').style.transform ='scale(0)';
+        }
+        
+        
+        
+        function RbacktoM(){
+            document.getElementById('RbackToMain').src='img/backTo2.png'; 
+        }
+        var fr = true;
+        
+        function fullR(){
+            
+            if (fr== true){
+                document.getElementById('SpaceUse2').style.width='100%';
+            document.getElementById('SpaceUse2').style.height='100%';
+                document.getElementById('SpaceUse2').style.borderLeft='4px solid #c4c4c4';
+            document.getElementById('SpaceUse2').style.borderRadius='0px';
+                document.getElementById('TfullR').innerHTML='-';
+                 document.getElementById('TfullR').style.fontSize='28px';
+                
+                
+//                document.getElementById('imgR1').width='22';
+//                 document.getElementById('imgR2').width='22';
+//                document.getElementById('imgR3').width='42';
+                fr=false;
+            }else{
+                 document.getElementById('SpaceUse2').style.width='93%';
+            document.getElementById('SpaceUse2').style.height='90%';
+                 document.getElementById('SpaceUse2').style.borderLeft='none';
+            document.getElementById('SpaceUse2').style.borderRadius='6px';
+                document.getElementById('TfullR').innerHTML='O';
+                 document.getElementById('TfullR').style.fontSize='18px';
+//                
+//                document.getElementById('imgR1').width='28';
+//                 document.getElementById('imgR2').width='28';
+//                document.getElementById('imgR3').width='48';
+                fr=true;
+            }
+            
+        }
+        
+        
         function hovAC1() {
             document.getElementById('onHov1').style.display = 'block';
         }
@@ -1508,6 +1613,10 @@
             document.getElementById('imgRightBook').style.background = '#f5f5f8';
             document.getElementById('imgRightMarks').style.background = '#e7e7e8';
             document.getElementById('imgRightFri').style.background = '#e7e7e8';
+            
+            document.getElementById('imgRightBook').style.border = '1px solid white';
+             document.getElementById('imgRightMarks').style.border = 'none';
+             document.getElementById('imgRightFri').style.border = 'none';
 
         }
 
@@ -1516,6 +1625,10 @@
             document.getElementById('imgRightBook').style.background = '#e7e7e8';
             document.getElementById('imgRightMarks').style.background = '#f5f5f8';
             document.getElementById('imgRightFri').style.background = '#e7e7e8';
+            
+             document.getElementById('imgRightBook').style.border = 'none';
+             document.getElementById('imgRightMarks').style.border = '1px solid white';
+             document.getElementById('imgRightFri').style.border = 'none';
 
         }
 
@@ -1524,6 +1637,10 @@
             document.getElementById('imgRightBook').style.background = '#e7e7e8';
             document.getElementById('imgRightMarks').style.background = '#e7e7e8';
             document.getElementById('imgRightFri').style.background = '#f5f5f8';
+            
+              document.getElementById('imgRightBook').style.border = 'none';
+             document.getElementById('imgRightMarks').style.border = 'none';
+             document.getElementById('imgRightFri').style.border = '1px solid white';
 
         }
 
@@ -1544,6 +1661,13 @@
             document.getElementById('SpaceUse').style.display = 'none';
         }
 
+        
+        function closeRightMenu(){
+            document.getElementById('SpaceUse2').style.transform = 'scale(0) translate(-80%,0%)';
+            document.getElementById('SpaceUse2').style.left = '1000px';
+        }
+        
+        
         function allFunClose() {
             document.getElementById('SpaceUse2').style.transform = 'scale(0) translate(-80%,0%)';
             document.getElementById('SpaceUse2').style.left = '1000px';
@@ -1872,12 +1996,12 @@
                 <div class="book-tum">
                     <div class="body-tum">
                         <div class="fri-trav">
-                            <a href="#"><span class="with">with 10 friends</span></a>
-                            <a href="#"><img class="fri1-lis" src="img/fri-6.png" alt=""></a>
-                            <a href="#"><img class="fri1-lis" src="img/fri-4.png" alt=""></a>
-                            <a href="#"><img class="fri1-lis" src="img/fri-3.png" alt=""></a>
-                            <a href="#"><img class="fri1-lis" src="img/fri-1.png" alt=""></a>
-                            <a href="#"><span class="fif">+6</span></a>
+                            <span class="with Cu-Us-none">with 10 friends</span>
+                           <img class="fri1-lis Cu-Us-none" src="img/fri-6.png" alt="">
+                            <img class="fri1-lis Cu-Us-none" src="img/fri-4.png" alt="">
+                           <img class="fri1-lis Cu-Us-none" src="img/fri-3.png" alt="">
+                           <img class="fri1-lis Cu-Us-none" src="img/fri-1.png" alt="">
+                           <span class="fif Cu-Us-none">+6</span></a>
                         </div>
                         <div class="place-date">
                             <a href="#">
@@ -1930,12 +2054,12 @@
 
                     <div class="body-tum2">
                         <div class="fri-trav">
-                            <a href="#"><span class="with">with 8 friends</span></a>
-                            <a href="#"><img class="fri1-lis" src="img/fri-6.png" alt=""></a>
-                            <a href="#"><img class="fri1-lis" src="img/fri-4.png" alt=""></a>
-                            <a href="#"><img class="fri1-lis" src="img/fri-2.png" alt=""></a>
-                            <a href="#"><img class="fri1-lis" src="img/fri-1.png" alt=""></a>
-                            <a href="#"><span class="fif2">+4</span></a>
+                            <span class="with Cu-Us-none">with 8 friends</span></a>
+                           <img class="fri1-lis Cu-Us-none" src="img/fri-6.png" alt="">
+                        <img class="fri1-lis Cu-Us-none" src="img/fri-4.png" alt="">
+                      <img class="fri1-lis Cu-Us-none" src="img/fri-2.png" alt="">
+                         <img class="fri1-lis Cu-Us-none" src="img/fri-1.png" alt="">
+                      <span class="fif2 Cu-Us-none">+4</span>
                         </div>
                         <div class="place-date">
                             <a href="#">

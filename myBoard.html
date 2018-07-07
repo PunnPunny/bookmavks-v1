@@ -104,12 +104,10 @@
                         <img width="22" src="img/editBoard.png" alt="">
                     </div>
                     <div class="profileTop mg-12">
-                        <img
-                        onclick="setTimeout(profileBoard,5)
+                        <img onclick="setTimeout(profileBoard,5)
                         ,setTimeout(openBoard,0)
                         ,setTimeout(closeMenuBoard,300)
-                        ,setTimeout(ClosetlBoardMenu,50)"
-                        class="imgProfile" src="img/left-profile-picpro.png" width="38" alt="">
+                        ,setTimeout(ClosetlBoardMenu,50)" class="imgProfile" src="img/left-profile-picpro.png" width="38" alt="">
                     </div>
 
                     <div class="bookmavksTop mg-12">
@@ -315,8 +313,8 @@
         function ClosetlBoardMenu() {
             document.getElementById('forHideBoardMenu').style.transform = 'translate(-50%,0%) scale(0)';
         }
-        
-        
+
+
 
         function showMenuBoard() {
             document.getElementById('forHideBoardMenu').style.display = 'block';
@@ -346,6 +344,7 @@
             document.getElementById('twstimg').style.transform = 'translate(0%,200%) scale(0)';
             document.getElementById('twstimg').style.transition = '0.3s ease-in';
             document.getElementById('bgDarkBoard').style.background = 'rgba( 0, 0, 0, 0.0)';
+            document.getElementById('tabTopper').style.background = 'rgba( 0, 0, 0, 0.3)';
 
 
 
