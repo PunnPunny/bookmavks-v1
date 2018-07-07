@@ -1082,18 +1082,17 @@
             </a>
             <div class="side-menu">
 
-                <div class="book-side Cu-Us-none" onclick="setTimeout(callSpace,0),setTimeout(slideSpace,50),gallSpace()">
+                <div class="book-side Cu-Us-none" onclick="setTimeout(callSpace,0),setTimeout(slideSpace,50),gallSpace(),changAC1()">
                     <img src="img/books-ex.png" alt="">
                     <div class="side-num">gallery</div>
                 </div>
 
-                <div class="mark-side Cu-Us-none" onclick="setTimeout(callSpace,0),setTimeout(slideSpace,50),marksSpace()">
+                <div class="mark-side Cu-Us-none" onclick="setTimeout(callSpace,0),setTimeout(slideSpace,50),marksSpace(),changAC2()">
                     <img src="img/marks-ex.png" alt="">
                     <div class="side-num">marks</div>
                 </div>
 
-                <div class="fri-side Cu-Us-none"
-                   onclick="setTimeout(callSpace,0),setTimeout(slideSpace,50),friSpace()">
+                <div class="fri-side Cu-Us-none" onclick="setTimeout(callSpace,0),setTimeout(slideSpace,50),friSpace(),changAC3()">
                     <img src="img/fri-ex.png" alt="">
                     <div class="side-num">friends</div>
                 </div>
@@ -1158,34 +1157,32 @@
 
 
     <script>
-        
-        
         function gallSpace() {
-            
-            document.getElementById('gallSpace').style.display ='flex';
-            
-            document.getElementById('marksSpace').style.display ='none';
-             document.getElementById('friSpace').style.display ='none';
+
+            document.getElementById('gallSpace').style.display = 'flex';
+
+            document.getElementById('marksSpace').style.display = 'none';
+            document.getElementById('friSpace').style.display = 'none';
         }
-        
+
         function marksSpace() {
-            document.getElementById('marksSpace').style.display ='flex';
-            
-            document.getElementById('gallSpace').style.display ='none';
-             document.getElementById('friSpace').style.display ='none';
+            document.getElementById('marksSpace').style.display = 'flex';
+
+            document.getElementById('gallSpace').style.display = 'none';
+            document.getElementById('friSpace').style.display = 'none';
         }
-        
+
         function friSpace() {
-            document.getElementById('friSpace').style.display ='flex';
-            
-            document.getElementById('marksSpace').style.display ='none';
-             document.getElementById('gallSpace').style.display ='none';
+            document.getElementById('friSpace').style.display = 'flex';
+
+            document.getElementById('marksSpace').style.display = 'none';
+            document.getElementById('gallSpace').style.display = 'none';
         }
-        
-        
-        
-        
-        
+
+
+
+
+
         var y = 1;
 
         function glassMedia() {
@@ -1400,13 +1397,48 @@
     <div id="SpaceUse">
 
         <div id="SpaceUse2">
-            
+
+
+
+
             <div class="bSlide">
-                <div class="bSlideIMG">
-                    <img class="imgBs" src="img/bannerMyBoard.jpg" alt="">
+
+
+
+                <div class="logoRight">
+                    <div onclick="setTimeout(callSpace,0),setTimeout(slideSpace,50),gallSpace(),changAC1()" id="imgRightBook" class="edRight hovRight" onmouseover="hovAC1()" onmouseout="outAC1()">
+                        <img id="onHov1" src="img/onHov.png" alt="">
+                        <img id="imgR" src="img/book-logo-big.png" width="28" alt="">
+                    </div>
+
+                    <div onclick="setTimeout(callSpace,0),setTimeout(slideSpace,50),marksSpace(),changAC2()" id="imgRightMarks" class="edRight hovRight" onmouseover="hovAC2()" onmouseout="outAC2()">
+                        <img id="onHov2" src="img/onHov.png" alt="">
+                        <img id="imgR" src="img/mark-logo-big.png" width="28" alt="">
+                    </div>
+
+                    <div onclick="setTimeout(callSpace,0),setTimeout(slideSpace,50),friSpace(),changAC3()" id="imgRightFri" class="edRight3 hovRight" onmouseover="hovAC3()" onmouseout="outAC3()">
+                        <img id="onHov3" src="img/onHov.png" alt="">
+                        <img id="imgR" src="img/fri-ex.png" width="48" alt="">
+                    </div>
+
                 </div>
-                
-                
+
+                <div>
+
+
+                </div>
+
+
+
+
+                <div class="bSlideIMG">
+                    <!--                   bg-->
+                    <!--                    <img class="imgBs" src="img/bannerMyBoard.jpg" alt="">-->
+                </div>
+
+
+
+
             </div>
 
             <!--           gallery-->
@@ -1446,6 +1478,58 @@
 
 
     <script>
+        function hovAC1() {
+            document.getElementById('onHov1').style.display = 'block';
+        }
+
+        function outAC1() {
+            document.getElementById('onHov1').style.display = 'none';
+        }
+
+        function hovAC2() {
+            document.getElementById('onHov2').style.display = 'block';
+        }
+
+        function outAC2() {
+            document.getElementById('onHov2').style.display = 'none';
+        }
+
+        function hovAC3() {
+            document.getElementById('onHov3').style.display = 'block';
+        }
+
+        function outAC3() {
+            document.getElementById('onHov3').style.display = 'none';
+        }
+
+
+        function changAC1() {
+
+            document.getElementById('imgRightBook').style.background = '#f5f5f8';
+            document.getElementById('imgRightMarks').style.background = '#e7e7e8';
+            document.getElementById('imgRightFri').style.background = '#e7e7e8';
+
+        }
+
+        function changAC2() {
+
+            document.getElementById('imgRightBook').style.background = '#e7e7e8';
+            document.getElementById('imgRightMarks').style.background = '#f5f5f8';
+            document.getElementById('imgRightFri').style.background = '#e7e7e8';
+
+        }
+
+        function changAC3() {
+
+            document.getElementById('imgRightBook').style.background = '#e7e7e8';
+            document.getElementById('imgRightMarks').style.background = '#e7e7e8';
+            document.getElementById('imgRightFri').style.background = '#f5f5f8';
+
+        }
+
+
+
+
         function slideSpace() {
             document.getElementById('SpaceUse2').style.transform = 'scale(1) translate(0%,0%)';
             document.getElementById('SpaceUse2').style.left = '0px';
@@ -1677,7 +1761,7 @@
 
 
                 <a href="#">
-                    <div class="down-ex" onclick="profileSlide(),setTimeout(callSpace,0),setTimeout(slideSpace,50),gallSpace()">
+                    <div class="down-ex" onclick="profileSlide(),setTimeout(callSpace,0),setTimeout(slideSpace,50),gallSpace(),changAC1()">
                         <img id="a" onmouseover="chbg('#eeeef4')" onmouseout="chbg('#f9f9fa')" class="books-ex" src="img/books-ex.png" alt="">
                         <span id="a" onmouseover="chbg('#eeeef4')" onmouseout="chbg('#f9f9fa')" class="books-ex-t">gallery</span>
                         <div onmouseover="chbg('#eeeef4')" onmouseout="chbg('#f9f9fa')" id="b" class="bg-books"></div>
@@ -1685,7 +1769,7 @@
                 </a>
 
 
-                <div class="down-ex2 Cu-Us-none" onclick="profileSlide(),setTimeout(callSpace,0),setTimeout(slideSpace,50),marksSpace()">
+                <div class="down-ex2 Cu-Us-none" onclick="profileSlide(),setTimeout(callSpace,0),setTimeout(slideSpace,50),marksSpace(),changAC2()">
                     <img id="a" onmouseover="chbg2('#eeeef4')" onmouseout="chbg2('#f9f9fa')" class="books-ex2" src="img/marks-ex.png" alt="">
                     <span id="a" onmouseover="chbg2('#eeeef4')" onmouseout="chbg2('#f9f9fa')" class="books-ex-t2">marks</span>
                     <div onmouseover="chbg2('#eeeef4')" onmouseout="chbg2('#f9f9fa')" id="c" class="bg-books2"></div>
@@ -1694,7 +1778,7 @@
 
 
 
-                <div class="down-ex3 Cu-Us-none" onclick="profileSlide(),setTimeout(callSpace,0),setTimeout(slideSpace,50),friSpace()">
+                <div class="down-ex3 Cu-Us-none" onclick="profileSlide(),setTimeout(callSpace,0),setTimeout(slideSpace,50),friSpace(),changAC3()">
                     <img id="a" onmouseover="chbg3('#eeeef4')" onmouseout="chbg3('#f9f9fa')" class="books-ex3" src="img/fri-ex.png" alt="">
                     <span id="a" onmouseover="chbg3('#eeeef4')" onmouseout="chbg3('#f9f9fa')" class="books-ex-t3">friends</span>
                     <div onmouseover="chbg3('#eeeef4')" onmouseout="chbg3('#f9f9fa')" id="d" class="bg-books3"></div>
