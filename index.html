@@ -27,7 +27,6 @@
 
 <body>
 
-
     <div id="cover-media">
 
         <!--
@@ -950,7 +949,7 @@
                         <div class="search-cover">
                             <form class="search-bg" action="">
                                 <input type="text" class="search-input" placeholder="@Search">
-                                <a href="#"><input class="search-button" type="submit" value="&#x1f50d;"></a>
+                                <a href="#"><input class="search-button Cu-Us-none" type="submit" value="&#x1f50d;"></a>
                             </form>
                         </div>
                     </div>
@@ -966,7 +965,12 @@
 
                     </div>
                 </div>
-
+                
+                  <a href="myBoard.html">
+                      <div class="myBoardRight Cu-Us-none"> 
+                            My board
+                    </div>
+                    </a>
             </div>
 
         </nav>
@@ -1025,7 +1029,7 @@
                         <div class="profileEd-Drop">
                             <div class="profile-submenu-d">
                                 <p class="headMD">Profile</p>
-                                <p class="profile-md-nav" onclick="profileSlide(),closeMD()">Profile Side</p>
+                                <p class="profile-md-nav" onclick="profileSlide(),closeMD()">Timeline</p>
                                 <a href="myBoard.html">
                                     <p onclick="closeMD()" class="myBlog-md-nav">Go to my board</p>
                                 </a>
@@ -1067,32 +1071,32 @@
             <div class="profile-side">
                 <a href="myBoard.html"><img src="img/profile-side.png" alt=""></a>
             </div>
-            <a href="#">
-                <div class="side-name">
-                    <a href="myBoard.html">
-                        <h3>Kwang Thibamrung</h3>
-                    </a>
-                </div>
-            </a>
-            <a href="#">
-                <div class="side-follow">following : 26</div>
-            </a>
-            <a href="#">
-                <div class="side-follower">followers : 48</div>
-            </a>
+
+            <div class="side-name Cu-Us-none">
+                <a href="myBoard.html">
+                    <h3>Kwang Thibamrung</h3>
+                </a>
+            </div>
+
+
+            <div class="side-follow Cu-Us-none">following : 26</div>
+
+
+            <div class="side-follower Cu-Us-none">followers : 48</div>
+
             <div class="side-menu">
 
-                <div class="book-side Cu-Us-none" onclick="setTimeout(callSpace,0),setTimeout(slideSpace,50),gallSpace(),changAC1()">
+                <div class="book-side Cu-Us-none" onclick="setTimeout(callSpace,0),setTimeout(slideSpace,50),gallSpace(),changAC1(),creatorHide(),timeLineGall()">
                     <img src="img/books-ex.png" width="38" alt="">
                     <div class="side-num">gallery</div>
                 </div>
 
-                <div class="mark-side Cu-Us-none" onclick="setTimeout(callSpace,0),setTimeout(slideSpace,50),marksSpace(),changAC2()">
+                <div class="mark-side Cu-Us-none" onclick="setTimeout(callSpace,0),setTimeout(slideSpace,50),marksSpace(),changAC2(),creatorHide(),markLineSet0()">
                     <img src="img/marks-ex.png" width="34" alt="">
                     <div class="side-num">marks</div>
                 </div>
 
-                <div class="fri-side Cu-Us-none" onclick="setTimeout(callSpace,0),setTimeout(slideSpace,50),friSpace(),changAC3()">
+                <div class="fri-side Cu-Us-none" onclick="setTimeout(callSpace,0),setTimeout(slideSpace,50),friSpace(),changAC3(),creatorHide(),friLineClick0();">
                     <img src="img/fri-ex.png" width="52" alt="">
                     <div class="side-num">friends</div>
                 </div>
@@ -1157,7 +1161,21 @@
 
 
     <script>
+        function creatorHide() {
+
+            document.getElementById('SpaceCreator').style.transform = 'scale(0)';
+
+
+        }
+
+        function Creator2Show() {
+            document.getElementById('SpaceCreator').style.transform = 'scale(1)';
+        }
+
+
         function gallSpace() {
+
+
 
             document.getElementById('gallSpace').style.display = 'flex';
 
@@ -1273,7 +1291,41 @@
     <script>
         var bsl = 1;
 
+
         function profileSlide() {
+
+            setTimeout(function() {
+                document.getElementById('writerLogoR').style.transform = 'scale(1) translate(0%,0%)';
+                document.getElementById('csBookShow').style.transform = 'scale(1) translate(0%,0%)';
+            }, 0);
+
+
+            setTimeout(function() {
+                document.getElementById('blogLogoR').style.transform = 'scale(1) translate(0%,0%)';
+                document.getElementById('csBlogShow').style.transform = 'scale(1) translate(0%,0%)';
+            }, 200);
+
+            setTimeout(function() {
+                document.getElementById('MovieLogoR').style.transform = 'scale(1) translate(0%,0%)';
+                document.getElementById('csMovieShow').style.transform = 'scale(1) translate(0%,0%)';
+            }, 400);
+
+            setTimeout(function() {
+                document.getElementById('artLogoR').style.transform = 'scale(1) translate(0%,0%)';
+                document.getElementById('csArtShow').style.transform = 'scale(1) translate(0%,0%)';
+            }, 600);
+
+
+
+
+
+
+
+
+            document.getElementById('creatorShowMenu').style.display = 'block';
+
+
+
             document.getElementById('profile-slide').style.width = '568px';
             document.getElementById('profile-slide').style.display = 'block';
             document.getElementById('bg-dark').style.height = '100%';
@@ -1307,6 +1359,38 @@
         }
 
         function profileClose() {
+            Creator2Show();
+
+
+            setTimeout(function() {
+                document.getElementById('creatorShowMenu').style.display = 'none';
+            }, 500)
+
+
+            setTimeout(function() {
+                document.getElementById('writerLogoR').style.transform = 'scale(0) translate(0%,0%)';
+                document.getElementById('csBookShow').style.transform = 'scale(0) translate(0%,0%)';
+            }, 0);
+
+
+            setTimeout(function() {
+                document.getElementById('blogLogoR').style.transform = 'scale(0) translate(0%,0%)';
+                document.getElementById('csBlogShow').style.transform = 'scale(0) translate(0%,0%)';
+            }, 100);
+
+            setTimeout(function() {
+                document.getElementById('MovieLogoR').style.transform = 'scale(0) translate(0%,0%)';
+                document.getElementById('csMovieShow').style.transform = 'scale(0) translate(0%,0%)';
+            }, 200);
+
+            setTimeout(function() {
+                document.getElementById('artLogoR').style.transform = 'scale(0) translate(0%,0%)';
+                document.getElementById('csArtShow').style.transform = 'scale(0) translate(0%,0%)';
+            }, 300);
+
+
+
+
             document.getElementById('backToUndo').style.display = 'none';
             document.getElementById('hideSearch').style.display = 'none';
 
@@ -1394,6 +1478,50 @@
     </div>
 
 
+
+    <div id="creatorShowMenu">
+        <div onclick="profileClose()" id="SpaceCreator" class="SpaceCreator">
+            <div class="CreatorSlide1">
+                <div class="SpaceC1">
+                    <a href="">
+                        <div id="csBookShow" class="csBookShow">
+                            <img id="writerLogoR" class="writerLogoR" src="img/writer-logo-big.png" alt="">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="SpaceC2">
+                    <a href="">
+                        <div id="csBlogShow" class="csBlogShow">
+                            <img id="blogLogoR" class="blogLogoR" src="img/blog-logo-big.png" alt="">
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+            <div class="CreatorSlide2">
+                <div class="SpaceC3">
+                    <a href="">
+                        <div id="csMovieShow" class="csMovieShow">
+                            <img id="MovieLogoR" class="MovieLogoR" src="img/movie-logo-big.png" alt="">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="SpaceC4">
+                    <a href="">
+                        <div id="csArtShow" class="csArtShow">
+                            <img id="artLogoR" class="artLogoR" src="img/content-logo-big.png" alt="">
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
     <div id="SpaceUse" onclick="closeMD()">
 
         <div id="SpaceUse2">
@@ -1406,26 +1534,26 @@
 
 
                 <div class="logoRight">
-                    <div onclick="setTimeout(callSpace,0),setTimeout(slideSpace,50),gallSpace(),changAC1()" id="imgRightBook" class="edRight hovRight" onmouseover="hovAC1()" onmouseout="outAC1()">
-                        <img id="onHov1" src="img/onHov.png" height="54"  alt="">
+                    <div onclick="setTimeout(callSpace,0),setTimeout(slideSpace,50),gallSpace(),changAC1(),timeLineGall()" id="imgRightBook" class="edRight hovRight" onmouseover="hovAC1()" onmouseout="outAC1()">
+                        <img id="onHov1" src="img/onHov.png" height="54" alt="">
                         <img id="imgR1" src="img/book-logo-big.png" width="26" alt="">
                     </div>
 
-                    <div onclick="setTimeout(callSpace,0),setTimeout(slideSpace,50),marksSpace(),changAC2()" id="imgRightMarks" class="edRight hovRight" onmouseover="hovAC2()" onmouseout="outAC2()">
+                    <div onclick="setTimeout(callSpace,0),setTimeout(slideSpace,50),marksSpace(),changAC2(),markLineSet0()" id="imgRightMarks" class="edRight hovRight" onmouseover="hovAC2()" onmouseout="outAC2()">
                         <img id="onHov2" src="img/onHov.png" height="54" alt="">
                         <img id="imgR2" src="img/mark-logo-big.png" width="26" alt="">
                     </div>
 
-                    <div onclick="setTimeout(callSpace,0),setTimeout(slideSpace,50),friSpace(),changAC3()" id="imgRightFri" class="edRight3 hovRight" onmouseover="hovAC3()" onmouseout="outAC3()">
+                    <div onclick="setTimeout(callSpace,0),setTimeout(slideSpace,50),friSpace(),changAC3(),friLineClick0();" id="imgRightFri" class="edRight3 hovRight" onmouseover="hovAC3()" onmouseout="outAC3()">
                         <img id="onHov3" src="img/onHov.png" height="54" alt="">
                         <img id="imgR3" src="img/fri-ex.png" width="46" alt="">
                     </div>
 
                 </div>
-                
+
 
                 <div class="rSlide">
-<!--
+                    <!--
                  <div class="menuCreator">
                      <div class="lineRightM"></div>
                      <div class="writerBook">
@@ -1433,40 +1561,34 @@
                      </div>
                  </div>
 -->
-                  
-                 
-                 <div class="myBoardRight Cu-Us-none">
-                   <a href="myBoard.html"><div class="myBoardStyle">
-                       My board
+                   <div id="findRightMenu">
+
+                   <input class="findRightMenu" type="text" placeholder="&#x1f50d Find this page..">
                    </div>
-                    </a>
-                     
-                 </div>
-                 
-                 
-                   
-                    <div class="xRight" >
-                       <span id="TfullR" onclick="fullR()" onmouseover="showCA1()" onmouseout="closeCA1()" class="Cu-Us-none xTextRight">O</span>
-                       <div id="onCAnimate1"></div>
+
+
+                    <div class="xRight">
+                        <span id="TfullR" onclick="fullR()" onmouseover="showCA1()" onmouseout="closeCA1()" class="Cu-Us-none xTextRight">O</span>
+                        <div id="onCAnimate1"></div>
                     </div>
-                   
-                    
-                     <div class="xRight">
-                       <span onclick="closeRightMenu()" class="Cu-Us-none xTextRight" onmouseover="showCA2()" onmouseout="closeCA2()">X</span>
-                       <div id="onCAnimate2"></div>
+
+
+                    <div class="xRight">
+                        <span onclick="closeRightMenu(),Creator2Show()" class="Cu-Us-none xTextRight" onmouseover="showCA2()" onmouseout="closeCA2()">X</span>
+                        <div id="onCAnimate2"></div>
                     </div>
-                    
-                    
-                     <div class="xRight">
-                       <span onclick="profileClose(),setTimeout(closeAll,300),setTimeout(allFunClose,10)" class="Cu-Us-none xTextRight" onmouseover="showCA3()" onmouseout="closeCA3()">
+
+
+                    <div class="xRight">
+                        <span onclick="profileClose(),setTimeout(closeAll,300),setTimeout(allFunClose,10),Creator2Show()" class="Cu-Us-none xTextRight" onmouseover="showCA3()" onmouseout="closeCA3()">
                             <img id="RbackToMain" src="img/backTo.png" width="22" alt="">
                             <div id="onCAnimate3"></div>
                        </span>
                     </div>
-                    
-                     
-                
-                    
+
+
+
+
                 </div>
 
 
@@ -1483,8 +1605,34 @@
             </div>
 
             <!--           gallery-->
-            <div id="gallSpace" class="gallSpace fwb">
-                #gallery_space
+            <div id="gallSpace" class="gallSpace">
+                <div class="gallMenuHead">
+                    <div onclick="timeLineGall()" id="gallM0">
+                    Timeline
+                    <div class="edTextG">12</div>
+                    </div>
+                    
+                    <div onclick="MomentLineGall()" id="gallM1">
+                    Moment
+                    <div class="edTextG">2</div>
+                    </div>
+                    
+                    <div onclick="BlogLineGall()" id="gallM2">
+                    Blog
+                    <div class="edTextG">
+                    3  
+                    </div></div>
+                    <div onclick="BookLineGall()" id="gallM3">
+                    Book
+                    <div class="edTextG">2</div>
+                    </div>
+                    <div onclick="allLineGall()" id="gallM4">
+                    See all memories
+                    <div class="edTextG">7</div>
+                    </div>
+                </div>
+                <div id="LineChooseGall"></div>
+                <div class="lineGall"></div>
             </div>
 
 
@@ -1492,23 +1640,75 @@
 
 
             <!--           marks-->
-            <div id="marksSpace" class="marksSpace fwb">
-                #marks_space
+            <div id="marksSpace" class="marksSpace">
+                <div class="marksMenuHead">
+                    <div id="marksM0" onclick="markLineSet0()">
+                    Marks
+                    <div class="edTextG">8</div>
+                    </div>
+                    
+                    <div id="marksM1" onclick="markLineSet1()">
+                    Inviting
+                     <div class="edTextG">5</div>
+                    </div>
+                 
+                    
+                    <div id="marksM2" onclick="markLineSet2()">
+                    Was invited
+                    <div class="edTextG">18</div>
+                    </div>
+                    
+                    <div id="marksM3" onclick="markLineSet3()">
+                    Not invite
+                    <div class="edTextG">3</div>
+                    </div>
+                    
+                    <div id="marksM4" onclick="markLineSet4()">
+                    See all friend's marks
+                    <div class="edTextG">22</div>
+                    </div>
+                </div>
+
+                <div id="LineChooseMarks"></div>
+                <div class="lineMarks"></div>
             </div>
 
 
 
 
             <!--         friends  -->
-            <div id="friSpace" class="friSpace fwb">
-                #friends_space
+            <div id="friSpace" class="friSpace">
+                <div class="friMenuHead">
+                    <div id="friM0" onclick="friLineClick0()">
+                    Friends
+                    <div class="edTextG">5</div>
+                    </div>
+                    
+                    <div id="friM1" onclick="friLineClick1()">
+                    Invited
+                    <div class="edTextG">5</div>
+                    </div>
+                    
+                    <div id="friM2" onclick="friLineClick2()">
+                    Joined
+                    <div class="edTextG">2</div>
+                    </div>
+                    
+                    <div id="friM4" onclick="friLineClick3()">
+                    See all friends
+                    <div class="edTextG">1,335</div>
+                    </div>
+                    
+                </div>
+
+                <div id="LineChooseFri"></div>
+                <div class="lineFri"></div>
+
             </div>
 
 
-
-
-
         </div>
+
 
         <div onclick="setTimeout(closeAll,300),setTimeout(allFunClose,10)" id="SpaceUse3">
 
@@ -1519,70 +1719,550 @@
 
 
     <script>
+        var lg;
         
-        function showCA1(){
-            document.getElementById('onCAnimate1').style.transform ='scale(1)';
+        var flg = false;
+        
+        function markLineSet4() {
+               if (flg == true) {
+                document.getElementById('LineChooseMarks').style.width = '179px';
+                document.getElementById('LineChooseMarks').style.transform = 'translate(440%,0%)';
+
+
+                document.getElementById('marksM0').style.color = '#9b9b9b';
+                document.getElementById('marksM1').style.color = '#9b9b9b';
+                document.getElementById('marksM2').style.color = '#9b9b9b';
+                document.getElementById('marksM3').style.color = '#9b9b9b';
+                document.getElementById('marksM4').style.color = '#444444';
+
+
+                lg = 5;
+
+            } else if (flg == false) {
+                document.getElementById('LineChooseMarks').style.width = '179px';
+                document.getElementById('LineChooseMarks').style.transform = 'translate(405%,0%)';
+
+
+                document.getElementById('marksM0').style.color = '#9b9b9b';
+                document.getElementById('marksM1').style.color = '#9b9b9b';
+              document.getElementById('marksM2').style.color = '#9b9b9b';
+             document.getElementById('marksM3').style.color = '#9b9b9b';
+                document.getElementById('marksM4').style.color = '#444444';
+                lg = 5;
+            }
         }
         
-        function closeCA1(){
-            document.getElementById('onCAnimate1').style.transform ='scale(0)';
+        function markLineSet3() {
+              if (flg == true) {
+                document.getElementById('LineChooseMarks').style.width = '83px';
+                document.getElementById('LineChooseMarks').style.transform = 'translate(641%,0%)';
+
+
+                document.getElementById('marksM0').style.color = '#9b9b9b';
+                document.getElementById('marksM1').style.color = '#9b9b9b';
+                document.getElementById('marksM2').style.color = '#9b9b9b';
+                document.getElementById('marksM3').style.color = '#444444';
+                document.getElementById('marksM4').style.color = '#9b9b9b';
+
+
+                lg = 4;
+
+            } else if (flg == false) {
+                document.getElementById('LineChooseMarks').style.width = '83px';
+                document.getElementById('LineChooseMarks').style.transform = 'translate(602%,0%)';
+
+
+                document.getElementById('marksM0').style.color = '#9b9b9b';
+                document.getElementById('marksM1').style.color = '#9b9b9b';
+              document.getElementById('marksM2').style.color = '#9b9b9b';
+                document.getElementById('marksM3').style.color = '#444444';
+                document.getElementById('marksM4').style.color = '#9b9b9b';
+                lg = 4;
+            }
         }
         
-           function showCA2(){
-            document.getElementById('onCAnimate2').style.transform ='scale(1)';
-        }
-        
-        function closeCA2(){
-            document.getElementById('onCAnimate2').style.transform ='scale(0)';
-        }
-        
-           function showCA3(){
-            document.getElementById('onCAnimate3').style.transform ='scale(1)';
-        }
-        
-        function closeCA3(){
-            document.getElementById('onCAnimate3').style.transform ='scale(0)';
-        }
-        
-        
-        
-        function RbacktoM(){
-            document.getElementById('RbackToMain').src='img/backTo2.png'; 
-        }
-        var fr = true;
-        
-        function fullR(){
+        function markLineSet2() {
             
-            if (fr== true){
-                document.getElementById('SpaceUse2').style.width='100%';
-            document.getElementById('SpaceUse2').style.height='100%';
-                document.getElementById('SpaceUse2').style.borderLeft='4px solid #c4c4c4';
-            document.getElementById('SpaceUse2').style.borderRadius='0px';
-                document.getElementById('TfullR').innerHTML='-';
-                 document.getElementById('TfullR').style.fontSize='28px';
-                
-                
-//                document.getElementById('imgR1').width='22';
-//                 document.getElementById('imgR2').width='22';
-//                document.getElementById('imgR3').width='42';
-                fr=false;
-            }else{
-                 document.getElementById('SpaceUse2').style.width='93%';
-            document.getElementById('SpaceUse2').style.height='90%';
-                 document.getElementById('SpaceUse2').style.borderLeft='none';
-            document.getElementById('SpaceUse2').style.borderRadius='6px';
-                document.getElementById('TfullR').innerHTML='O';
-                 document.getElementById('TfullR').style.fontSize='18px';
-//                
-//                document.getElementById('imgR1').width='28';
-//                 document.getElementById('imgR2').width='28';
-//                document.getElementById('imgR3').width='48';
-                fr=true;
+                if (flg == true) {
+                document.getElementById('LineChooseMarks').style.width = '100px';
+                document.getElementById('LineChooseMarks').style.transform = 'translate(425%,0%)';
+
+
+                document.getElementById('marksM0').style.color = '#9b9b9b';
+                document.getElementById('marksM1').style.color = '#9b9b9b';
+                document.getElementById('marksM2').style.color = '#444444';
+                document.getElementById('marksM3').style.color = '#9b9b9b';
+                document.getElementById('marksM4').style.color = '#9b9b9b';
+
+
+                lg = 3;
+
+            } else if (flg == false) {
+                document.getElementById('LineChooseMarks').style.width = '100px';
+                document.getElementById('LineChooseMarks').style.transform = 'translate(394%,0%)';
+
+
+                document.getElementById('marksM0').style.color = '#9b9b9b';
+                document.getElementById('marksM1').style.color = '#9b9b9b';
+                document.getElementById('marksM2').style.color = '#444444';
+                document.getElementById('marksM3').style.color = '#9b9b9b';
+                document.getElementById('marksM4').style.color = '#9b9b9b';
+                lg = 3;
             }
             
         }
+
+        function markLineSet1() {
+
+            if (flg == true) {
+                document.getElementById('LineChooseMarks').style.width = '66px';
+                document.getElementById('LineChooseMarks').style.transform = 'translate(531%,0%)';
+
+
+                document.getElementById('marksM0').style.color = '#9b9b9b';
+                document.getElementById('marksM1').style.color = '#444444';
+                document.getElementById('marksM2').style.color = '#9b9b9b';
+                document.getElementById('marksM3').style.color = '#9b9b9b';
+                document.getElementById('marksM4').style.color = '#9b9b9b';
+
+
+                lg = 1;
+
+            } else if (flg == false) {
+                document.getElementById('LineChooseMarks').style.width = '66px';
+                document.getElementById('LineChooseMarks').style.transform = 'translate(484%,0%)';
+
+
+                document.getElementById('marksM0').style.color = '#9b9b9b';
+                document.getElementById('marksM1').style.color = '#444444';
+                document.getElementById('marksM2').style.color = '#9b9b9b';
+                document.getElementById('marksM3').style.color = '#9b9b9b';
+                document.getElementById('marksM4').style.color = '#9b9b9b';
+                lg = 1;
+            }
+
+
+        }
         
         
+        
+          function markLineSet0() {
+
+            if (flg == true) {
+                document.getElementById('LineChooseMarks').style.width = '72px';
+                document.getElementById('LineChooseMarks').style.transform = 'translate(0%,0%)';
+
+
+                document.getElementById('marksM0').style.color = '#444444';
+                document.getElementById('marksM1').style.color = '#9b9b9b';
+                document.getElementById('marksM2').style.color = '#9b9b9b';
+                document.getElementById('marksM3').style.color = '#9b9b9b';
+                document.getElementById('marksM4').style.color = '#9b9b9b';
+
+
+                lg = 2;
+
+            } else if (flg == false) {
+                document.getElementById('LineChooseMarks').style.width = '72px';
+                document.getElementById('LineChooseMarks').style.transform = 'translate(0%,0%)';
+
+
+                document.getElementById('marksM0').style.color = '#444444';
+                document.getElementById('marksM1').style.color = '#9b9b9b';
+                document.getElementById('marksM2').style.color = '#9b9b9b';
+                document.getElementById('marksM3').style.color = '#9b9b9b';
+                document.getElementById('marksM4').style.color = '#9b9b9b';
+                lg = 2;
+            }
+
+
+        }
+        
+        
+
+
+        function friLineClick3() {
+            if (flg == true) {
+                document.getElementById('LineChooseFri').style.width = '126px';
+                document.getElementById('LineChooseFri').style.transform = 'translate(665%,0%)';
+
+
+                document.getElementById('friM0').style.color = '#9b9b9b';
+                document.getElementById('friM2').style.color = '#9b9b9b';
+                document.getElementById('friM1').style.color = '#9b9b9b';
+                document.getElementById('friM4').style.color = '#444444';
+
+
+
+                lg = 3;
+
+            } else if (flg == false) {
+                document.getElementById('LineChooseFri').style.width = '126px';
+                document.getElementById('LineChooseFri').style.transform = 'translate(615%,0%)';
+
+
+                document.getElementById('friM0').style.color = '#9b9b9b';
+                document.getElementById('friM2').style.color = '#9b9b9b';
+                document.getElementById('friM1').style.color = '#9b9b9b';
+                document.getElementById('friM4').style.color = '#444444';
+                lg = 3;
+            }
+        }
+
+        function friLineClick0() {
+            if (flg == true) {
+                document.getElementById('LineChooseFri').style.width = '77px';
+                document.getElementById('LineChooseFri').style.transform = 'translate(0%,0%)';
+
+
+                document.getElementById('friM0').style.color = '#444444';
+                document.getElementById('friM2').style.color = '#9b9b9b';
+                document.getElementById('friM1').style.color = '#9b9b9b';
+                document.getElementById('friM4').style.color = '#9b9b9b';
+                lg = 4;
+
+            } else if (flg == false) {
+                document.getElementById('LineChooseFri').style.width = '77px';
+                document.getElementById('LineChooseFri').style.transform = 'translate(0%,0%)';
+                document.getElementById('friM0').style.color = '#444444';
+                document.getElementById('friM2').style.color = '#9b9b9b';
+                document.getElementById('friM1').style.color = '#9b9b9b';
+                document.getElementById('friM4').style.color = '#9b9b9b';
+                lg = 4;
+            }
+        }
+
+
+        function friLineClick1() {
+            if (flg == true) {
+                document.getElementById('LineChooseFri').style.width = '67px';
+                document.getElementById('LineChooseFri').style.transform = 'translate(618%,0%)';
+                document.getElementById('friM4').style.color = '#9b9b9b';
+                document.getElementById('friM0').style.color = '#9b9b9b';
+                document.getElementById('friM2').style.color = '#9b9b9b';
+                document.getElementById('friM1').style.color = '#444444';
+                lg = 1;
+
+            } else if (flg == false) {
+                document.getElementById('LineChooseFri').style.width = '67px';
+                document.getElementById('LineChooseFri').style.transform = 'translate(569%,0%)';
+                document.getElementById('friM4').style.color = '#9b9b9b';
+                document.getElementById('friM0').style.color = '#9b9b9b';
+                document.getElementById('friM2').style.color = '#9b9b9b';
+                document.getElementById('friM1').style.color = '#444444';
+                lg = 1;
+            }
+        }
+
+        function friLineClick2() {
+            if (flg == true) {
+                document.getElementById('LineChooseFri').style.width = '69px';
+                document.getElementById('LineChooseFri').style.transform = 'translate(704%,0%)';
+
+                document.getElementById('friM4').style.color = '#9b9b9b';
+                document.getElementById('friM0').style.color = '#9b9b9b';
+                document.getElementById('friM1').style.color = '#9b9b9b';
+                document.getElementById('friM2').style.color = '#444444';
+                lg = 2;
+
+            } else if (flg == false) {
+                document.getElementById('LineChooseFri').style.width = '69px';
+                document.getElementById('LineChooseFri').style.transform = 'translate(657%,0%)';
+
+                document.getElementById('friM4').style.color = '#9b9b9b';
+                document.getElementById('friM0').style.color = '#9b9b9b';
+                document.getElementById('friM1').style.color = '#9b9b9b';
+                document.getElementById('friM2').style.color = '#444444';
+                lg = 2;
+            }
+        }
+  
+
+        function timeLineGall() {
+            
+            
+            if (flg == true) {
+                document.getElementById('LineChooseGall').style.width = '90px';
+                document.getElementById('LineChooseGall').style.transform = 'translate(0%,0%)';
+
+                document.getElementById('gallM4').style.color = '#9b9b9b';
+                document.getElementById('gallM3').style.color = '#9b9b9b';
+                document.getElementById('gallM2').style.color = '#9b9b9b';
+                document.getElementById('gallM1').style.color = '#9b9b9b';
+                document.getElementById('gallM0').style.color = '#444444';
+                lg = 5;
+            } else {
+                document.getElementById('LineChooseGall').style.width = '90px';
+                document.getElementById('LineChooseGall').style.transform = 'translate(0%,0%)';
+
+                document.getElementById('gallM4').style.color = '#9b9b9b';
+                document.getElementById('gallM3').style.color = '#9b9b9b';
+                document.getElementById('gallM2').style.color = '#9b9b9b';
+                document.getElementById('gallM1').style.color = '#9b9b9b';
+                document.getElementById('gallM0').style.color = '#444444';
+                lg = 5;
+            }
+        }
+
+        function allLineGall() {
+            if (flg == true) {
+                document.getElementById('LineChooseGall').style.width = '145px';
+                document.getElementById('LineChooseGall').style.transform = 'translate(565%,0%)';
+                document.getElementById('gallM3').style.color = '#9b9b9b';
+                document.getElementById('gallM2').style.color = '#9b9b9b';
+                document.getElementById('gallM1').style.color = '#9b9b9b';
+                document.getElementById('gallM0').style.color = '#9b9b9b';
+                document.getElementById('gallM4').style.color = '#444444';
+                lg = 4;
+            } else {
+                document.getElementById('LineChooseGall').style.width = '145px';
+                document.getElementById('LineChooseGall').style.transform = 'translate(522%,0%)';
+                document.getElementById('gallM3').style.color = '#9b9b9b';
+                document.getElementById('gallM2').style.color = '#9b9b9b';
+                document.getElementById('gallM1').style.color = '#9b9b9b';
+                document.getElementById('gallM0').style.color = '#9b9b9b';
+                document.getElementById('gallM4').style.color = '#444444';
+                lg = 4;
+            }
+
+        }
+
+        function BookLineGall() {
+            if (flg == true) {
+                document.getElementById('LineChooseGall').style.width = '53px';
+                document.getElementById('LineChooseGall').style.transform = 'translate(993%,0%)';
+                document.getElementById('gallM3').style.color = '#444444';
+                document.getElementById('gallM2').style.color = '#9b9b9b';
+                document.getElementById('gallM1').style.color = '#9b9b9b';
+                document.getElementById('gallM0').style.color = '#9b9b9b';
+                document.getElementById('gallM4').style.color = '#9b9b9b';
+                lg = 3;
+            } else {
+                document.getElementById('LineChooseGall').style.width = '53px';
+                document.getElementById('LineChooseGall').style.transform = 'translate(932%,0%)';
+                document.getElementById('gallM3').style.color = '#444444';
+                document.getElementById('gallM2').style.color = '#9b9b9b';
+                document.getElementById('gallM1').style.color = '#9b9b9b';
+                document.getElementById('gallM0').style.color = '#9b9b9b';
+                document.getElementById('gallM4').style.color = '#9b9b9b';
+                lg = 3;
+            }
+
+
+        }
+
+        function BlogLineGall() {
+
+            if (flg == true) {
+                document.getElementById('LineChooseGall').style.width = '53px';
+                document.getElementById('LineChooseGall').style.transform = 'translate(881%,0%)';
+                document.getElementById('gallM2').style.color = '#444444';
+                document.getElementById('gallM3').style.color = '#9b9b9b';
+                document.getElementById('gallM1').style.color = '#9b9b9b';
+                document.getElementById('gallM0').style.color = '#9b9b9b';
+                document.getElementById('gallM4').style.color = '#9b9b9b';
+                lg = 2;
+
+            } else {
+                document.getElementById('LineChooseGall').style.width = '53px';
+                document.getElementById('LineChooseGall').style.transform = 'translate(821%,0%)';
+                document.getElementById('gallM2').style.color = '#444444';
+                document.getElementById('gallM3').style.color = '#9b9b9b';
+                document.getElementById('gallM1').style.color = '#9b9b9b';
+                document.getElementById('gallM0').style.color = '#9b9b9b';
+                document.getElementById('gallM4').style.color = '#9b9b9b';
+                lg = 2;
+            }
+
+
+
+        }
+
+        function MomentLineGall() {
+
+            if (flg == true) {
+                document.getElementById('LineChooseGall').style.width = '80px';
+                document.getElementById('LineChooseGall').style.transform = 'translate(480%,0%)';
+                document.getElementById('gallM1').style.color = '#444444';
+                document.getElementById('gallM3').style.color = '#9b9b9b';
+                document.getElementById('gallM2').style.color = '#9b9b9b';
+                document.getElementById('gallM0').style.color = '#9b9b9b';
+                document.getElementById('gallM4').style.color = '#9b9b9b';
+
+            } else {
+                document.getElementById('LineChooseGall').style.width = '80px';
+                document.getElementById('LineChooseGall').style.transform = 'translate(440%,0%)';
+                document.getElementById('gallM1').style.color = '#444444';
+                document.getElementById('gallM3').style.color = '#9b9b9b';
+                document.getElementById('gallM2').style.color = '#9b9b9b';
+                document.getElementById('gallM0').style.color = '#9b9b9b';
+                document.getElementById('gallM4').style.color = '#9b9b9b';
+                lg = 1;
+            }
+
+        }
+
+        function gallmov() {
+
+        }
+
+
+        function showCA1() {
+            document.getElementById('onCAnimate1').style.transform = 'scale(1)';
+        }
+
+        function closeCA1() {
+            document.getElementById('onCAnimate1').style.transform = 'scale(0)';
+        }
+
+        function showCA2() {
+            document.getElementById('onCAnimate2').style.transform = 'scale(1)';
+        }
+
+        function closeCA2() {
+            document.getElementById('onCAnimate2').style.transform = 'scale(0)';
+        }
+
+        function showCA3() {
+            document.getElementById('onCAnimate3').style.transform = 'scale(1)';
+        }
+
+        function closeCA3() {
+            document.getElementById('onCAnimate3').style.transform = 'scale(0)';
+        }
+
+
+
+        function RbacktoM() {
+            document.getElementById('RbackToMain').src = 'img/backTo2.png';
+        }
+
+
+
+
+        var fr = true;
+
+
+
+
+
+        function fullR() {
+            if (fr == true) {
+                flg = true;
+                if (lg == 1) {
+
+
+                    document.getElementById('LineChooseMarks').style.transform = 'translate(531%,0%)';
+
+
+                    document.getElementById('LineChooseFri').style.transform = 'translate(618%,0%)';
+                    document.getElementById('LineChooseGall').style.transform = 'translate(480%,0%)';
+                }
+                if (lg == 2) {
+                    
+                     document.getElementById('LineChooseMarks').style.transform = 'translate(0%,0%)';
+                    
+                    document.getElementById('LineChooseGall').style.transform = 'translate(881%,0%)';
+                    document.getElementById('LineChooseFri').style.transform = 'translate(704%,0%)';
+
+                }
+                if (lg == 3) {
+                    
+                       document.getElementById('LineChooseMarks').style.transform = 'translate(425%,0%)';
+  
+                    
+
+                    document.getElementById('LineChooseFri').style.transform = 'translate(665%,0%)';
+
+
+
+                    document.getElementById('LineChooseGall').style.transform = 'translate(993%,0%)';
+                }
+                if (lg == 4) {
+                    document.getElementById('LineChooseGall').style.width = '145px';
+                    document.getElementById('LineChooseGall').style.transform = 'translate(565%,0%)';
+
+                    document.getElementById('LineChooseFri').style.transform = 'translate(0%,0%)';
+                    
+                      document.getElementById('LineChooseMarks').style.transform = 'translate(641%,0%)';
+   
+
+                }
+                if (lg == 5){
+                      document.getElementById('LineChooseMarks').style.transform = 'translate(440%,0%)';
+                }
+
+
+
+
+                document.getElementById('SpaceUse2').style.width = '100%';
+                document.getElementById('SpaceUse2').style.height = '100%';
+                document.getElementById('SpaceUse2').style.borderLeft = '4px solid #c4c4c4';
+                document.getElementById('SpaceUse2').style.borderRadius = '0px';
+                document.getElementById('TfullR').innerHTML = '-';
+                document.getElementById('TfullR').style.fontSize = '28px';
+
+
+                //                document.getElementById('imgR1').width='22';
+                //                 document.getElementById('imgR2').width='22';
+                //                document.getElementById('imgR3').width='42';
+                fr = false;
+            } else {
+                flg = false;
+
+                if (lg == 1) {
+
+                    document.getElementById('LineChooseMarks').style.transform = 'translate(484%,0%)';
+
+                    document.getElementById('LineChooseFri').style.transform = 'translate(569%,0%)';
+                    document.getElementById('LineChooseGall').style.transform = 'translate(440%,0%)';
+                }
+                if (lg == 2) {
+                    
+                     document.getElementById('LineChooseMarks').style.transform = 'translate(0%,0%)';
+                    
+                    document.getElementById('LineChooseGall').style.transform = 'translate(821%,0%)';
+                    document.getElementById('LineChooseFri').style.transform = 'translate(657%,0%)';
+                }
+                if (lg == 3) {
+                    document.getElementById('LineChooseMarks').style.transform = 'translate(394%,0%)';
+
+                    document.getElementById('LineChooseFri').style.transform = 'translate(615%,0%)';
+
+                    document.getElementById('LineChooseGall').style.transform = 'translate(932%,0%)';
+
+                }
+                if (lg == 4) {
+                    document.getElementById('LineChooseGall').style.width = '145px';
+                    document.getElementById('LineChooseGall').style.transform = 'translate(522%,0%)';
+
+                    document.getElementById('LineChooseFri').style.transform = 'translate(0%,0%)';
+                    
+                    document.getElementById('LineChooseMarks').style.transform = 'translate(602%,0%)';
+                }
+                if(lg == 5) {
+                   
+ document.getElementById('LineChooseMarks').style.transform = 'translate(405%,0%)';
+                }
+
+
+
+                document.getElementById('SpaceUse2').style.width = '93%';
+                document.getElementById('SpaceUse2').style.height = '90%';
+                document.getElementById('SpaceUse2').style.borderLeft = 'none';
+                document.getElementById('SpaceUse2').style.borderRadius = '6px';
+                document.getElementById('TfullR').innerHTML = 'O';
+                document.getElementById('TfullR').style.fontSize = '18px';
+                //                
+                //                document.getElementById('imgR1').width='28';
+                //                 document.getElementById('imgR2').width='28';
+                //                document.getElementById('imgR3').width='48';
+                fr = true;
+            }
+
+        }
+
+
         function hovAC1() {
             document.getElementById('onHov1').style.display = 'block';
         }
@@ -1613,10 +2293,10 @@
             document.getElementById('imgRightBook').style.background = '#f5f5f8';
             document.getElementById('imgRightMarks').style.background = '#e7e7e8';
             document.getElementById('imgRightFri').style.background = '#e7e7e8';
-            
+
             document.getElementById('imgRightBook').style.border = '1px solid white';
-             document.getElementById('imgRightMarks').style.border = 'none';
-             document.getElementById('imgRightFri').style.border = 'none';
+            document.getElementById('imgRightMarks').style.border = 'none';
+            document.getElementById('imgRightFri').style.border = 'none';
 
         }
 
@@ -1625,10 +2305,10 @@
             document.getElementById('imgRightBook').style.background = '#e7e7e8';
             document.getElementById('imgRightMarks').style.background = '#f5f5f8';
             document.getElementById('imgRightFri').style.background = '#e7e7e8';
-            
-             document.getElementById('imgRightBook').style.border = 'none';
-             document.getElementById('imgRightMarks').style.border = '1px solid white';
-             document.getElementById('imgRightFri').style.border = 'none';
+
+            document.getElementById('imgRightBook').style.border = 'none';
+            document.getElementById('imgRightMarks').style.border = '1px solid white';
+            document.getElementById('imgRightFri').style.border = 'none';
 
         }
 
@@ -1637,10 +2317,10 @@
             document.getElementById('imgRightBook').style.background = '#e7e7e8';
             document.getElementById('imgRightMarks').style.background = '#e7e7e8';
             document.getElementById('imgRightFri').style.background = '#f5f5f8';
-            
-              document.getElementById('imgRightBook').style.border = 'none';
-             document.getElementById('imgRightMarks').style.border = 'none';
-             document.getElementById('imgRightFri').style.border = '1px solid white';
+
+            document.getElementById('imgRightBook').style.border = 'none';
+            document.getElementById('imgRightMarks').style.border = 'none';
+            document.getElementById('imgRightFri').style.border = '1px solid white';
 
         }
 
@@ -1661,13 +2341,13 @@
             document.getElementById('SpaceUse').style.display = 'none';
         }
 
-        
-        function closeRightMenu(){
+
+        function closeRightMenu() {
             document.getElementById('SpaceUse2').style.transform = 'scale(0) translate(-80%,0%)';
             document.getElementById('SpaceUse2').style.left = '1000px';
         }
-        
-        
+
+
         function allFunClose() {
             document.getElementById('SpaceUse2').style.transform = 'scale(0) translate(-80%,0%)';
             document.getElementById('SpaceUse2').style.left = '1000px';
@@ -1885,7 +2565,7 @@
 
 
                 <a href="#">
-                    <div class="down-ex" onclick="profileSlide(),setTimeout(callSpace,0),setTimeout(slideSpace,50),gallSpace(),changAC1()">
+                    <div class="down-ex" onclick="profileSlide(),setTimeout(callSpace,0),setTimeout(slideSpace,50),gallSpace(),changAC1(),creatorHide(),timeLineGall()">
                         <img id="a" onmouseover="chbg('#eeeef4')" onmouseout="chbg('#f9f9fa')" class="books-ex" src="img/books-ex.png" alt="">
                         <span id="a" onmouseover="chbg('#eeeef4')" onmouseout="chbg('#f9f9fa')" class="books-ex-t">gallery</span>
                         <div onmouseover="chbg('#eeeef4')" onmouseout="chbg('#f9f9fa')" id="b" class="bg-books"></div>
@@ -1893,7 +2573,7 @@
                 </a>
 
 
-                <div class="down-ex2 Cu-Us-none" onclick="profileSlide(),setTimeout(callSpace,0),setTimeout(slideSpace,50),marksSpace(),changAC2()">
+                <div class="down-ex2 Cu-Us-none" onclick="profileSlide(),setTimeout(callSpace,0),setTimeout(slideSpace,50),marksSpace(),changAC2(),creatorHide(),markLineSet0()">
                     <img id="a" onmouseover="chbg2('#eeeef4')" onmouseout="chbg2('#f9f9fa')" class="books-ex2" src="img/marks-ex.png" alt="">
                     <span id="a" onmouseover="chbg2('#eeeef4')" onmouseout="chbg2('#f9f9fa')" class="books-ex-t2">marks</span>
                     <div onmouseover="chbg2('#eeeef4')" onmouseout="chbg2('#f9f9fa')" id="c" class="bg-books2"></div>
@@ -1902,7 +2582,7 @@
 
 
 
-                <div class="down-ex3 Cu-Us-none" onclick="profileSlide(),setTimeout(callSpace,0),setTimeout(slideSpace,50),friSpace(),changAC3()">
+                <div class="down-ex3 Cu-Us-none" onclick="profileSlide(),setTimeout(callSpace,0),setTimeout(slideSpace,50),friSpace(),changAC3(),creatorHide(),friLineClick0()">
                     <img id="a" onmouseover="chbg3('#eeeef4')" onmouseout="chbg3('#f9f9fa')" class="books-ex3" src="img/fri-ex.png" alt="">
                     <span id="a" onmouseover="chbg3('#eeeef4')" onmouseout="chbg3('#f9f9fa')" class="books-ex-t3">friends</span>
                     <div onmouseover="chbg3('#eeeef4')" onmouseout="chbg3('#f9f9fa')" id="d" class="bg-books3"></div>
@@ -1997,11 +2677,11 @@
                     <div class="body-tum">
                         <div class="fri-trav">
                             <span class="with Cu-Us-none">with 10 friends</span>
-                           <img class="fri1-lis Cu-Us-none" src="img/fri-6.png" alt="">
+                            <img class="fri1-lis Cu-Us-none" src="img/fri-6.png" alt="">
                             <img class="fri1-lis Cu-Us-none" src="img/fri-4.png" alt="">
-                           <img class="fri1-lis Cu-Us-none" src="img/fri-3.png" alt="">
-                           <img class="fri1-lis Cu-Us-none" src="img/fri-1.png" alt="">
-                           <span class="fif Cu-Us-none">+6</span></a>
+                            <img class="fri1-lis Cu-Us-none" src="img/fri-3.png" alt="">
+                            <img class="fri1-lis Cu-Us-none" src="img/fri-1.png" alt="">
+                            <span class="fif Cu-Us-none">+6</span></a>
                         </div>
                         <div class="place-date">
                             <a href="#">
@@ -2055,11 +2735,11 @@
                     <div class="body-tum2">
                         <div class="fri-trav">
                             <span class="with Cu-Us-none">with 8 friends</span></a>
-                           <img class="fri1-lis Cu-Us-none" src="img/fri-6.png" alt="">
-                        <img class="fri1-lis Cu-Us-none" src="img/fri-4.png" alt="">
-                      <img class="fri1-lis Cu-Us-none" src="img/fri-2.png" alt="">
-                         <img class="fri1-lis Cu-Us-none" src="img/fri-1.png" alt="">
-                      <span class="fif2 Cu-Us-none">+4</span>
+                            <img class="fri1-lis Cu-Us-none" src="img/fri-6.png" alt="">
+                            <img class="fri1-lis Cu-Us-none" src="img/fri-4.png" alt="">
+                            <img class="fri1-lis Cu-Us-none" src="img/fri-2.png" alt="">
+                            <img class="fri1-lis Cu-Us-none" src="img/fri-1.png" alt="">
+                            <span class="fif2 Cu-Us-none">+4</span>
                         </div>
                         <div class="place-date">
                             <a href="#">
@@ -2243,7 +2923,43 @@
 
                 }
 
+
+
                 function profileClose() {
+
+                    Creator2Show();
+
+                    setTimeout(function() {
+                        document.getElementById('creatorShowMenu').style.display = 'none';
+                    }, 500)
+
+
+                    setTimeout(function() {
+                        document.getElementById('writerLogoR').style.transform = 'scale(0) translate(0%,0%)';
+                        document.getElementById('csBookShow').style.transform = 'scale(0) translate(0%,0%)';
+                    }, 100);
+
+
+                    setTimeout(function() {
+                        document.getElementById('blogLogoR').style.transform = 'scale(0) translate(0%,0%)';
+                        document.getElementById('csBlogShow').style.transform = 'scale(0) translate(0%,0%)';
+                    }, 100);
+
+                    setTimeout(function() {
+                        document.getElementById('MovieLogoR').style.transform = 'scale(0) translate(0%,0%)';
+                        document.getElementById('csMovieShow').style.transform = 'scale(0) translate(0%,0%)';
+                    }, 200);
+
+                    setTimeout(function() {
+                        document.getElementById('artLogoR').style.transform = 'scale(0) translate(0%,0%)';
+                        document.getElementById('csArtShow').style.transform = 'scale(0) translate(0%,0%)';
+                    }, 300);
+
+
+
+
+
+
                     document.getElementById('backToUndo').style.display = 'none';
 
                     document.getElementById('hideSearch').style.display = 'none';
@@ -2355,6 +3071,36 @@
                 }
 
                 function profileClose() {
+
+                    Creator2Show();
+
+                    setTimeout(function() {
+                        document.getElementById('creatorShowMenu').style.display = 'none';
+                    }, 500)
+
+
+                    setTimeout(function() {
+                        document.getElementById('writerLogoR').style.transform = 'scale(0) translate(0%,0%)';
+                        document.getElementById('csBookShow').style.transform = 'scale(0) translate(0%,0%)';
+                    }, 0);
+
+
+                    setTimeout(function() {
+                        document.getElementById('blogLogoR').style.transform = 'scale(0) translate(0%,0%)';
+                        document.getElementById('csBlogShow').style.transform = 'scale(0) translate(0%,0%)';
+                    }, 100);
+
+                    setTimeout(function() {
+                        document.getElementById('MovieLogoR').style.transform = 'scale(0) translate(0%,0%)';
+                        document.getElementById('csMovieShow').style.transform = 'scale(0) translate(0%,0%)';
+                    }, 200);
+
+                    setTimeout(function() {
+                        document.getElementById('artLogoR').style.transform = 'scale(0) translate(0%,0%)';
+                        document.getElementById('csArtShow').style.transform = 'scale(0) translate(0%,0%)';
+                    }, 300);
+
+
                     document.getElementById('backToUndo').style.display = 'none';
 
 

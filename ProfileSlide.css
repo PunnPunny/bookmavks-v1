@@ -2,7 +2,7 @@
     height: 100%;
     background: white;
     position: fixed;
-    z-index: 1000;
+    z-index: 1005;
     transition: 0.3s;
     /*    -moz-box-shadow: 0 10px 18px 0 rgba(0,0,0,0.8);*/
     box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.8);
@@ -59,7 +59,7 @@
     z-index: 6;
     background: #000000;
     transition: 0.45s;
-    opacity: 0; 
+    opacity: 0;
 }
 
 
@@ -163,7 +163,7 @@
 }
 
 
-.Cu-Us-none{
+.Cu-Us-none {
     cursor: pointer;
     user-select: none;
 }
@@ -247,14 +247,16 @@
     white-space: nowrap;
     flex-direction: column;
 }
-.line-side{
+
+.line-side {
     display: flex;
     width: 3px;
     height: 100%;
     justify-content: center;
     align-items: center;
 }
-.line-about{
+
+.line-about {
     width: 2px;
     height: 80%;
     background: #e4e2f7;
@@ -320,9 +322,7 @@
 
 }
 
-.display-size-side3 {
-    
-}
+.display-size-side3 {}
 
 .style-dis {
     display: flex;
@@ -332,7 +332,7 @@
     height: 100%;
 }
 
-#SpaceUse{
+#SpaceUse {
     height: 100%;
     width: 100%;
     position: absolute;
@@ -347,7 +347,8 @@
     align-items: center;
     display: none;
 }
-#SpaceUse2{
+
+#SpaceUse2 {
     height: 90%;
     width: 93%;
     position: relative;
@@ -355,24 +356,24 @@
     background: black;
     background: white;
     border-radius: 6px;
-    transform: scale(0) translate(-80%,0%);
-    transition: 0.3s; 
-    left:1000px;
+    transform: scale(0) translate(-80%, 0%);
+    transition: 0.3s;
+    left: 1000px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
-     box-shadow: 0 0px 18px 0 rgba(0, 0, 0, 0.8);
-    
+    box-shadow: 0 0px 18px 0 rgba(0, 0, 0, 0.8);
+
 }
 
-#SpaceUse3{
+#SpaceUse3 {
     width: 100%;
     height: 100%;
     position: absolute;
     z-index: 1001;
 }
 
-.bSlide{
+.bSlide {
     width: 100%;
     height: 60px;
     overflow: hidden;
@@ -381,73 +382,64 @@
 
 }
 
-.imgBs{
+.imgBs {
     width: 100%;
     position: relative;
     bottom: 120px;
     filter: blur(120px) brightness(130%);
-   
+
 }
 
-.bSlideIMG{
-     width: 100%;
+.bSlideIMG {
+    width: 100%;
     overflow: hidden;
     position: absolute;
     z-index: 0;
     height: 54px;
-   background: #e7e7e8
-
+    background: #e7e7e8
 }
 
-.logoRight{
+.logoRight {
     width: 257px;
-    position: relative;;
+    position: relative;
+    ;
     z-index: 1;
     display: flex;
-    
-    
+
+
 }
 
 
 /*test font*/
-.fwb{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Prompt';
-     font-size: 28px;
-    font-weight: bold;
-    color: #7f7f7f
-}
+
+
 /*test font*/
 
-.edRight{
+.edRight {
     width: 80px;
-    height: 54px   ;
+    height: 54px;
     display: flex;
     justify-content: center;
     align-items: center;
     user-select: none;
     transform: 0.6s
-    
 }
 
-.edRight3{
+.edRight3 {
     width: 96px;
-    height: 54px   ;
+    height: 54px;
     display: flex;
     justify-content: center;
     align-items: center;
-     user-select: none;
-   transform: 0.6s
-    
+    user-select: none;
+    transform: 0.6s
 }
 
 
 
-#imgRightBook,#imgRightMarks,#imgRightFri{
+#imgRightBook,
+#imgRightMarks,
+#imgRightFri {
     box-sizing: border-box;
     border: none;
     border-radius: 3px;
@@ -455,21 +447,23 @@
 
 #onHov1,
 #onHov2,
-#onHov3{
+#onHov3 {
     position: absolute;
     z-index: 0;
     bottom: 0;
     display: none;
 }
 
-#imgR1, #imgR2 ,#imgR3{
+#imgR1,
+#imgR2,
+#imgR3 {
     position: relative;
     z-index: 1;
     transition: 0.3s;
 }
 
-.rSlide{
-  
+.rSlide {
+
     width: 100%;
     position: relative;
     z-index: 1;
@@ -478,7 +472,7 @@
     padding-right: 7px
 }
 
-.xRight{
+.xRight {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -486,12 +480,12 @@
     font-weight: bolder;
     font-family: 'Prompt';
     transition: 0.3s;
-    margin: 2px; 
+    margin: 2px;
 }
 
 
-.xTextRight{
-  margin: 0;
+.xTextRight {
+    margin: 0;
     width: 35px;
     height: 35px;
     display: flex;
@@ -502,11 +496,15 @@
     position: relative;
     z-index: 1;
 }
-#RbackToMain{
+
+#RbackToMain {
     position: relative;
     z-index: 1;
 }
-#onCAnimate1,#onCAnimate2,#onCAnimate3{
+
+#onCAnimate1,
+#onCAnimate2,
+#onCAnimate3 {
     position: absolute;
     z-index: 0;
     width: 35px;
@@ -517,37 +515,52 @@
     transform: scale(0);
 }
 
-.myBoardRight{
-    margin: 6px;
+.myBoardRight {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100px;
-    margin-right: 8px;
- 
+    width: 120px;
+    height: 67px;
+    position: absolute;
+    background: #4967bf;
+    right: 0px;
+    bottom: 0px;
+    animation: myBoardAnimate 0.3s;
+    color: white;
+    font-size: 20px;
+    animation: bgChangeAnimate 6s infinite;
+  transition: 0.3s;
     
 }
 
-.myBoardStyle{
-    height: 30px;
-    width: 100px;
-    background: #a764c8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    border-radius: 25px;
-    font-weight: bolder;
-    font-family: 'Prompt';
-    transition: 0.125s;
+@keyframes bgChangeAnimate {
+    0%{
+         background: #4967bf;
+    }
+    50%{
+         background: #5fcf52;
+    }
+    100%{
+         background: #4967bf;
+    }
 }
 
-.myBoardStyle:hover{
-     transition: 0.125s;
-     background: #8c4dac;
+@keyframes myBoardAnimate{
+    0%{
+        bottom: 10px;
+    }
+    100%{
+        bottom: 0px;
+    }
 }
 
-.menuCreator{
+.myBoardRight:hover{
+    filter: brightness(120%);
+        
+}
+
+
+.menuCreator {
     width: 100%;
     height: 54px;
     display: flex;
@@ -555,13 +568,369 @@
     justify-content: flex-end;
 }
 
-.lineRightM{
+.lineRightM {
     height: 85%;
     width: 2px;
     background: #cda8ea;
     margin: 0 16px;
 }
+#creatorShowMenu{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
 
-.writerBook{
+.SpaceCreator{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding-left: 568px;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding-bottom: 64px;
+     position: absolute;
+    z-index: 1003;
+    display: flex;
+    flex-direction: column;
+    transform: scale(1);
+    transition: 0.3s;
+    
     
 }
+
+.CreatorSlide1{
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+
+
+.CreatorSlide2{
+  width: 100%;
+    height: 50%;
+    display: flex;
+}
+
+.SpaceC1,.SpaceC2,.SpaceC3,.SpaceC4{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.SpaceC1{
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 0px 12px 12px 0;
+    box-sizing: border-box;
+}
+
+
+.csBookShow{
+    width: 150px;
+    height: 150px;
+    background: #c65151;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    cursor: pointer;
+   
+}
+.writerLogoR{
+    width: 80px;
+}
+.blogLogoR{
+    width: 80px;
+}
+
+.csBlogShow{
+    width: 150px;
+    height: 150px;
+    background: #3867cb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.SpaceC2{
+    align-items: flex-end;
+    padding: 0px 0px 12px 12px;
+    box-sizing: border-box;
+}
+
+
+.csMovieShow{
+     width: 150px;
+    height: 150px;
+    background: #494949;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.MovieLogoR{
+    width: 80px;
+}
+
+.SpaceC3{
+    justify-content:flex-end;
+    padding: 12px 12px 0 0;
+    box-sizing: border-box;
+}
+
+.SpaceC4{
+    box-sizing: border-box;
+    padding: 12px 0 0 12px;
+}
+
+.csArtShow{
+     width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    cursor: pointer;
+    animation: artLogoAnimate 4s infinite;
+}
+
+@keyframes artLogoAnimate{
+    0%{
+        background: #364490;
+    }
+    50%{
+        background: #91b837
+    }
+    100%{
+        background: #364490;
+    }
+}
+
+
+.artLogoR{
+    width: 85px;
+}
+
+.csBookShow,.csBlogShow,.csMovieShow,.csArtShow{
+    user-select: none;
+    box-shadow: 0 0 18px 0 rgba( 0, 0, 0, 0.3 );
+    transform: scale(0) translate(0%,0%);
+    transition: 0.2s;
+}
+#writerLogoR,#blogLogoR,#MovieLogoR,#artLogoR{
+    transform: scale(0) translate(0%,0%);
+    transition: 0.65s;
+}
+
+.csBookShow:hover,.csBlogShow:hover,.csMovieShow:hover,.csArtShow:hover{
+    filter: brightness(120%);
+    transition: 0.3s;
+}
+
+.gallSpace, .marksSpace, .friSpace{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;  
+}
+
+.gallMenuHead{
+    height: 46px;
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+}
+
+.friMenuHead{
+    height: 46px;
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+}
+
+
+.marksMenuHead{
+    height: 46px;
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+}
+
+#gallM1, #gallM2, #gallM3,#gallM4,#gallM0{
+    margin: 5px 12px 0px 12px;
+    box-sizing: border-box;
+    color: #9b9b9b;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.3s;
+  
+}
+
+#friM1, #friM2,#friM4,#friM0{
+   margin: 5px 12px 0px 12px;
+    box-sizing: border-box;
+    color: #9b9b9b;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+     flex-direction: column;
+    align-items: center;
+    transition: 0.3s;
+}
+
+#marksM1, #marksM2,#marksM3,#marksM4,#marksM0{
+    margin: 5px 12px 0px 12px;
+    box-sizing: border-box;
+    color: #9b9b9b;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+     flex-direction: column;
+    align-items: center;
+    transition: 0.3s;
+}
+
+#marksM0{
+     color: #444444;
+     position: absolute;
+    left: 0;
+    bottom: 0px;
+    align-content: flex-start;
+}
+
+#marksM4{
+  
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+    align-content: flex-start;
+
+}
+
+.lineGall{
+    width: 100%;
+    height: 2px;
+    background: #d3d3d3;
+    position: relative;
+    z-index: 0;
+
+}
+
+.lineFri{
+    width: 100%;
+    height: 2px;
+    background: #d3d3d3;
+    position: relative;
+    z-index: 0;
+
+}
+
+.lineMarks{
+    width: 100%;
+    height: 2px;
+    background: #d3d3d3;
+    position: relative;
+    z-index: 0;
+
+}
+
+#friM0{
+    color: #444444;
+     position: absolute;
+    left: 0;
+    bottom: 0px;
+    align-content: flex-start;
+}
+
+#friM4{
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+    align-content: flex-start;
+}
+
+#gallM4{
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+    align-content: flex-start;
+}
+#LineChooseGall{
+    width: 90px;
+    height: 4px;
+    background: #a8a8a8;
+    transform: translate(0%,0%);
+    transition: 0.3s;
+}
+#LineChooseFri{
+    width: 77px;
+    height: 4px;
+    background: #a8a8a8;
+    transform: translate(0%,0%);
+    transition: 0.3s;
+    
+}
+
+#LineChooseMarks{
+    width: 72px;
+    height: 4px;
+    background: #a8a8a8;
+    transform: translate(0%,0%);
+    transition: 0.3s;
+    
+}
+
+
+#gallM0{
+    color: #444444;
+     position: absolute;
+    left: 0;
+    bottom: 0px;
+    align-content: flex-start;
+}
+
+.edTextG{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#findRightMenu{
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.findRightMenu{
+    height: 25px;
+    width: 139px;
+    border-radius: 50px;
+    border: 5px red;
+    outline: none;
+   transition: 0.15s;
+    padding: 0 12px;
+    font-size: 16px;
+    margin-right: 12px;
+    box-shadow: 0px 0px 0px 3px #bdc4da;
+}
+.findRightMenu:focus{
+    box-shadow: 0px 0px 0px 3px #5472be;
+}
+
+ 
