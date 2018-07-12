@@ -396,13 +396,16 @@
     position: absolute;
     z-index: 0;
     height: 54px;
-    background: #e7e7e8
+	background: url(img/bannerMyBoard.jpg);
+	background-size: cover;
+	background-position: 0% 0%;
+	filter: blur(30px) brightness(120%);
+   
 }
 
 .logoRight {
     width: 257px;
     position: relative;
-    ;
     z-index: 1;
     display: flex;
 
@@ -509,7 +512,7 @@
     z-index: 0;
     width: 35px;
     height: 35px;
-    background: #8c8c8c;
+    background: #eaedef;
     transition: 0.3s;
     border-radius: 50px;
     transform: scale(0);
@@ -520,17 +523,17 @@
     justify-content: center;
     align-items: center;
     width: 120px;
-    height: 67px;
+    height: 40px;
     position: absolute;
     background: #4967bf;
-    right: 0px;
-    bottom: 0px;
+    right: 12px;
+    bottom: 12px;
     animation: myBoardAnimate 0.3s;
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     animation: bgChangeAnimate 6s infinite;
   transition: 0.3s;
-    
+    border-radius: 50px; 
 }
 
 @keyframes bgChangeAnimate {

@@ -1,0 +1,45 @@
+
+.placeBox{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 100000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	display: none;
+}
+
+.placeIn{
+    width: 90%;
+    height: 92%;
+    background: white;
+    border-radius: 4px;
+	position:absolute;
+	z-index: 100002;
+	display: flex;
+	transform: scale(0);
+	transition: 0.3s;
+}
+
+.xPlace{
+    position: absolute;
+	 z-index: 100002;
+    color: white;
+    font-size: 25px;
+    top: 0;
+    right: 7px;
+    cursor: pointer;
+    user-select: none;
+}
+
+#closePlace{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	   background: rgba( 0, 0, 0, 0.9 );
+	 z-index: 100001;
+	transition: 0.3s;
+	
+}
