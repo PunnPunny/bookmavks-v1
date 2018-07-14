@@ -65,7 +65,7 @@
     position: absolute;
     margin: 5px;
     height: 20px;
-    width: 100px;
+    width: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -99,7 +99,7 @@ border: 2px solid white;
     position: absolute;
     margin: 5px;
     height: 20px;
-    width: 125px;
+    width: 88px;
     display: flex;
     justify-content: center;
     align-items: center;

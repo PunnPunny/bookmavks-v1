@@ -90,27 +90,46 @@
 
 
 .list-box {
-    height: 50px;
-    margin: 8px 0px 20px 0px;
+    height: 74px;
+    margin: 8px 0px 2px 0px;
     position: relative;
     width: 272px;
-    border-radius: 25px;
     padding-left: 5px;
-    box-sizing: border-box
+	position: relative;
+	right: 5px;
+    box-sizing: border-box;
+	margin-bottom: 12px;
 }
 
 .list-box2 {
-    height: 50px;
-    margin: 20px 0px 0px 0px;
+    margin: 20px 0px 20px 0px;
+	padding-bottom: 40px;
     position: relative;
     width: 272px;
-    border-radius: 25px;
+    border-radius: 12px;
     padding-left: 5px;
     box-sizing: border-box;
     padding-top: 3.5px;
+	background: white;
+	box-shadow: 0 0 8px 0 rgba( 0, 0, 0, 0.3 );
+	z-index: 0;
+	box-sizing: border-box;
 }
 
-.west-list {}
+.miniBoard{
+	width: 272px;
+	display: flex;
+	justify-content: center;
+	margin-top: 5px;
+}
+.mfi{
+	margin-top: 24px;
+	padding-top: 7px;
+	width: 272px;
+	display: flex;
+	justify-content: center;
+	color: 
+}
 
 .fri-list {
     width: 20px;
@@ -126,7 +145,7 @@
     font-size: 20px;
     color: white;
     position: relative;
-    bottom: 3px;
+    bottom: 2px;
 }
 
 .next-place {
@@ -143,6 +162,21 @@
     color: rgba( 255, 255, 255, 0.564);
 }
 
+.fri-bg-list0 {
+    position: relative;
+    display: inline-block;
+    top: 8px;
+    left: 9px;
+    background: rgba( 114, 148, 222, 0.564);
+    width: 44px;
+    height: 27px;
+    padding: 5px 0 0px 7px;
+    border-radius: 8px;
+    transition: 0.3s ease-out;
+	z-index: 1;
+
+}
+
 .fri-bg-list {
     position: relative;
     display: inline-block;
@@ -157,6 +191,10 @@
 
 }
 
+.edMost{
+	top: 37px;
+}
+
 .fri-bg-list2 {
     position: relative;
     display: inline-block;
@@ -168,7 +206,7 @@
     padding: 5px 0 0px 7px;
     border-radius: 8px;
     transition: 0.3s ease-out;
-
+	z-index: 1;
 }
 
 
@@ -185,6 +223,7 @@
     padding: 5px 0 0px 7px;
     border-radius: 8px;
     transition: 0.3s ease-out;
+	z-index: 1;
 
 }
 .fri-bg-list3:hover {
@@ -204,6 +243,12 @@
 }
 
 
+.fri-bg-list0:hover {
+    background: rgba( 43, 98, 216, 0.564);
+    transition: 0.3s ease-out;
+}
+
+
 
 
 
@@ -211,6 +256,10 @@
 
 .friends {
     border-radius: 4px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	right: 3px;
 
 }
 
@@ -404,8 +453,10 @@ a .palmt {
     transition: 0.3s ease-out;
     position: relative;
     display: inline-block;
-    bottom: 14px;
-    right: 82px;
+	box-sizing: border-box;
+	bottom: 36px;
+	left: 71px;
+    
 
 
 }

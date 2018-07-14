@@ -29,10 +29,13 @@
                 <div id="forHideBoardMenu" class="BoardMenu">
                     <div class="edBM">
                         <div class="bmMenu">
-                            <div class="BoardTopper">
+                           
+     <div onclick="allBoard(),setTimeout(closeBoard,125),setTimeout(showMenuBoard,0),setTimeout(tlBoardMenu,80)" class="BoardTopper">
                                 Board
                             </div>
-                            <div class="WriterMenu edChoose" onclick="setTimeout(writerBoardOpen,300),setTimeout(wbgOpacity,100)">
+                            
+                            
+                            <div class="WriterMenu edChoose" onclick="setTimeout(writerBoardOpen,0),setTimeout(wbgOpacity,100)">
 
 
                                 Writer Board
@@ -213,12 +216,12 @@
 
 
         function writerBoardOpen() {
-            document.getElementById('bgDarkBoard').style.display = 'none';
+            document.getElementById('bgDarkBoard').style.display = 'block';
 
         }
 
         function wbgOpacity() {
-            document.getElementById('bgDarkBoard').style.background = 'rgba( 0, 0, 0, 0.0)';
+            document.getElementById('bgDarkBoard').style.background = 'rgba( 0, 0, 0, 0.3)';
             document.getElementById('tabTopper').style.background = 'rgba( 0, 0, 0, 0.3)';
 
         }
@@ -353,17 +356,17 @@
         }
 
 
-        function logoChange() {
-            document.getElementById('logoTop2').style.opacity = '0';
-            document.getElementById('logoTop2').style.transition = '0.3s';
-
-        }
-
-        function logoChange2() {
-            document.getElementById('logoTop2').style.opacity = '1';
-            document.getElementById('logoTop2').style.transition = '0.3s';
-
-        }
+//        function logoChange() {
+//            document.getElementById('logoTop2').style.opacity = '0';
+//            document.getElementById('logoTop2').style.transition = '0.3s';
+//
+//        }
+//
+//        function logoChange2() {
+//            document.getElementById('logoTop2').style.opacity = '1';
+//            document.getElementById('logoTop2').style.transition = '0.3s';
+//
+//        }
     </script>
 
 </body>

@@ -30,9 +30,96 @@
 <body>
 
 	<div id="placeBox" class="placeBox">
+
+		<!--	placein = space of place -->
 		<div id="placeIn" class="placeIn">
 
+			<div class="spacePlace">
+				<div class="cover-navPlace">
+					<div class="navMenuPlace">
+
+						<div class="menuMarksboard1">
+							<div class="marksLogoBoard">
+								<img src="img/logo-2.png" width="25" alt="">
+							</div>
+							<div class="boardPlace Cu-Us-none">
+								Marks Boards
+							</div>
+							<div class="linePlace">
+
+							</div>
+							
+							
+							<div class="tourisAtt edBoxplace">
+								<span onclick="locaMB()" class="Cu-Us-none textShadowP" id="locaMenuTop">Location</span>
+							</div>
+
+							<div class="eventplace edBoxplace">
+								<span onclick="eventMB()" class="Cu-Us-none textShadowP" id="eventMenuTop">Event</span>
+							</div>
+
+							<div class="friInv edBoxplace">
+								<span onclick="invitMB()" class="Cu-Us-none textShadowP" id="invitMenuTop">Invitation</span>
+							</div>
+
+							<div class="analys edBoxplace">
+								<span onclick="analyMB()" class="Cu-Us-none textShadowP" id="analyMenuTop">Analysis</span>
+							</div>
+						</div>
+
+
+
+
+						<div class="myMarks">
+							<div class="profileInmark">
+								<img class="profileMB" src="img/left-profile-picpro.png" width="35" alt="">
+							</div>
+						</div>
+
+					</div>
+
+
+
+
+
+				</div>
+
+				<div class="SpaceMenuPlace">
+				
+					<div id="LocaSpace" class="LocaSpace">
+						#Location_Space
+					</div>
+
+					<div id="EventSpace" class="EventSpace">
+						#Event_Space
+					</div>
+
+					<div id="inviSpace" class="inviSpace">
+						#Invitation_Space
+					</div>
+
+					<div id="analySpace" class="analySpace">
+						#Analysis_Space
+					</div>
+
+
+
+				</div>
+
+				<div class="bgPlace"></div>
+
+
+
+
+
+
+
+
+
+			</div>
+
 		</div>
+
 		<div onclick="xPlace()" id="xPlace" class="xPlace">
 			&#10006
 		</div>
@@ -698,9 +785,9 @@
 
 				</div>
 
-				<div id="bttSearch" onclick="hideBTT()">Video Board</div>
+				<div id="bttSearch" onclick="hideBTT()">Maximised</div>
 
-				<div onclick="searchBoard()" id="backToUndo">Back to Search</div>
+				<div onclick="searchBoard()" id="backToUndo">Minimizes</div>
 
 				<div id="hideSearch" onclick="hideSearch()">Hide</div>
 
@@ -1589,7 +1676,7 @@
 -->
 					<div id="findRightMenu">
 
-						<input class="findRightMenu" type="text" placeholder="&#x1f50d Find this page..">
+						<input class="findRightMenu" type="text" placeholder="&#x1f50d Find..">
 					</div>
 
 
@@ -2400,151 +2487,169 @@
 			</div>
 
 
-			<div class="list-box2 west-cl1">
+			<div class="list-box2">
+				<div onclick="placeBox()" class="marksmallBoard Cu-Us-none">
+
+					<img class="markslosmal" src="img/logo-2.png" width="22" alt="">
+					<span class="Cu-Us-none">Marks Boards</span>
+
+				</div>
 				<a href="#">
 
-					<div class="fri-bg-list">
+					<div onclick="placeBox()" class="fri-bg-list0">
 
 						<img class="fri-list" src="img/fr-g1.png" alt="">
 						<div class="fri-count">5</div>
 					</div>
 
-					<div class="fri-bg-list2">
+					<div onclick="placeBox()" class="fri-bg-list2">
 						<img class="fri-list2" src="img/groub-fri.png" alt="">
 						<div class="fri-count">2</div>
 					</div>
 
-					<div class="fri-bg-list3">
+					<div onclick="placeBox()" class="fri-bg-list3">
 						<div class="fri-count">Analysis : 18</div>
 					</div>
 
 				</a>
+
+				<!--list box west-->
+				<div class="list-box west-cl1">
+					<div class="mfi">
+						Most location invited
+					</div>
+					<a href="#">
+						<div onclick="placeBox()" class="west opa Cu-Us-none">@Prachuap Khiri Khan</div>
+					</a>
+					<a href="#">
+						<div onclick="placeBox()" class="fri-bg-list">
+							<img class="fri-list" src="img/fri-list.png" alt="">
+							<div class="fri-count">2</div>
+						</div>
+					</a>
+
+					<span class="next-place opanex Cu-Us-none edMost">&#9654;</span>
+
+				</div>
+
+
+				<div class="friends">
+					<div class="fri1 west-cl1">
+
+						<a href="#"><img class="fri1-ed" src="img/fri-1.png" alt=""></a>
+						<a href="#">
+							<div class="palmt">Palm Natthasret</div>
+						</a>
+
+						<a href="#">
+							<div onclick="placeBox()" class="mavks-li">
+								<img class="mavks-west" src="img/mavks-west.png" alt="">
+								<div class="fri-count2">2</div>
+							</div>
+						</a>
+						<span class="next-place1 opanex Cu-Us-none">&#9654;</span>
+						<a href="#">
+							<div onclick="placeBox()" class="west2 opa Cu-Us-none">@Prachuap Khiri Khan</div>
+						</a>
+
+
+					</div>
+
+					<div class="fri1 west-cl1">
+						<a href="#"><img class="fri1-ed" src="img/fri-2.png" alt=""></a>
+						<a href="#">
+							<div class="palmt">Tum Ruttanapong</div>
+						</a>
+
+						<a href="#">
+							<div onclick="placeBox()" class="mavks-li mavk-tum">
+								<img class="mavks-west" src="img/mavks-west.png" alt="">
+								<div class="fri-count2">3</div>
+							</div>
+						</a>
+						<span class="next-place2 opanex Cu-Us-none">&#9654;</span>
+						<a href="#">
+							<div onclick="placeBox()" class="west2 opa Cu-Us-none">@Prachuap Khiri Khan</div>
+						</a>
+
+
+
+					</div>
+
+
+
+
+
+
+
+					<div class="fri1 north-cl1">
+						<a href="#"><img class="fri1-ed" src="img/fri-5.png" alt=""></a>
+						<a href="#">
+							<div class="palmt">Rock Suphot</div>
+						</a>
+						<a href="#">
+							<div class="mavks-li-north">
+								<img class="mavks-west" src="img/mavks-west.png" alt="">
+								<div class="fri-count2">1</div>
+							</div>
+						</a>
+
+						<a href="#">
+							<div onclick="placeBox()" class="north2 opa">@Mae Hong Son</div>
+						</a>
+					</div>
+
+
+
+
+					<div class="fri1 south-cl1">
+						<a href="#"><img class="fri1-ed" src="img/fri-4.png" alt=""></a>
+						<a href="#">
+							<div class="palmt">Guitar Wilasini</div>
+						</a>
+						<a href="#">
+							<div onclick="placeBox()" class="mavks-li-south">
+								<img class="mavks-west" src="img/mavks-west.png" alt="">
+								<div class="fri-count2">1</div>
+							</div>
+						</a>
+
+						<a href="#">
+							<div onclick="placeBox()" class="south2 opa">@Nakhon Si Thammarat</div>
+						</a>
+
+
+					</div>
+					<div class="fri1 east-cl1">
+						<a href="#"><img class="fri1-ed" src="img/fri-3.png" alt=""></a>
+						<a href="#">
+							<div class="palmt">Gift Chanunchida</div>
+						</a>
+						<a href="#">
+							<div onclick="placeBox()" class="mavks-li-north2">
+								<img class="mavks-west" src="img/mavks-west.png" alt="">
+								<div class="fri-count22">1</div>
+							</div>
+						</a>
+
+						<a href="#">
+							<div onclick="placeBox()" class="north22 opa">@Khoon Kaen</div>
+						</a>
+					</div>
+
+
+
+				</div>
+
+
+
+
+
 			</div>
 
 
 
-			<!--list box west-->
-			<div class="list-box west-cl1">
-				<a href="#">
-					<div onclick="placeBox()" class="west opa Cu-Us-none">@Prachuap Khiri Khan</div>
-				</a>
-				<div class="fri-bg-list">
-					<img class="fri-list" src="img/fri-list.png" alt="">
-					<div class="fri-count">2</div>
-				</div>
 
-				<span class="next-place opanex">&#9654;</span>
-
-			</div>
-
-
-			<div class="friends">
-				<div class="fri1 west-cl1">
-
-					<a href="#"><img class="fri1-ed" src="img/fri-1.png" alt=""></a>
-					<a href="#">
-						<div class="palmt">Palm Natthasret</div>
-					</a>
-
-					<a href="#">
-						<div class="mavks-li">
-							<img class="mavks-west" src="img/mavks-west.png" alt="">
-							<div class="fri-count2">2</div>
-						</div>
-					</a>
-					<a href="#"><span class="next-place1 opanex">&#9654;</span></a>
-					<a href="#">
-						<div onclick="placeBox()" class="west2 opa Cu-Us-none">@Prachuap Khiri Khan</div>
-					</a>
-
-
-				</div>
-
-				<div class="fri1 west-cl1">
-					<a href="#"><img class="fri1-ed" src="img/fri-2.png" alt=""></a>
-					<a href="#">
-						<div class="palmt">Tum Ruttanapong</div>
-					</a>
-
-					<a href="#">
-						<div class="mavks-li mavk-tum">
-							<img class="mavks-west" src="img/mavks-west.png" alt="">
-							<div class="fri-count2">3</div>
-						</div>
-					</a>
-					<a href="#"><span class="next-place2 opanex">&#9654;</span></a>
-					<a href="#">
-						<div onclick="placeBox()" class="west2 opa Cu-Us-none">@Prachuap Khiri Khan</div>
-					</a>
-
-
-
-				</div>
-
-
-
-
-
-
-
-				<div class="fri1 north-cl1">
-					<a href="#"><img class="fri1-ed" src="img/fri-5.png" alt=""></a>
-					<a href="#">
-						<div class="palmt">Rock Suphot</div>
-					</a>
-					<a href="#">
-						<div class="mavks-li-north">
-							<img class="mavks-west" src="img/mavks-west.png" alt="">
-							<div class="fri-count2">1</div>
-						</div>
-					</a>
-
-					<a href="#">
-						<div class="north2 opa">@Mae Hong Son</div>
-					</a>
-				</div>
-
-
-
-
-				<div class="fri1 south-cl1">
-					<a href="#"><img class="fri1-ed" src="img/fri-4.png" alt=""></a>
-					<a href="#">
-						<div class="palmt">Guitar Wilasini</div>
-					</a>
-					<a href="#">
-						<div class="mavks-li-south">
-							<img class="mavks-west" src="img/mavks-west.png" alt="">
-							<div class="fri-count2">1</div>
-						</div>
-					</a>
-
-					<a href="#">
-						<div class="south2 opa">@Nakhon Si Thammarat</div>
-					</a>
-
-
-				</div>
-				<div class="fri1 east-cl1">
-					<a href="#"><img class="fri1-ed" src="img/fri-3.png" alt=""></a>
-					<a href="#">
-						<div class="palmt">Gift Chanunchida</div>
-					</a>
-					<a href="#">
-						<div class="mavks-li-north2">
-							<img class="mavks-west" src="img/mavks-west.png" alt="">
-							<div class="fri-count22">1</div>
-						</div>
-					</a>
-
-					<a href="#">
-						<div class="north22 opa">@Khoon Kaen</div>
-					</a>
-				</div>
-
-
-
-			</div>
 			<!--</div>-->
 		</div>
 
@@ -2725,7 +2830,7 @@
 						<div class="detail-book">
 							<div class="left-detail">
 								<div class="read-box">
-									Read
+									See the story
 								</div>
 							</div>
 
@@ -2783,7 +2888,7 @@
 						<div class="detail-book">
 							<div class="left-detail">
 								<div class="read-box">
-									Read
+									See the story
 								</div>
 
 							</div>

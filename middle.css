@@ -607,23 +607,24 @@ header {
 }
 
 .read-box{
-    width: 80px;
+    width: 160px;
     height: 60px;
-    background: #db2d2d;
-    border-radius: 9px;
+    background: rgba( 255, 255, 255, 0.1 );
+    border-radius: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     font-size: 18px;
-    font-weight: bolder;
+	font-family: 'Prompt';
     cursor: pointer;
     margin-left: 5px;
     transition: 0.1s;
     user-select: none;
+	font-weight: bolder;
 }
 .read-box:hover{
-    background: #d82121;
+    background: rgba( 255, 255, 255, 0.221 );
     transition: 0.1s
 }
 

@@ -11,8 +11,8 @@
 }
 
 .placeIn{
-    width: 90%;
-    height: 92%;
+    width: 84%;
+    height: 90%;
     background: white;
     border-radius: 4px;
 	position:absolute;
@@ -20,13 +20,15 @@
 	display: flex;
 	transform: scale(0);
 	transition: 0.3s;
+	overflow: hidden;
+	box-shadow: 0 0 16px 0 rgba( 0, 0, 0, 0.4 )
 }
 
 .xPlace{
     position: absolute;
 	 z-index: 100002;
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     top: 0;
     right: 7px;
     cursor: pointer;
@@ -38,8 +40,138 @@
 	width: 100%;
 	height: 100%;
 	opacity: 0;
-	   background: rgba( 0, 0, 0, 0.9 );
+	 background: rgba( 0, 0, 0, 0.9 );
 	 z-index: 100001;
 	transition: 0.3s;
 	
+}
+
+.spacePlace{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	
+}
+
+.cover-navPlace{
+	width: 100%;
+	height: 50px;
+	overflow: hidden;
+	position: relative;
+/*	background: rgba( 0, 0, 0, 0.5 );*/
+	z-index: 1;
+}
+.bgPlace{
+	width: 100%;
+	height: 100%;
+	background: url(img/bannerMyBoard.jpg);
+	background-size: cover;
+	background-position: 0% 30%;
+	display: flex;
+	position: absolute;
+	filter: brightness(45%)
+	
+}
+
+.navMenuPlace{
+	width: inherit;
+	height: inherit;
+	position: absolute;
+	z-index: 1;
+	display: flex;
+}
+
+.edBoxplace{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 0 0 25px;
+	font-size: 16px;
+	user-select: none;
+	font-family: 'Prompt';
+	color: white;
+}
+.textShadowP{
+	transition: 0.3s;
+	color: #b5b5b5;
+}
+.textShadowP:hover{
+	transition: 0.3s;
+	text-shadow: 0px 0px 12px;
+	color: white;
+}
+.boardPlace{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 12px;
+	font-family: 'Prompt';
+	color: white;
+	font-size: 18px
+} 
+
+.linePlace{
+	height: 70%;
+	width: 1.5px;
+	background: #dddddd;
+	margin-left: 24px;
+	margin-top: 6px;
+	
+}
+.marksLogoBoard{
+	display: flex;
+	align-items: center;
+	margin-left: 12px;
+	user-select: none;
+	cursor: pointer;
+}
+.markslosmal{
+	margin-right: 6px;
+}
+.marksmallBoard{
+	margin-top: 3px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 160px;
+	border-radius: 50px;
+	padding: 4px 0;
+	position: relative;
+	left: 50px;
+}
+
+.menuMarksboard1{
+	width: 565px;
+	display: flex;
+	
+}
+.profileInmark{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 5px;
+}
+.myMarks{
+	flex-grow: 8;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	
+}
+
+
+.cycleRed{
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	background: red;
+	border-radius: 50px;
+	left: 10px;
+}
+
+
+.profileMB{
+	border-radius: 50px;
+	border: 2px solid white;
 }
