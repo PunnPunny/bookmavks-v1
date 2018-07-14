@@ -48,8 +48,8 @@
 							<div class="linePlace">
 
 							</div>
-							
-							
+
+
 							<div class="tourisAtt edBoxplace">
 								<span onclick="locaMB()" class="Cu-Us-none textShadowP" id="locaMenuTop">Location</span>
 							</div>
@@ -71,9 +71,32 @@
 
 
 						<div class="myMarks">
+							<div class="logoInBoard">
+								<div class="friends mg-12 t-8">
+									<img src="img/fr-g12.png" width="27" alt="">
+								</div>
+
+								<div class="achiev mg-12 t-8">
+									<img src="img/quality.png" width="26" alt="">
+								</div>
+
+								<div class="editBoard mg-12 t-8" onclick="editBoard()">
+									<img width="24" src="img/editBoard.png" alt="">
+								</div>
+
+
+
+							</div>
 							<div class="profileInmark">
 								<img class="profileMB" src="img/left-profile-picpro.png" width="35" alt="">
 							</div>
+							
+							<div onclick="fullPlaceBox()" id="fullPlace">O</div>
+							
+							<div onclick="xPlace()" id="xPlace" class="xPlace">
+								&#10006
+							</div>
+
 						</div>
 
 					</div>
@@ -85,7 +108,7 @@
 				</div>
 
 				<div class="SpaceMenuPlace">
-				
+
 					<div id="LocaSpace" class="LocaSpace">
 						#Location_Space
 					</div>
@@ -101,6 +124,8 @@
 					<div id="analySpace" class="analySpace">
 						#Analysis_Space
 					</div>
+
+
 
 
 
@@ -120,9 +145,7 @@
 
 		</div>
 
-		<div onclick="xPlace()" id="xPlace" class="xPlace">
-			&#10006
-		</div>
+
 
 		<div id="closePlace" onclick="xPlace()">
 
@@ -2488,7 +2511,7 @@
 
 
 			<div class="list-box2">
-				<div onclick="placeBox()" class="marksmallBoard Cu-Us-none">
+				<div onclick="placeBox(),locaMB()" class="marksmallBoard Cu-Us-none">
 
 					<img class="markslosmal" src="img/logo-2.png" width="22" alt="">
 					<span class="Cu-Us-none">Marks Boards</span>
@@ -2496,18 +2519,18 @@
 				</div>
 				<a href="#">
 
-					<div onclick="placeBox()" class="fri-bg-list0">
+					<div onclick="placeBox(),invitMB()" class="fri-bg-list0">
 
 						<img class="fri-list" src="img/fr-g1.png" alt="">
 						<div class="fri-count">5</div>
 					</div>
 
-					<div onclick="placeBox()" class="fri-bg-list2">
+					<div onclick="placeBox(),invitMB()" class="fri-bg-list2">
 						<img class="fri-list2" src="img/groub-fri.png" alt="">
 						<div class="fri-count">2</div>
 					</div>
 
-					<div onclick="placeBox()" class="fri-bg-list3">
+					<div onclick="placeBox(),analyMB()" class="fri-bg-list3">
 						<div class="fri-count">Analysis : 18</div>
 					</div>
 
@@ -2519,10 +2542,10 @@
 						Most location invited
 					</div>
 					<a href="#">
-						<div onclick="placeBox()" class="west opa Cu-Us-none">@Prachuap Khiri Khan</div>
+						<div onclick="placeBox(),locaMB()" class="west opa Cu-Us-none">@Prachuap Khiri Khan</div>
 					</a>
 					<a href="#">
-						<div onclick="placeBox()" class="fri-bg-list">
+						<div onclick="placeBox(),invitMB()" class="fri-bg-list">
 							<img class="fri-list" src="img/fri-list.png" alt="">
 							<div class="fri-count">2</div>
 						</div>
@@ -2542,14 +2565,14 @@
 						</a>
 
 						<a href="#">
-							<div onclick="placeBox()" class="mavks-li">
+							<div onclick="placeBox(),locaMB()" class="mavks-li">
 								<img class="mavks-west" src="img/mavks-west.png" alt="">
 								<div class="fri-count2">2</div>
 							</div>
 						</a>
 						<span class="next-place1 opanex Cu-Us-none">&#9654;</span>
 						<a href="#">
-							<div onclick="placeBox()" class="west2 opa Cu-Us-none">@Prachuap Khiri Khan</div>
+							<div onclick="placeBox(),locaMB()" class="west2 opa Cu-Us-none">@Prachuap Khiri Khan</div>
 						</a>
 
 
@@ -2562,14 +2585,14 @@
 						</a>
 
 						<a href="#">
-							<div onclick="placeBox()" class="mavks-li mavk-tum">
+							<div onclick="placeBox(),locaMB()" class="mavks-li mavk-tum">
 								<img class="mavks-west" src="img/mavks-west.png" alt="">
 								<div class="fri-count2">3</div>
 							</div>
 						</a>
 						<span class="next-place2 opanex Cu-Us-none">&#9654;</span>
 						<a href="#">
-							<div onclick="placeBox()" class="west2 opa Cu-Us-none">@Prachuap Khiri Khan</div>
+							<div onclick="placeBox(),locaMB()" class="west2 opa Cu-Us-none">@Prachuap Khiri Khan</div>
 						</a>
 
 
@@ -2588,14 +2611,14 @@
 							<div class="palmt">Rock Suphot</div>
 						</a>
 						<a href="#">
-							<div class="mavks-li-north">
+							<div class="mavks-li-north" onclick="placeBox(),locaMB()">
 								<img class="mavks-west" src="img/mavks-west.png" alt="">
 								<div class="fri-count2">1</div>
 							</div>
 						</a>
 
 						<a href="#">
-							<div onclick="placeBox()" class="north2 opa">@Mae Hong Son</div>
+							<div onclick="placeBox(),locaMB()" class="north2 opa">@Mae Hong Son</div>
 						</a>
 					</div>
 
@@ -2608,14 +2631,14 @@
 							<div class="palmt">Guitar Wilasini</div>
 						</a>
 						<a href="#">
-							<div onclick="placeBox()" class="mavks-li-south">
+							<div onclick="placeBox(),locaMB()" class="mavks-li-south">
 								<img class="mavks-west" src="img/mavks-west.png" alt="">
 								<div class="fri-count2">1</div>
 							</div>
 						</a>
 
 						<a href="#">
-							<div onclick="placeBox()" class="south2 opa">@Nakhon Si Thammarat</div>
+							<div onclick="placeBox(),locaMB()" class="south2 opa">@Nakhon Si Thammarat</div>
 						</a>
 
 
@@ -2626,14 +2649,14 @@
 							<div class="palmt">Gift Chanunchida</div>
 						</a>
 						<a href="#">
-							<div onclick="placeBox()" class="mavks-li-north2">
+							<div onclick="placeBox(),locaMB()" class="mavks-li-north2">
 								<img class="mavks-west" src="img/mavks-west.png" alt="">
 								<div class="fri-count22">1</div>
 							</div>
 						</a>
 
 						<a href="#">
-							<div onclick="placeBox()" class="north22 opa">@Khoon Kaen</div>
+							<div onclick="placeBox(),locaMB()" class="north22 opa">@Khoon Kaen</div>
 						</a>
 					</div>
 
@@ -2660,7 +2683,7 @@
 
 			<div class="top-place">
 
-				<p class="t-place">
+				<p onclick="placeBox(),locaMB()" class="t-place Cu-Us-none">
 					Trending
 				</p>
 
@@ -2880,7 +2903,7 @@
 								<div class="place-text">@Phuket on Saturday 22 September 2018</div>
 							</a>
 						</div>
-						<div class="profile-books">
+						<div class="profile-books" onclick="locaMB()">
 							<a href="#"><img class="tum-book-profile2" src="img/fri-5.png" alt=""></a>
 						</div>
 

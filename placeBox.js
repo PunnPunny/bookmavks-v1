@@ -117,3 +117,24 @@ function analyMB() {
 	document.getElementById('inviSpace').style.display = 'none';
 	document.getElementById('analySpace').style.display = 'flex';
 }
+
+var px = true;
+
+function fullPlaceBox(){
+	if (px == true){
+	document.getElementById('placeIn').style.height ='100%';
+	document.getElementById('placeIn').style.width = '100%';
+	document.getElementById('fullPlace').innerHTML ='-';
+	document.getElementById('fullPlace').style.fontSize ='42px';
+		px = false;
+	}
+	else if (px == false){
+		document.getElementById('placeIn').style.height ='90%';
+	document.getElementById('placeIn').style.width = '84%';
+	document.getElementById('fullPlace').innerHTML ='O';
+	document.getElementById('fullPlace').style.fontSize ='27px';
+		px = true;
+	}
+	
+}
+
