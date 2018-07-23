@@ -36,11 +36,11 @@
 
 			<div class="spacePlace">
 				<div class="cover-navPlace">
-					<div class="navMenuPlace">
+					<div id="navMenuPlace" class="navMenuPlace">
 
 						<div class="menuMarksboard1">
 							<div class="marksLogoBoard">
-								<img src="img/logo-2.png" width="25" alt="">
+								<img onclick="xPlace()" src="img/logo-2.png" width="25" alt="">
 							</div>
 							<div class="boardPlace Cu-Us-none">
 								Marks Boards
@@ -72,15 +72,15 @@
 
 						<div class="myMarks">
 							<div class="logoInBoard">
-								<div class="friends mg-12 t-8">
+								<div class="mg-12 t-8">
 									<img src="img/fr-g12.png" width="27" alt="">
 								</div>
 
-								<div class="achiev mg-12 t-8">
+								<div class="mg-12 t-8">
 									<img src="img/quality.png" width="26" alt="">
 								</div>
 
-								<div class="editBoard mg-12 t-8" onclick="editBoard()">
+								<div class="mg-12 t-8" onclick="editBoard()">
 									<img width="24" src="img/editBoard.png" alt="">
 								</div>
 
@@ -90,9 +90,9 @@
 							<div class="profileInmark">
 								<img class="profileMB" src="img/left-profile-picpro.png" width="35" alt="">
 							</div>
-							
-							<div onclick="fullPlaceBox()" id="fullPlace">O</div>
-							
+
+							<!--							<div onclick="fullPlaceBox()" id="fullPlace">O</div>-->
+
 							<div onclick="xPlace()" id="xPlace" class="xPlace">
 								&#10006
 							</div>
@@ -109,16 +109,263 @@
 
 				<div class="SpaceMenuPlace">
 
+
+					<!--						#Location_Space-->
 					<div id="LocaSpace" class="LocaSpace">
-						#Location_Space
+						<div class="topTrend">
+							<div class="topTrendMenu">
+								<div class="countryTop">
+
+									<div class="TourTrends">Tourist trends</div>
+									<div class="THTrends">Thailand <span style="font-size: 10px; margin-left: 6px;">change</span> </div>
+
+								</div>
+
+								<div class="trendsBoard">
+									<div class="northTrends">
+										<div class="Ntrends">
+											<div class="NorthMain">
+												<div class="textNorth">North</div>
+											</div>
+
+											<div class="ProviceTrends mt-6">
+												<div class="tProv">Mea Hong Son</div>
+												<div class="itrTrends">172K marks</div>
+											</div>
+
+											<div class="ProviceTrends">
+												<div class="tProv">Chiang Mai</div>
+												<div class="itrTrends">102K marks</div>
+											</div>
+
+											<div class="ProviceTrends">
+												<div class="tProv">Uttaradit</div>
+												<div class="itrTrends">48K marks</div>
+											</div>
+
+
+
+
+
+
+
+
+
+
+										</div>
+
+									</div>
+
+									<div class="southTrends">
+										<div class="Ntrends">
+											<div class="NorthMain eastCl">
+												<div class="textNorth">East</div>
+											</div>
+
+											<div class="ProviceTrendsEast ProviceTrends mt-6">
+												<div class="tProv">Khon Kaen</div>
+												<div class="itrTrends">168K marks</div>
+											</div>
+
+											<div class="ProviceTrendsEast ProviceTrends">
+												<div class="tProv">Loei</div>
+												<div class="itrTrends">98K marks</div>
+											</div>
+
+											<div class="ProviceTrendsEast ProviceTrends">
+												<div class="tProv">Udon Thani</div>
+												<div class="itrTrends">62K marks</div>
+											</div>
+
+										</div>
+									</div>
+
+									<div class="westTrends">
+										<div class="Ntrends">
+											<div class="NorthMain westCl">
+												<div class="textNorth">West</div>
+											</div>
+
+											<div class="ProviceTrendsWest ProviceTrends mt-6">
+												<div class="tProv">Prachuap Khiri...</div>
+												<div class="itrTrends">148K marks</div>
+											</div>
+
+											<div class="ProviceTrendsWest ProviceTrends">
+												<div class="tProv">Phetchaburi</div>
+												<div class="itrTrends">72K marks</div>
+											</div>
+
+											<div class="ProviceTrendsWest ProviceTrends">
+												<div class="tProv">Tak</div>
+												<div class="itrTrends">52K marks</div>
+											</div>
+
+
+
+
+
+
+
+
+
+
+										</div>
+									</div>
+
+									<div class="eastTrends">
+										<div class="Ntrends">
+											<div class="NorthMain southCl">
+												<div class="textNorth">South</div>
+											</div>
+
+											<div class="ProviceTrends ProviceTrendsSouth mt-6">
+												<div class="tProv">Phuket</div>
+												<div class="itrTrends">139K marks</div>
+											</div>
+
+											<div class="ProviceTrends ProviceTrendsSouth">
+												<div class="tProv">Krabi</div>
+												<div class="itrTrends">85K marks</div>
+											</div>
+
+											<div class="ProviceTrends ProviceTrendsSouth">
+												<div class="tProv">Trang</div>
+												<div class="itrTrends">56K marks</div>
+											</div>
+
+
+
+
+
+
+
+
+
+
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+
+						</div>
+
+
+						<div class="localShow">
+
+
+						</div>
+
 					</div>
+
+
 
 					<div id="EventSpace" class="EventSpace">
-						#Event_Space
+
+						<div class="event1">
+							<img class="event1img" src="img/mae-hong-son_1.jpg" width="100%" alt="">
+							<div class="event1box">
+								<div class="nameofEvent">
+									Mae Hong Son Event
+								</div>
+								<div class="detailEvent">
+									ชวนเพื่อนให้ครบ 12 คน เพื่อเล่นกิจกรรม Mae Hong Son Event
+								</div>
+							</div>
+						</div>
+
+						<div class="event1">
+							<img class="event1img" src="img/chiang-mai-thailand.jpg.jpg" width="100%" height="350px" alt="">
+							<div class="event1box">
+								<div class="nameofEvent">
+									Chiang Mai Event
+								</div>
+								<div class="detailEvent">
+									ชวนเพื่อนให้ครบ 12 คน เพื่อเล่นกิจกรรม Chiang Mai Event
+								</div>
+							</div>
+						</div>
+
+						<div class="event1">
+							<img class="event1img" src="img/bankok.jpg" width="100%" height="350px" alt="">
+							<div class="event1box">
+								<div class="nameofEvent">
+									Bankok Event
+								</div>
+								<div class="detailEvent">
+									ชวนเพื่อนให้ครบ 12 คน เพื่อเล่นกิจกรรม Bankok Event
+								</div>
+							</div>
+						</div>
+
+						<div class="event1">
+							<img class="event1img" src="img/35643204451_8634b89556_b.jpg" width="100%" height="350px" alt="">
+							<div class="event1box">
+								<div class="nameofEvent">
+									Khon Kaen Event
+								</div>
+								<div class="detailEvent">
+									ชวนเพื่อนให้ครบ 12 คน เพื่อเล่นกิจกรรม Khon Kaen Event
+								</div>
+							</div>
+						</div>
+
+						<div class="event1">
+							<img class="event1img" src="img/phuket.jpg" width="100%" alt="" height="350px">
+							<div class="event1box">
+								<div class="nameofEvent">
+									Phuket Event
+								</div>
+								<div class="detailEvent">
+									ชวนเพื่อนให้ครบ 12 คน เพื่อเล่นกิจกรรม Phuket Event
+								</div>
+							</div>
+						</div>
+
+						<div class="event1">
+							<img class="event1img" src="img/loei.jpg" width="100%" alt="" height="350px">
+							<div class="event1box">
+								<div class="nameofEvent">
+									Loei Event
+								</div>
+								<div class="detailEvent">
+									ชวนเพื่อนให้ครบ 12 คน เพื่อเล่นกิจกรรม Loey Event
+								</div>
+							</div>
+						</div>
+
+
+
 					</div>
 
+
+
+
 					<div id="inviSpace" class="inviSpace">
-						#Invitation_Space
+						<div class="invit1">
+							<div class="navInvis in1cl">
+								<div class="west opa Cu-Us-none" >@Prachuap Khiri Khan</div>
+							</div>
+						</div>
+						
+						<div class="invit1">
+							
+						</div>
+						
+						<div class="invit1">
+							
+						</div>
+						
+						<div class="invit1">
+							
+						</div>
+						
+						<div class="invit1">
+							
+						</div>
+						
 					</div>
 
 					<div id="analySpace" class="analySpace">
@@ -2511,7 +2758,7 @@
 
 
 			<div class="list-box2">
-				<div onclick="placeBox(),locaMB()" class="marksmallBoard Cu-Us-none">
+				<div onclick="placeBox(),locaMB(),fullPlaceBox()" class="marksmallBoard Cu-Us-none">
 
 					<img class="markslosmal" src="img/logo-2.png" width="22" alt="">
 					<span class="Cu-Us-none">Marks Boards</span>
@@ -2519,19 +2766,19 @@
 				</div>
 				<a href="#">
 
-					<div onclick="placeBox(),invitMB()" class="fri-bg-list0">
+					<div onclick="placeBox(),invitMB(),fullPlaceBox()" class="fri-bg-list0">
 
 						<img class="fri-list" src="img/fr-g1.png" alt="">
 						<div class="fri-count">5</div>
 					</div>
 
-					<div onclick="placeBox(),invitMB()" class="fri-bg-list2">
+					<div onclick="placeBox(),invitMB(),fullPlaceBox()" class="fri-bg-list2">
 						<img class="fri-list2" src="img/groub-fri.png" alt="">
 						<div class="fri-count">2</div>
 					</div>
 
-					<div onclick="placeBox(),analyMB()" class="fri-bg-list3">
-						<div class="fri-count">Analysis : 18</div>
+					<div onclick="placeBox(),analyMB(),fullPlaceBox()" class="fri-bg-list3">
+						<div class="fri-count">Analysis : 12</div>
 					</div>
 
 				</a>
@@ -2542,10 +2789,10 @@
 						Most location invited
 					</div>
 					<a href="#">
-						<div onclick="placeBox(),locaMB()" class="west opa Cu-Us-none">@Prachuap Khiri Khan</div>
+						<div onclick="placeBox(),locaMB(),fullPlaceBox()" class="west opa Cu-Us-none">@Prachuap Khiri Khan</div>
 					</a>
 					<a href="#">
-						<div onclick="placeBox(),invitMB()" class="fri-bg-list">
+						<div onclick="placeBox(),invitMB(),fullPlaceBox()" class="fri-bg-list">
 							<img class="fri-list" src="img/fri-list.png" alt="">
 							<div class="fri-count">2</div>
 						</div>
@@ -2565,14 +2812,14 @@
 						</a>
 
 						<a href="#">
-							<div onclick="placeBox(),locaMB()" class="mavks-li">
+							<div onclick="placeBox(),locaMB(),fullPlaceBox()" class="mavks-li">
 								<img class="mavks-west" src="img/mavks-west.png" alt="">
 								<div class="fri-count2">2</div>
 							</div>
 						</a>
 						<span class="next-place1 opanex Cu-Us-none">&#9654;</span>
 						<a href="#">
-							<div onclick="placeBox(),locaMB()" class="west2 opa Cu-Us-none">@Prachuap Khiri Khan</div>
+							<div onclick="placeBox(),locaMB(),fullPlaceBox()" class="west2 opa Cu-Us-none">@Prachuap Khiri Khan</div>
 						</a>
 
 
@@ -2585,14 +2832,14 @@
 						</a>
 
 						<a href="#">
-							<div onclick="placeBox(),locaMB()" class="mavks-li mavk-tum">
+							<div onclick="placeBox(),locaMB(),fullPlaceBox()" class="mavks-li mavk-tum">
 								<img class="mavks-west" src="img/mavks-west.png" alt="">
 								<div class="fri-count2">3</div>
 							</div>
 						</a>
 						<span class="next-place2 opanex Cu-Us-none">&#9654;</span>
 						<a href="#">
-							<div onclick="placeBox(),locaMB()" class="west2 opa Cu-Us-none">@Prachuap Khiri Khan</div>
+							<div onclick="placeBox(),locaMB(),fullPlaceBox()" class="west2 opa Cu-Us-none">@Prachuap Khiri Khan</div>
 						</a>
 
 
@@ -2611,14 +2858,14 @@
 							<div class="palmt">Rock Suphot</div>
 						</a>
 						<a href="#">
-							<div class="mavks-li-north" onclick="placeBox(),locaMB()">
+							<div class="mavks-li-north" onclick="placeBox(),locaMB(),fullPlaceBox()">
 								<img class="mavks-west" src="img/mavks-west.png" alt="">
 								<div class="fri-count2">1</div>
 							</div>
 						</a>
 
 						<a href="#">
-							<div onclick="placeBox(),locaMB()" class="north2 opa">@Mae Hong Son</div>
+							<div onclick="placeBox(),locaMB(),fullPlaceBox()" class="north2 opa">@Mae Hong Son</div>
 						</a>
 					</div>
 
@@ -2631,14 +2878,14 @@
 							<div class="palmt">Guitar Wilasini</div>
 						</a>
 						<a href="#">
-							<div onclick="placeBox(),locaMB()" class="mavks-li-south">
+							<div onclick="placeBox(),locaMB(),fullPlaceBox()" class="mavks-li-south">
 								<img class="mavks-west" src="img/mavks-west.png" alt="">
 								<div class="fri-count2">1</div>
 							</div>
 						</a>
 
 						<a href="#">
-							<div onclick="placeBox(),locaMB()" class="south2 opa">@Nakhon Si Thammarat</div>
+							<div onclick="placeBox(),locaMB(),fullPlaceBox()" class="south2 opa">@Nakhon Si Thammarat</div>
 						</a>
 
 
@@ -2649,14 +2896,14 @@
 							<div class="palmt">Gift Chanunchida</div>
 						</a>
 						<a href="#">
-							<div onclick="placeBox(),locaMB()" class="mavks-li-north2">
+							<div onclick="placeBox(),locaMB(),fullPlaceBox()" class="mavks-li-north2">
 								<img class="mavks-west" src="img/mavks-west.png" alt="">
 								<div class="fri-count22">1</div>
 							</div>
 						</a>
 
 						<a href="#">
-							<div onclick="placeBox(),locaMB()" class="north22 opa">@Khoon Kaen</div>
+							<div onclick="placeBox(),locaMB(),fullPlaceBox()" class="north22 opa">@Khoon Kaen</div>
 						</a>
 					</div>
 
@@ -3455,6 +3702,7 @@
 
 		</div>
 	</div>
+
 	<footer>
 	</footer>
 </body>

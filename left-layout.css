@@ -103,7 +103,7 @@
 
 .list-box2 {
     margin: 20px 0px 20px 0px;
-	padding-bottom: 40px;
+	padding-bottom: 10px;
     position: relative;
     width: 272px;
     border-radius: 12px;
@@ -260,6 +260,7 @@
 	flex-direction: column;
 	position: relative;
 	right: 3px;
+	
 
 }
 
@@ -329,7 +330,7 @@ a .palmt {
 .mavks-li {
     position: absolute;
     display: inline-block;
-    margin: 4px 0px 0px 43px;
+    margin: 4px 0px 0px 36px;
     background: #8d9ee2;
     border-radius: 39px;
     width: 40px;
@@ -357,7 +358,7 @@ a .palmt {
 
 
 .mavk-tum {
-    margin: 3px 0px 0px 32px;
+    margin: 3px 0px 0px 25px;
 }
 
 
@@ -468,7 +469,7 @@ a .palmt {
 .mavks-li-north {
     position: absolute;
     display: inline-block;
-    margin: 4px 0px 0px 63px;
+    margin: 4px 0px 0px 56px;
     background:#d17272;
     border-radius: 39px;
     width: 40px;
@@ -502,7 +503,7 @@ a .palmt {
 .mavks-li-north2 {
     position: absolute;
     display: inline-block;
-    margin: 4px 0px 0px 35px;
+    margin: 4px 0px 0px 30px;
     background:#c0b480;
     border-radius: 39px;
     width: 40px;
@@ -546,7 +547,7 @@ a .palmt {
 .mavks-li-south {
     position: absolute;
     display: inline-block;
-    margin: 4px 0px 0px 53px;
+    margin: 4px 0px 0px 48px;
     background:#a7aae8;
     
     border-radius: 39px;

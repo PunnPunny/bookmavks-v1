@@ -25,7 +25,7 @@ function placeBox() {
 }
 
 function xPlace() {
-	document.getElementById('xPlace').style.display = 'none';
+//	document.getElementById('xPlace').style.display = 'none';
 	setTimeout(function () {
 		document.getElementById('placeBox').style.display = 'none';
 	}, 300);
@@ -72,7 +72,7 @@ function eventMB() {
 
 
 	document.getElementById('LocaSpace').style.display = 'none';
-	document.getElementById('EventSpace').style.display = 'flex';
+	document.getElementById('EventSpace').style.display = 'grid';
 	document.getElementById('inviSpace').style.display = 'none';
 	document.getElementById('analySpace').style.display = 'none';
 }
@@ -94,7 +94,7 @@ function invitMB() {
 
 	document.getElementById('LocaSpace').style.display = 'none';
 	document.getElementById('EventSpace').style.display = 'none';
-	document.getElementById('inviSpace').style.display = 'flex';
+	document.getElementById('inviSpace').style.display = 'grid';
 	document.getElementById('analySpace').style.display = 'none';
 }
 
@@ -121,20 +121,22 @@ function analyMB() {
 var px = true;
 
 function fullPlaceBox(){
-	if (px == true){
+//	if (px == true){
 	document.getElementById('placeIn').style.height ='100%';
 	document.getElementById('placeIn').style.width = '100%';
 	document.getElementById('fullPlace').innerHTML ='-';
 	document.getElementById('fullPlace').style.fontSize ='42px';
-		px = false;
-	}
-	else if (px == false){
-		document.getElementById('placeIn').style.height ='90%';
-	document.getElementById('placeIn').style.width = '84%';
-	document.getElementById('fullPlace').innerHTML ='O';
-	document.getElementById('fullPlace').style.fontSize ='27px';
-		px = true;
-	}
+		document.getElementById('navMenuPlace').style.marginTop = '0';
+//		px = false;
+//	}
+//	else if (px == false){
+//		document.getElementById('placeIn').style.height ='90%';
+//	document.getElementById('placeIn').style.width = '84%';
+//	document.getElementById('fullPlace').innerHTML ='O';
+//	document.getElementById('fullPlace').style.fontSize ='27px';
+//		document.getElementById('navMenuPlace').style.marginTop = '6px';
+//		px = true;
+//	}
 	
 }
 
